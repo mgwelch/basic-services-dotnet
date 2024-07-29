@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Security;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -121,6 +122,15 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <summary>
         /// Attempts to login to the given host and retrieve an access token.
         /// </summary>
+        /// <remarks><b>It's recommended that you use one of the other variants that do not
+        /// pass a password in plaintext.</b> You can use <see cref="SecretStore"/> to save and
+        /// retrieve passwords from your operating systems keystore.
+        /// </remarks>
+        /// <seealso cref="TryLogin(string, SecureString)"/>
+        /// <seealso cref="TryLoginAsync(string, SecureString)"/>
+        /// <seealso cref="TryLogin(string, bool)"/>
+        /// <seealso cref="TryLoginAsync(string, bool)"/>
+        /// <seealso cref="SecretStore"/>
         /// <returns>Access Token.</returns>
         /// <param name="username"></param>
         /// <param name="password"></param>
@@ -130,6 +140,17 @@ namespace JohnsonControls.Metasys.BasicServices
         AccessToken TryLogin(string username, string password, bool refresh = true);
         /// <inheritdoc cref="IMetasysClient.TryLogin(string, string, bool)"/>
         Task<AccessToken> TryLoginAsync(string username, string password, bool refresh = true);
+
+        /// <summary>
+        /// Attempts to login to the given host and retrieve an access token.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        AccessToken TryLogin(string username, SecureString password);
+        /// <inheritdoc cref="TryLogin(string, SecureString)"/>
+        Task<AccessToken> TryLoginAsync(string username, SecureString password);
+
 
 
         /// <summary>
@@ -193,10 +214,10 @@ namespace JohnsonControls.Metasys.BasicServices
         /// Read many attribute values given the Guids of the objects.
         /// </summary>
         /// <returns>
-        /// A list of VariantMultiple with all the specified attributes (if existing).        
+        /// A list of VariantMultiple with all the specified attributes (if existing).
         /// </returns>
         /// <param name="ids"></param>
-        /// <param name="attributeNames"></param>        
+        /// <param name="attributeNames"></param>
         /// <exception cref="MetasysHttpException"></exception>
         /// <exception cref="MetasysPropertyException"></exception>
         IEnumerable<VariantMultiple> ReadPropertyMultiple(IEnumerable<Guid> ids, IEnumerable<string> attributeNames);
@@ -306,8 +327,8 @@ namespace JohnsonControls.Metasys.BasicServices
         /// </remarks>
         /// <param name="id">The ID of the parent object.</param>
         /// <param name="levels">The depth of the children to retrieve.</param>
-        /// <param name="includeInternalObjects">Set it to true to see also internal objects that are not displayed in the Metasys tree. </param>      
-        /// <param name="includeExtensions">Set it to true to get also the extensions of the object.</param>      
+        /// <param name="includeInternalObjects">Set it to true to see also internal objects that are not displayed in the Metasys tree. </param>
+        /// <param name="includeExtensions">Set it to true to get also the extensions of the object.</param>
         /// <remarks> The flag includeInternalObjects applies since Metasys API v3. </remarks>
         /// <exception cref="MetasysHttpException"></exception>
         /// <exception cref="MetasysHttpParsingException"></exception>
@@ -321,7 +342,7 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <param name="objectId"></param>
         /// <param name="objectType">The object type enum set.</param>
         /// <exception cref="MetasysHttpException"></exception>
-        /// <exception cref="MetasysHttpParsingException"></exception>        
+        /// <exception cref="MetasysHttpParsingException"></exception>
         IEnumerable<MetasysObject> GetObjects(Guid objectId, string objectType);
 
         /// <inheritdoc cref="IMetasysClient.GetObjects(Guid, string)"/>
@@ -429,7 +450,7 @@ namespace JohnsonControls.Metasys.BasicServices
 
         /// <summary>
         /// Send an HTTP request as an asynchronous operation.
-        /// 
+        ///
         /// <para>
         /// This method currently only supports 1 value per header rather than multiple. In a future revision, this is planned to be addressed.
         /// </para>

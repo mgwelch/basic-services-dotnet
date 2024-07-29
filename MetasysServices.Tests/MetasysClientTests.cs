@@ -50,7 +50,7 @@ namespace MetasysServices.Tests
             httpTest.ShouldHaveCalled($"https://hostname/api/v2/login")
                 .WithVerb(HttpMethod.Post)
                 .WithContentType("application/json")
-                .WithRequestBody("{\"username\":\"username\",\"password\":\"password\"")
+                .WithCapturedByteArrayContent("{\"username\":\"username\",\"password\":\"password\"}")
                 .Times(1);
             var token = client.GetAccessToken();
             var expected = new AccessToken("hostname", "username", "Bearer faketokenLoginAsync", dateTime2);
@@ -70,12 +70,31 @@ namespace MetasysServices.Tests
                 httpTest.ShouldHaveCalled($"https://hostname/api/v2/login")
                     .WithVerb(HttpMethod.Post)
                     .WithContentType("application/json")
-                    .WithRequestBody("{\"username\":\"username\",\"password\":\"password\"")
+                    .WithCapturedByteArrayContent("{\"username\":\"username\",\"password\":\"password\"}")
                     .Times(1);
                 var token = client.GetAccessToken();
                 var expected = new AccessToken("hostname", "username", "Bearer faketokenLoginAsyncContext", dateTime2);
                 Assert.AreEqual(expected, token);
             });
+        }
+
+        [Test]
+        public void TestLoginWithSecureString()
+        {
+            CleanLogin();
+            httpTest.RespondWithJson(new { accessToken = "faketokenLoginSecureString", expires = date2 });
+            var password = "ThePassword".ToSecureString();
+            var token = client.TryLogin("api", password);
+
+            httpTest.ShouldHaveCalled($"https://hostname/api/v2/login")
+                .WithVerb(HttpMethod.Post)
+                .WithContentType("application/json")
+                .WithCapturedByteArrayContent("{\"username\":\"api\",\"password\":\"ThePassword\"}")
+                .Times(1);
+
+            var expected = new AccessToken("hostname", "api", "Bearer faketokenLoginSecureString", dateTime2);
+            Assert.AreEqual(expected, token);
+
         }
 
         [Test]
@@ -91,7 +110,7 @@ namespace MetasysServices.Tests
             httpTest.ShouldHaveCalled($"https://hostname/api/v2/login")
                 .WithVerb(HttpMethod.Post)
                 .WithContentType("application/json")
-                .WithRequestBody("{\"username\":\"username\",\"password\":\"badpassword\"")
+                .WithCapturedByteArrayContent("{\"username\":\"username\",\"password\":\"badpassword\"}")
                 .Times(1);
             Assert.AreEqual(original, client.GetAccessToken()); // The access token is not changed on error
             PrintMessage($"TestLoginUnauthorizedThrowsException: {e.Message}");
@@ -111,7 +130,7 @@ namespace MetasysServices.Tests
             httpTest.ShouldHaveCalled($"https://badhost/api/v2/login")
                 .WithVerb(HttpMethod.Post)
                 .WithContentType("application/json")
-                .WithRequestBody("{\"username\":\"username\",\"password\":\"password\"")
+                .WithCapturedByteArrayContent("{\"username\":\"username\",\"password\":\"password\"}")
                 .Times(1);
             Assert.AreEqual(original, client.GetAccessToken()); // The access token is not changed on error
             PrintMessage($"TestLoginBadHostThrowsException: {e.Message}");
@@ -130,7 +149,7 @@ namespace MetasysServices.Tests
             httpTest.ShouldHaveCalled($"https://hostname/api/v2/login")
                 .WithVerb(HttpMethod.Post)
                 .WithContentType("application/json")
-                .WithRequestBody("{\"username\":\"username\",\"password\":\"password\"")
+                .WithCapturedByteArrayContent("{\"username\":\"username\",\"password\":\"password\"}")
                 .Times(1);
             Assert.AreEqual(original, client.GetAccessToken()); // The access token is not changed on error
             PrintMessage($"TestLoginBadResponseMissingTokenThrowsException: {e.Message}");
@@ -149,7 +168,7 @@ namespace MetasysServices.Tests
             httpTest.ShouldHaveCalled($"https://hostname/api/v2/login")
                 .WithVerb(HttpMethod.Post)
                 .WithContentType("application/json")
-                .WithRequestBody("{\"username\":\"username\",\"password\":\"badpassword\"")
+                .WithCapturedByteArrayContent("{\"username\":\"username\",\"password\":\"badpassword\"}")
                 .Times(1);
             Assert.AreEqual(original, client.GetAccessToken()); // The access token is not changed on error
             PrintMessage($"TestLoginBadResponseMissingExpiresThrowsException: {e.Message}");
