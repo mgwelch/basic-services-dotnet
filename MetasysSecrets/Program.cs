@@ -86,6 +86,7 @@ SecureString GetPassword()
             Console.Write("*");
         }
     }
+    Console.WriteLine();
     password.MakeReadOnly();
     return password;
 }

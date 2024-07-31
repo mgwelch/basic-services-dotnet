@@ -5,6 +5,16 @@ These credentials can then be retrieved by your applications and the password
 can be securely passed to `MetasysClient.TryLogin` method of
 [basic-services-dotnet](../README.md).
 
+## Installation
+
+You'll need a modern version of
+[dotnet](https://dotnet.microsoft.com/en-us/download). Both .Net 6.0 and .Net
+8.0 are supported.
+
+```bash
+dotnet tool install --global JohnsonControls.MetasysSecrets
+```
+
 ## Usage
 
 There are three subcommands `add`, `lookup` and `delete` as shown below. Each

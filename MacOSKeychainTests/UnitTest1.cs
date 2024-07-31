@@ -78,52 +78,12 @@ public class Tests
             Assert.Ignore("Tests are ignored because they are not running on macOS.");
         }
 
-        // Make sure we use random data that is not already in key chain
-        ServiceNames = new string[5];
-        UserNames = new string[5];
-        for (var i = 0; i < 5; i++)
-        {
-            string randomServiceName;
-            do
-            {
-                randomServiceName = RandomStringGenerator.GenerateRandomString();
-            } while (Keychain.HasKeychainEntry(randomServiceName));
-            ServiceNames[i] = randomServiceName;
 
-        }
     }
 
-    [TearDown]
-    public void TearDown()
-    {
-        var keychain = new Keychain();
-        if (ServiceNames != null)
-        {
-            foreach (var service in ServiceNames)
-            {
-                keychain.DeletePassword((string)service, "username");
-            }
-        }
-    }
 
-    public static object[] ServiceNames { get; set; }
-    public static object[] GetServiceAccounts()
-    {
-        ServiceNames = new string[3];
-        for (int i = 0; i < 1; i++)
-        {
-            string random;
-            do
-            {
-                random = RandomStringGenerator.GenerateRandomString();
-            } while (Keychain.HasKeychainEntry(random));
-            ServiceNames[i] = new object[] { random };
 
-        }
 
-        return ServiceNames;
-    }
-    public static string[] UserNames { get; set; }
 
     public static IEnumerable<SecureString> Passwords
     {

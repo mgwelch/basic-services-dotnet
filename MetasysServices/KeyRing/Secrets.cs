@@ -30,21 +30,21 @@ namespace JohnsonControls.Metasys.BasicServices
             }
         }
 
-        static readonly ISecretStore secretStore;
+        static readonly ICredentialManager secretStore;
 
-        /// <inheritdoc cref="ISecretStore.AddOrReplacePassword(string, string, SecureString)"/>
+        /// <inheritdoc cref="ICredentialManager.AddOrReplacePassword(string, string, SecureString)"/>
         public static void AddOrReplacePassword(string hostName, string userName, SecureString password)
         {
             secretStore.AddOrReplacePassword(hostName, userName, password);
         }
 
-        /// <inheritdoc cref="ISecretStore.TryGetPassword(string, string, out SecureString)"/>
+        /// <inheritdoc cref="ICredentialManager.TryGetPassword(string, string, out SecureString)"/>
         public static bool TryGetPassword(string hostName, string userName, out SecureString password)
         {
             return secretStore.TryGetPassword(hostName, userName, out password);
         }
 
-        /// <inheritdoc cref="ISecretStore.DeletePassword(string, string)"/>
+        /// <inheritdoc cref="ICredentialManager.DeletePassword(string, string)"/>
         public static void DeletePassword(string hostName, string userName)
         {
             secretStore.DeletePassword(hostName, userName);

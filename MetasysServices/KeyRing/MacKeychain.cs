@@ -6,7 +6,7 @@ namespace JohnsonControls.Metasys.BasicServices;
 
 
 /// <summary>
-/// An implementation of <see cref="ISecretStore"/> which uses the Keychain on macOS to
+/// An implementation of <see cref="ICredentialManager"/> which uses the Keychain on macOS to
 /// store passwords.
 /// </summary>
 /// <remarks>
@@ -15,7 +15,7 @@ namespace JohnsonControls.Metasys.BasicServices;
 /// example, my-ads-server.my-company-com). Add your Metasys User Name in the "Account Name" field.
 /// Finally type your password in the "Password" field.
 /// </remarks>
-public class Keychain : ISecretStore
+public class Keychain : ICredentialManager
 {
     private const string SecurityLibrary = "/System/Library/Frameworks/Security.framework/Security";
 
@@ -73,12 +73,13 @@ public class Keychain : ISecretStore
     private void AddPassword(string hostName, string userName, SecureString password)
     {
         AssertRunningOnMacOS();
+        var target = PrefixHostName(hostName);
 
         var passwordData = SecureStringToByteArray(password);
         var status = SecKeychainAddGenericPassword(
             IntPtr.Zero,
-            (uint)hostName.Length,
-            hostName,
+            (uint)target.Length,
+            target,
             (uint)userName.Length,
             userName,
             (uint)passwordData.Length,
@@ -93,7 +94,7 @@ public class Keychain : ISecretStore
     }
 
     /// <inheritdoc/>
-    public bool TryGetPassword(string hostName, string userName, out SecureString password)
+    public override bool TryGetPassword(string hostName, string userName, out SecureString password)
     {
         AssertRunningOnMacOS();
 
@@ -101,10 +102,12 @@ public class Keychain : ISecretStore
         IntPtr passwordData;
         IntPtr itemRef;
 
+        var target = PrefixHostName(hostName);
+
         var status = SecKeychainFindGenericPassword(
             IntPtr.Zero,
-            (uint)hostName.Length,
-            hostName,
+            (uint)target.Length,
+            target,
             (uint)userName.Length,
             userName,
             out passwordLength,
@@ -141,10 +144,12 @@ public class Keychain : ISecretStore
     }
 
     /// <inheritdoc/>
-    public void AddOrReplacePassword(string hostName, string userName, SecureString newPassword)
+    public override void AddOrReplacePassword(string hostName, string userName, SecureString newPassword)
     {
 
         AssertRunningOnMacOS();
+
+        var target = PrefixHostName(hostName);
 
         IntPtr itemRef = IntPtr.Zero;
         try
@@ -154,8 +159,8 @@ public class Keychain : ISecretStore
             IntPtr passwordData;
             var status = SecKeychainFindGenericPassword(
                 IntPtr.Zero,
-                (uint)hostName.Length,
-                hostName,
+                (uint)target.Length,
+                target,
                 (uint)userName.Length,
                 userName,
                 out passwordLength,
@@ -224,38 +229,6 @@ public class Keychain : ISecretStore
         }
     }
 
-    /// <summary>
-    /// Looks for any entries in the Keychain for the specified hostname
-    /// </summary>
-    /// <param name="hostName"></param>
-    /// <returns></returns>
-    public static bool HasKeychainEntry(string hostName)
-    {
-        IntPtr searchRef = IntPtr.Zero;
-        IntPtr itemRef = IntPtr.Zero;
-
-        // Create a search query for the service name
-        int result = SecKeychainSearchCreateFromAttributes(
-            IntPtr.Zero,
-            IntPtr.Zero,
-            IntPtr.Zero,
-            out searchRef
-        );
-
-        if (result == 0 && searchRef != IntPtr.Zero)
-        {
-            while (SecKeychainSearchCopyNext(searchRef, out itemRef) == 0)
-            {
-                // Here you can add additional checks if needed
-                if (itemRef != IntPtr.Zero)
-                {
-                    return true;
-                }
-            }
-        }
-
-        return false;
-    }
 
     private static byte[] SecureStringToByteArray(SecureString secureString)
     {
@@ -267,8 +240,9 @@ public class Keychain : ISecretStore
     }
 
     /// <inheritdoc/>
-    public void DeletePassword(string hostName, string userName)
+    public override void DeletePassword(string hostName, string userName)
     {
-        DeleteKeychainEntry(hostName, userName);
+        var target = PrefixHostName(hostName);
+        DeleteKeychainEntry(target, userName);
     }
 }

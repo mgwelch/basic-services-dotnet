@@ -47,7 +47,7 @@ namespace JohnsonControls.Metasys.BasicServices;
 /// </code>
 /// </para>
 /// </remarks>
-public class LinuxLibSecret : ISecretStore
+public class LinuxLibSecret : ICredentialManager
 {
 
     private static void AssertRunningOnLinux()
@@ -93,37 +93,26 @@ public class LinuxLibSecret : ISecretStore
         }
     }
 
-    // /// <inheritdoc/>
-    // public void AddPassword(string hostName, string userName, SecureString password)
-    // {
-    //     AssertRunningOnLinux();
-    //     if (TryGetPassword(hostName, userName, out SecureString _))
-    //     {
-    //         throw new InvalidOperationException($"A password already exists for {userName}@{hostName}");
-    //     }
-    //     AddOrReplacePassword(hostName, userName, password);
-    // }
-
     /// <inheritdoc/>
-    public void AddOrReplacePassword(string hostName, string userName, SecureString password)
+    public override void AddOrReplacePassword(string hostName, string userName, SecureString password)
     {
         AssertRunningOnLinux();
-        RunSecretToolStore(hostName, userName, password);
+        RunSecretToolStore(PrefixHostName(hostName), userName, password);
     }
     /// <inheritdoc/>
-    public bool TryGetPassword(string hostName, string userName, out SecureString password)
+    public override bool TryGetPassword(string hostName, string userName, out SecureString password)
     {
         AssertRunningOnLinux();
-        var result = RunSecretToolLookup(hostName, userName);
+        var result = RunSecretToolLookup(PrefixHostName(hostName), userName);
         password = result == null ? new() : result;
         return result != null;
     }
 
     /// <inheritdoc/>
-    public void DeletePassword(string hostName, string userName)
+    public override void DeletePassword(string hostName, string userName)
     {
         AssertRunningOnLinux();
-        var process = Process.Start("secret-tool", $"clear {HostNameAttribute} \"{hostName}\" {UserNameAttribute} \"{userName}\"");
+        var process = Process.Start("secret-tool", $"clear {HostNameAttribute} \"{PrefixHostName(hostName)}\" {UserNameAttribute} \"{userName}\"");
         process.WaitForExit(2000);
     }
 

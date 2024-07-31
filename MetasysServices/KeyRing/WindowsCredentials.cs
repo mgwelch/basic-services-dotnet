@@ -8,10 +8,10 @@ namespace JohnsonControls.Metasys.BasicServices
 
 
     /// <summary>
-    /// An implementation of <see cref="ISecretStore"/> that uses Windows Credential Manager to
+    /// An implementation of <see cref="ICredentialManager"/> that uses Windows Credential Manager to
     /// save passwords.
     /// </summary>
-    public class WindowsCredentials : ISecretStore
+    public class WindowsCredentials : ICredentialManager
     {
         private static void AssertRunningOnWindows()
         {
@@ -22,12 +22,13 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         /// <inheritdoc/>
-        public void AddOrReplacePassword(string hostName, string userName, SecureString password)
+        public override void AddOrReplacePassword(string hostName, string userName, SecureString password)
         {
             AssertRunningOnWindows();
+            var target = PrefixHostName(hostName);
             new Credential()
             {
-                Target = hostName,
+                Target = target,
                 Username = userName,
                 SecurePassword = password,
                 PersistanceType = PersistanceType.LocalComputer
@@ -36,20 +37,20 @@ namespace JohnsonControls.Metasys.BasicServices
 
 
         /// <inheritdoc/>
-        public void DeletePassword(string hostName, string userName)
+        public override void DeletePassword(string hostName, string userName)
         {
             AssertRunningOnWindows();
-
-            var credential = new Credential { Target = hostName, Username = userName };
+            var target = PrefixHostName(hostName);
+            var credential = new Credential { Target = target, Username = userName };
             credential.Delete();
         }
 
         /// <inheritdoc/>
-        public bool TryGetPassword(string hostName, string userName, out SecureString password)
+        public override bool TryGetPassword(string hostName, string userName, out SecureString password)
         {
             AssertRunningOnWindows();
-
-            var credential = new Credential { Target = hostName, Username = userName };
+            var target = PrefixHostName(hostName);
+            var credential = new Credential { Target = target, Username = userName };
             var result = credential.Load();
             password = credential.SecurePassword;
             return result;

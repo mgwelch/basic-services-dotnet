@@ -4,27 +4,24 @@ namespace JohnsonControls.Metasys.BasicServices;
 
 
 /// <summary>
-/// An implementation of <see cref="ISecretStore"/> that doesn't do anything
+/// An implementation of <see cref="ICredentialManager"/> that doesn't do anything
 /// </summary>
 /// <remarks>
 /// This is the instance of ISecretStore used by <see cref="SecretStore"/> if
 /// no suitable functional instance can be found.
 /// </remarks>
-class DummyStore : ISecretStore
+class DummyStore : ICredentialManager
 {
-    public void AddOrReplacePassword(string hostName, string userName, SecureString password)
+    public override void AddOrReplacePassword(string hostName, string userName, SecureString password)
     {
     }
 
-    public void AddPassword(string hostName, string userName, SecureString password)
+
+    public override void DeletePassword(string hostName, string userName)
     {
     }
 
-    public void DeletePassword(string hostName, string userName)
-    {
-    }
-
-    public bool TryGetPassword(string hostName, string userName, out SecureString password)
+    public override bool TryGetPassword(string hostName, string userName, out SecureString password)
     {
         password = new();
         password.MakeReadOnly();

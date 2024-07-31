@@ -5,8 +5,22 @@ namespace JohnsonControls.Metasys.BasicServices;
 /// <summary>
 /// Represents a secret store for passwords
 /// </summary>
-public interface ISecretStore
+public abstract class ICredentialManager
 {
+
+    /// <summary>
+    /// Prefix hostname before storing to avoid collisions and
+    /// more importantly to prevent this tool from being able to lookup
+    /// credentials that weren't entered by it.
+    /// </summary>
+    /// <param name="hostName"></param>
+    /// <returns></returns>
+    protected static string PrefixHostName(string hostName)
+    {
+        return $"Metasys:{hostName}";
+    }
+
+
     /// <summary>
     /// Adds or replaces a password in the secret store
     /// </summary>
@@ -18,7 +32,7 @@ public interface ISecretStore
     /// <param name="hostName"></param>
     /// <param name="userName"></param>
     /// <param name="password"></param>
-    void AddOrReplacePassword(string hostName, string userName, SecureString password);
+    public abstract void AddOrReplacePassword(string hostName, string userName, SecureString password);
 
     /// <summary>
     /// Attempts to retrieve a stored password
@@ -27,7 +41,7 @@ public interface ISecretStore
     /// <param name="userName"></param>
     /// <param name="password"></param>
     /// <returns><b>true</b> if the password for the user on the specified host exists; <b>false</b> otherwise.</returns>
-    bool TryGetPassword(string hostName, string userName, out SecureString password);
+    public abstract bool TryGetPassword(string hostName, string userName, out SecureString password);
 
     /// <summary>
     /// Deletes the password with specified hostName and userName if it exists.
@@ -35,5 +49,6 @@ public interface ISecretStore
     /// <remarks>This method does nothing if the password doesn't exist</remarks>
     /// <param name="hostName"></param>
     /// <param name="userName"></param>
-    void DeletePassword(string hostName, string userName);
+    public abstract void DeletePassword(string hostName, string userName);
+
 }
