@@ -42,6 +42,17 @@ internal static class SecureStringExtensions
 public class SecretStoreTests
 {
 
+    [SetUp]
+    public void SetUp()
+    {
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+        {
+            if (!LinuxLibSecret.IsSecretToolAvailable())
+            {
+                Assert.Ignore("Can run linux tests because secret-tool is not available");
+            }
+        }
+    }
 
     [Test]
     public void TestAddLookupAndDelete()

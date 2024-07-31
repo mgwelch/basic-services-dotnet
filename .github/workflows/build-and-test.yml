@@ -9,12 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-dotnet@v1
-      - name: Ensure secret-tool installed
-        run: sudo apt-get update && sudo apt-get install -y libsecret-tools
-      - name: Ensure secret-tool works
-        run: |
-          echo "Password" | secret-tool store -l "First login" "Host Name" host \
-          "User Name" api
       - run: dotnet build MetasysServices --configuration Release
       - run: dotnet test MetasysServicesLinux.sln
 
