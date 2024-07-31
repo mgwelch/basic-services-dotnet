@@ -37,6 +37,11 @@ namespace JohnsonControls.Metasys.BasicServices
         {
             return secretStore.TryGetPassword(hostName, userName, out password);
         }
+
+        public static void DeletePassword(string hostName, string userName)
+        {
+            secretStore.DeletePassword(hostName, userName);
+        }
     }
 
 }

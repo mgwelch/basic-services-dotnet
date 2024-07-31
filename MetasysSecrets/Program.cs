@@ -1,24 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
 using JohnsonControls.Metasys.BasicServices;
 
-if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
-{
-    Console.WriteLine("running on linux");
-}
-if (LinuxLibSecret.IsSecretToolAvailable())
-{
-    Console.WriteLine("secret tool available");
-}
 
-
-
-if (args.Length != 3)
+if (args.Length != 3 || !(args[0] is "add" or "lookup" or "delete"))
 {
-    Console.WriteLine("Usage:");
-    Console.WriteLine("metasys-secret add {host} {username}");
-    Console.WriteLine("metasys-secret lookup {host} {username}");
+    WriteUsage();
     return;
 }
 
@@ -33,6 +22,11 @@ switch (args[0])
         {
             Console.WriteLine(ConvertToPlainText(securePassword));
         }
+        break;
+    case "delete":
+        SecretStore.DeletePassword(args[1], args[2]);
+        break;
+    default:
         break;
 }
 
@@ -50,6 +44,14 @@ string ConvertToPlainText(SecureString secureString)
     }
 }
 
+void WriteUsage()
+{
+    Console.WriteLine("Usage:");
+    Console.WriteLine("metasys-secret add {host} {username}");
+    Console.WriteLine("metasys-secret lookup {host} {username}");
+    Console.WriteLine("metasys-secret delete {host} {username}");
+    return;
+}
 //
 SecureString GetPassword()
 {

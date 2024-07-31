@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacOSKeychainTests", "MacOS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetasysSecrets", "MetasysSecrets\MetasysSecrets.csproj", "{A2982304-552E-4447-BD0D-DD810CFA57BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{4E4255C3-8EB8-4BCF-9FB0-9F49F4FA601F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A2982304-552E-4447-BD0D-DD810CFA57BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2982304-552E-4447-BD0D-DD810CFA57BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2982304-552E-4447-BD0D-DD810CFA57BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4255C3-8EB8-4BCF-9FB0-9F49F4FA601F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4255C3-8EB8-4BCF-9FB0-9F49F4FA601F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4255C3-8EB8-4BCF-9FB0-9F49F4FA601F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4255C3-8EB8-4BCF-9FB0-9F49F4FA601F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
