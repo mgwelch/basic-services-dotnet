@@ -1,9 +1,6 @@
 using System.Runtime.InteropServices;
 using System;
-
-using System;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Security;
 namespace JohnsonControls.Metasys.BasicServices;
 
@@ -73,7 +70,7 @@ public class Keychain : ISecretStore
         }
     }
 
-    public void AddPassword(string hostName, string userName, SecureString password)
+    private void AddPassword(string hostName, string userName, SecureString password)
     {
         AssertRunningOnMacOS();
 
@@ -95,6 +92,7 @@ public class Keychain : ISecretStore
         }
     }
 
+    /// <inheritdoc/>
     public bool TryGetPassword(string hostName, string userName, out SecureString password)
     {
         AssertRunningOnMacOS();
@@ -141,6 +139,8 @@ public class Keychain : ISecretStore
             return false;
         }
     }
+
+    /// <inheritdoc/>
     public void AddOrReplacePassword(string hostName, string userName, SecureString newPassword)
     {
 
@@ -185,7 +185,7 @@ public class Keychain : ISecretStore
         }
     }
 
-    public static void DeleteKeychainEntry(string hostName, string userName, bool exceptionIfNotFound = false)
+    private static void DeleteKeychainEntry(string hostName, string userName, bool exceptionIfNotFound = false)
     {
         AssertRunningOnMacOS();
 
@@ -224,6 +224,11 @@ public class Keychain : ISecretStore
         }
     }
 
+    /// <summary>
+    /// Looks for any entries in the Keychain for the specified hostname
+    /// </summary>
+    /// <param name="hostName"></param>
+    /// <returns></returns>
     public static bool HasKeychainEntry(string hostName)
     {
         IntPtr searchRef = IntPtr.Zero;
@@ -261,6 +266,7 @@ public class Keychain : ISecretStore
         return passwordBytes;
     }
 
+    /// <inheritdoc/>
     public void DeletePassword(string hostName, string userName)
     {
         DeleteKeychainEntry(hostName, userName);

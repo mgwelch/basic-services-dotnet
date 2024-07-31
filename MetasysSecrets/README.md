@@ -62,8 +62,6 @@ metasys-secrets lookup <hostName> <userName>
 > not recommended for production environments. You may choose to use the GUI tool
 > for your operating system instead.
 
-
-
 ## Credential Managers
 
 The credential manager that is used depends on the operating system you are
@@ -88,8 +86,3 @@ On Debian/Ubuntu you can install it like this
 ```bash
 sudo apt install libsecret-tools
 ```
-
-Once it's installed you may choose to use it directly but it's recommended you
-use `metasys-secrets` so that the password is stored using known attributes that
-[SecretStore](../MetasysServices/KeyRing/Secrets.cs) can use to find your
-credentials at runtime.

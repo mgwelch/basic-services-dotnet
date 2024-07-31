@@ -1,4 +1,3 @@
-using System.Runtime.InteropServices;
 using System.Security;
 
 namespace JohnsonControls.Metasys.BasicServices;
@@ -8,7 +7,7 @@ namespace JohnsonControls.Metasys.BasicServices;
 /// An implementation of <see cref="ISecretStore"/> that doesn't do anything
 /// </summary>
 /// <remarks>
-/// This is the instance of ISecretStore used by <see cref="Secrets"/> if
+/// This is the instance of ISecretStore used by <see cref="SecretStore"/> if
 /// no suitable functional instance can be found.
 /// </remarks>
 class DummyStore : ISecretStore

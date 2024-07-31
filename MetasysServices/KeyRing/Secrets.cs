@@ -1,15 +1,18 @@
-using System;
 using System.Runtime.InteropServices;
 using System.Security;
 
 namespace JohnsonControls.Metasys.BasicServices
 {
 
+    /// <summary>
+    /// A cross platform API for managing Metasys passwords using appropriate credential manager
+    /// on each operating system.
+    /// </summary>
     public class SecretStore
     {
         static SecretStore()
         {
-            if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
             {
                 secretStore = new Keychain();
             }
@@ -28,16 +31,20 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         static readonly ISecretStore secretStore;
+
+        /// <inheritdoc cref="ISecretStore.AddOrReplacePassword(string, string, SecureString)"/>
         public static void AddOrReplacePassword(string hostName, string userName, SecureString password)
         {
             secretStore.AddOrReplacePassword(hostName, userName, password);
         }
 
+        /// <inheritdoc cref="ISecretStore.TryGetPassword(string, string, out SecureString)"/>
         public static bool TryGetPassword(string hostName, string userName, out SecureString password)
         {
             return secretStore.TryGetPassword(hostName, userName, out password);
         }
 
+        /// <inheritdoc cref="ISecretStore.DeletePassword(string, string)"/>
         public static void DeletePassword(string hostName, string userName)
         {
             secretStore.DeletePassword(hostName, userName);

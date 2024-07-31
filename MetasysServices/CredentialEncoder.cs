@@ -2,15 +2,16 @@ using System;
 using System.IO;
 using System.Net;
 using System.Net.Http;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
-using System.Text.Json;
 using System.Threading.Tasks;
 using Flurl.Http.Testing;
 
+#nullable enable
+
 namespace JohnsonControls.Metasys.BasicServices;
+
 /// <summary>Content provided by a byte array</summary>
 /// <remarks>
 /// Works just like a ByteArrayContent but in testing mode (HttpTest.Current isn't null) it retains the
@@ -21,28 +22,39 @@ namespace JohnsonControls.Metasys.BasicServices;
 public class CapturedByteArrayContent : HttpContent
 {
     private readonly byte[] payload;
+
+    /// <summary>
+    /// Create an HttpContent instance from the specified payload.
+    /// </summary>
+    /// <param name="payload"></param>
     public CapturedByteArrayContent(byte[] payload)
     {
         this.payload = payload;
         if (HttpTest.Current != null)
         {
-            Content = System.Text.Encoding.UTF8.GetString(payload);
+            Content = Encoding.UTF8.GetString(payload);
         }
     }
 
     /// <inheritdoc/>
     protected override Task SerializeToStreamAsync(Stream stream, TransportContext context)
     {
-        return stream.WriteAsync(payload, 0, payload.Length);
+        try
+        {
+            return stream.WriteAsync(payload, 0, payload.Length);
+        }
+        finally
+        {
+            Array.Clear(payload, 0, payload.Length);
+        }
 
-        Array.Clear(payload, 0, payload.Length);
     }
 
     /// <summary>
     /// Returns the decoded byte array.
     /// </summary>
     /// <remarks>The byte array is assumed to be utf8 encoded string.
-    /// <para>This will always be null in production.<para>
+    /// <para>This will always be null in production.</para>
     /// </remarks>
     public string? Content { get; private set; }
 
@@ -64,11 +76,23 @@ public class CapturedByteArrayContent : HttpContent
 /// to REST API /login
 /// </summary>
 /// <remarks>
+/// This class exists so that the password never needs to be converted to a
+/// string which represents a security vulnerability since you can't explicitly
+/// clear memory associated with a string.
+/// <para>
 /// You must ensure Dispose is called on this class as soon as you are done
-/// with the `EncodedPayload` to clear the password bytes from memory
+/// with the `EncodedPayload` to clear the password bytes from memory. Best to
+/// just wrap it in a using statement.
+/// </para>
 /// </remarks>
 public class MetasysCredentials : IDisposable
 {
+
+    /// <summary>
+    /// Create a MetasysCredentials Login request payload.
+    /// </summary>
+    /// <param name="username"></param>
+    /// <param name="password"></param>
     public MetasysCredentials(string username, SecureString password)
     {
         this.username = username;
@@ -78,19 +102,24 @@ public class MetasysCredentials : IDisposable
     private readonly SecureString password;
 
 
-    byte[]? encodedPayload;
+    private byte[]? encodedPayload;
 
+    /// <summary>
+    /// Retrieve the Utf8 encoded payload to be used in the login request.
+    /// </summary>
     public byte[] EncodedPayload
     {
         get
         {
-            Dispose();
-            encodedPayload = EncodePayload(username, password);
+            if (encodedPayload == null)
+            {
+                encodedPayload = EncodePayload(username, password);
+            }
             return encodedPayload;
         }
     }
 
-    public static byte[] SecureStringToUtf8Bytes(SecureString secureString)
+    private static byte[] SecureStringToUtf8Bytes(SecureString secureString)
     {
         IntPtr bstr = Marshal.SecureStringToBSTR(secureString);
         int length = secureString.Length;
@@ -158,7 +187,7 @@ public class MetasysCredentials : IDisposable
         }
     }
 
-
+    /// <inheritdoc cref="IDisposable.Dispose"/>
     public void Dispose()
     {
         if (encodedPayload != null) Array.Clear(encodedPayload, 0, encodedPayload.Length);

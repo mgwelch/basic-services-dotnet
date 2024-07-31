@@ -1,9 +1,7 @@
-using System.Collections;
 using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
-using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 
 namespace JohnsonControls.Metasys.BasicServices;
 
@@ -98,11 +96,12 @@ public class Tests
     [TearDown]
     public void TearDown()
     {
+        var keychain = new Keychain();
         if (ServiceNames != null)
         {
             foreach (var service in ServiceNames)
             {
-                Keychain.DeleteKeychainEntry((string)service, "username");
+                keychain.DeletePassword((string)service, "username");
             }
         }
     }

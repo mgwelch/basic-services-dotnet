@@ -1,10 +1,11 @@
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
+
+#nullable enable
 
 namespace JohnsonControls.Metasys.BasicServices;
 
@@ -13,12 +14,7 @@ namespace JohnsonControls.Metasys.BasicServices;
 /// </summary>
 /// <remarks>
 /// This class has a dependency on the command line tool <c>secret-tool</c> which
-/// can be installed on Ubuntu using <c>sudo apt install libsecret-tools</c>. Or on
-/// RedHat/Fedora it can be installed using
-/// <code>
-/// sudo yum install epel-release
-/// sudo yum install libsecret
-/// </code>
+/// can be installed on Ubuntu using <c>sudo apt install libsecret-tools</c>.
 /// <para>
 /// The gui tool related to this is the Gnome Passwords application also known as
 /// "seahorse". This tool can be used to view saved passwords but it is not useful
@@ -68,13 +64,6 @@ public class LinuxLibSecret : ISecretStore
     /// <remarks>
     /// If the tool is not available it can be installed on Debian/Ubuntu systems
     /// using <code>sudo apt install libsecret-tools</code>
-    /// <para>
-    /// Or on a RedHat/Fedora system
-    /// <code>
-    /// sudo yum install epel-release
-    /// sudo yum install libsecret
-    /// </code>
-    /// </para>
     /// </remarks>.
     /// <returns></returns>
     public static bool IsSecretToolAvailable()
@@ -104,21 +93,24 @@ public class LinuxLibSecret : ISecretStore
         }
     }
 
-    public void AddPassword(string hostName, string userName, SecureString password)
-    {
-        AssertRunningOnLinux();
-        if (TryGetPassword(hostName, userName, out SecureString _))
-        {
-            throw new InvalidOperationException($"A password already exists for {userName}@{hostName}");
-        }
-        AddOrReplacePassword(hostName, userName, password);
-    }
+    // /// <inheritdoc/>
+    // public void AddPassword(string hostName, string userName, SecureString password)
+    // {
+    //     AssertRunningOnLinux();
+    //     if (TryGetPassword(hostName, userName, out SecureString _))
+    //     {
+    //         throw new InvalidOperationException($"A password already exists for {userName}@{hostName}");
+    //     }
+    //     AddOrReplacePassword(hostName, userName, password);
+    // }
 
+    /// <inheritdoc/>
     public void AddOrReplacePassword(string hostName, string userName, SecureString password)
     {
         AssertRunningOnLinux();
         RunSecretToolStore(hostName, userName, password);
     }
+    /// <inheritdoc/>
     public bool TryGetPassword(string hostName, string userName, out SecureString password)
     {
         AssertRunningOnLinux();
@@ -127,6 +119,7 @@ public class LinuxLibSecret : ISecretStore
         return result != null;
     }
 
+    /// <inheritdoc/>
     public void DeletePassword(string hostName, string userName)
     {
         AssertRunningOnLinux();

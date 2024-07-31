@@ -9,6 +9,7 @@ if (args.Length != 3 || !(args[0] is "add" or "lookup" or "delete"))
     return;
 }
 
+
 switch (args[0])
 {
     case "add":
@@ -45,9 +46,9 @@ string ConvertToPlainText(SecureString secureString)
 void WriteUsage()
 {
     Console.WriteLine("Usage:");
-    Console.WriteLine("metasys-secret add {host} {username}");
-    Console.WriteLine("metasys-secret lookup {host} {username}");
-    Console.WriteLine("metasys-secret delete {host} {username}");
+    Console.WriteLine("  metasys-secret add {host} {username}");
+    Console.WriteLine("  metasys-secret lookup {host} {username}");
+    Console.WriteLine("  metasys-secret delete {host} {username}");
     return;
 }
 
