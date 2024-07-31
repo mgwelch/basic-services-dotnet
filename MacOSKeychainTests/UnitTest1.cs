@@ -39,8 +39,9 @@ internal static class SecureStringExtensions
     }
 }
 [TestFixture]
-public class LinuxTests
+public class SecretStoreTests
 {
+
 
     [Test]
     public void TestAddLookupAndDelete()
@@ -49,85 +50,20 @@ public class LinuxTests
         var hostname = "%--HOST--NAME--%";
         var username = "service-account";
         var password = "\uD83D\uDE01Password😃";
-        var secrets = new LinuxLibSecret();
-        secrets.AddOrReplacePassword(hostname, username, password.ToSecureString());
+        SecretStore.AddOrReplacePassword(hostname, username, password.ToSecureString());
 
-        var _ = secrets.TryGetPassword(hostname, username, out var password2);
+        var _ = SecretStore.TryGetPassword(hostname, username, out var password2);
 
         Assert.That(password2.ToPlainString(), Is.EqualTo(password));
 
-        secrets.DeletePassword(hostname, username);
+        SecretStore.DeletePassword(hostname, username);
 
-        var result = secrets.TryGetPassword(hostname, username, out password2);
+        var result = SecretStore.TryGetPassword(hostname, username, out password2);
         Assert.That(result, Is.False);
     }
 }
 
 
-[TestFixture]
-public class Tests
-{
-
-    private static readonly Keychain Keychain = new();
-
-    [SetUp]
-    public void Setup()
-    {
-        if (!RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
-        {
-            Assert.Ignore("Tests are ignored because they are not running on macOS.");
-        }
-
-
-    }
-
-
-
-
-
-    public static IEnumerable<SecureString> Passwords
-    {
-        get
-        {
-            var insecurePassword = RandomStringGenerator.GenerateRandomString();
-            var chars = insecurePassword.ToCharArray();
-
-
-            var securePassword = new SecureString();
-            chars.ToList().ForEach(securePassword.AppendChar);
-            yield return securePassword;
-        }
-    }
-
-
-    // [Test, TestCaseSource(nameof(GetServiceAccounts))]
-    // public void AddAndRetrieve(string serviceName)
-    // {
-    //     string username = "username";
-    //     SecureString securePassword = "password".ToSecureString();
-    //     Keychain.AddPassword(serviceName, username, securePassword);
-
-    //     Keychain.TryGetPassword(serviceName, username, out SecureString storedSecurePassword);
-
-    //     Assert.That(securePassword.ToPlainString(), Is.EqualTo(storedSecurePassword.ToPlainString()));
-    // }
-
-    [Test]
-    public void Test2()
-    {
-
-
-        var result = Keychain.TryGetPassword("welch12.go.johnsoncontrols.com", "api", out SecureString securePassword);
-        var password = securePassword.ToPlainString();
-
-
-        Keychain.AddOrReplacePassword("welch12.go.johnsoncontrols.com", "madeup", "badpassword".ToSecureString());
-        result = Keychain.TryGetPassword("welch12.go.johnsoncontrols.com", "madeup", out securePassword);
-        password = securePassword.ToPlainString();
-    }
-
-
-}
 
 public class RandomStringGenerator
 {
