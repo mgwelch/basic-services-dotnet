@@ -41,6 +41,29 @@ echo "thepassword" | metasys-secrets add my-ads-server.company.com api-service-a
 > Be careful with this approach as your password is now shown in plain text and will
 > be stored in your shell history. It's not recommended for production environments.
 
+### Delete a Password
+
+To delete a password from your credential manager you can do
+
+```bash
+metasys-secrets delete <hostName> <userName>
+```
+
+### Display a Password
+
+To read a password from the credential manager you can do
+
+```bash
+metasys-secrets lookup <hostName> <userName>
+```
+
+> [!Warning]\
+> Be careful with this approach as your password is now shown in plain text.It's
+> not recommended for production environments. You may choose to use the GUI tool
+> for your operating system instead.
+
+
+
 ## Credential Managers
 
 The credential manager that is used depends on the operating system you are

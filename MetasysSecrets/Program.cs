@@ -1,9 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
 using JohnsonControls.Metasys.BasicServices;
-
 
 if (args.Length != 3 || !(args[0] is "add" or "lookup" or "delete"))
 {
