@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-dotnet@v1
       - name: Ensure secret-tool installed
-        run: sudo apt-get update && sudo apt-get install -y secret-tool
+        run: sudo apt-get update && sudo apt-get install -y libsecret-tools
       - run: dotnet build MetasysServices --configuration Release
       - run: dotnet test MetasysServicesLinux.sln
 
