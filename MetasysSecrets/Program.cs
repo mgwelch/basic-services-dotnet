@@ -52,7 +52,7 @@ void WriteUsage()
     Console.WriteLine("metasys-secret delete {host} {username}");
     return;
 }
-//
+
 SecureString GetPassword()
 {
     SecureString password = new SecureString();
@@ -62,6 +62,8 @@ SecureString GetPassword()
         input?.ToCharArray().ToList().ForEach(password.AppendChar);
         return password;
     }
+    Console.Write("Enter your password: ");
+
     while (true)
     {
 
