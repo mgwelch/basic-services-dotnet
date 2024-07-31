@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
@@ -28,9 +29,6 @@ internal static class SecureStringExtensions
             // Free the unmanaged string
             Marshal.ZeroFreeGlobalAllocUnicode(unmanagedString.Value);
         }
-
-
-
     }
 
     public static SecureString ToSecureString(this string insecure)
@@ -38,28 +36,32 @@ internal static class SecureStringExtensions
         var chars = insecure.ToCharArray();
         var secure = new SecureString();
         chars.ToList().ForEach(secure.AppendChar);
+        secure.MakeReadOnly();
         return secure;
     }
 }
 [TestFixture]
 public class LinuxTests
 {
-    [SetUp]
-    public void Setup()
-    {
-        if (!RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
-        {
-            Assert.Ignore("Tests are ignored because they are not running on macOS.");
-        }
-    }
+
     [Test]
-    public void Tests()
+    public void TestAddLookupAndDelete()
     {
-        var libsecret = new LinuxLibSecret();
-        libsecret.AddPassword("welch12.go.johnsoncontrols.com", "api", "password".ToSecureString());
 
-        var result = libsecret.TryGetPassword("welch12.go.johnsoncontrols.com", "api", out SecureString password);
+        var hostname = "%--HOST--NAME--%";
+        var username = "service-account";
+        var password = "\uD83D\uDE01Password😃";
+        var secrets = new LinuxLibSecret();
+        secrets.AddOrReplacePassword(hostname, username, password.ToSecureString());
 
+        var _ = secrets.TryGetPassword(hostname, username, out var password2);
+
+        Assert.That(password2.ToPlainString(), Is.EqualTo(password));
+
+        secrets.DeletePassword(hostname, username);
+
+        var result = secrets.TryGetPassword(hostname, username, out password2);
+        Assert.That(result, Is.False);
     }
 }
 
@@ -166,22 +168,61 @@ public class Tests
     }
 
 
-    public class RandomStringGenerator
+}
+
+public class RandomStringGenerator
+{
+    private static readonly Random random = new Random();
+
+    public static string GenerateRandomString(int minLength = 10, int maxLength = 20)
     {
-        private static readonly Random random = new Random();
+        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        int length = random.Next(minLength, maxLength + 1);
+        StringBuilder result = new StringBuilder(length);
 
-        public static string GenerateRandomString(int minLength = 10, int maxLength = 20)
+        for (int i = 0; i < length; i++)
         {
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            int length = random.Next(minLength, maxLength + 1);
-            StringBuilder result = new StringBuilder(length);
-
-            for (int i = 0; i < length; i++)
-            {
-                result.Append(chars[random.Next(chars.Length)]);
-            }
-
-            return result.ToString();
+            result.Append(chars[random.Next(chars.Length)]);
         }
+
+        return result.ToString();
+    }
+
+    public static string GenerateRandomString2(int minLength = 10, int maxLength = 20)
+    {
+        int length = random.Next(minLength, maxLength + 1);
+        StringBuilder result = new StringBuilder(length);
+
+        for (int i = 0; i < length; i++)
+        {
+            int codePoint = GetRandomCodePoint();
+            result.Append(char.ConvertFromUtf32(codePoint));
+        }
+
+        return result.ToString();
+    }
+
+    private static int GetRandomCodePoint()
+    {
+        // Generate a random code point, including supplementary characters
+        int codePoint;
+        if (random.Next(0, 10) < 8)
+        {
+            // Most of the time, generate a BMP character (1-3 bytes)
+            codePoint = random.Next(0x0000, 0xFFFF);
+        }
+        else
+        {
+            // Occasionally generate a supplementary character (4 bytes)
+            codePoint = random.Next(0x10000, 0x10FFFF);
+        }
+
+        // Ensure the code point is valid
+        while (char.GetUnicodeCategory((char)codePoint) == UnicodeCategory.OtherNotAssigned)
+        {
+            codePoint = random.Next(0x0000, 0x10FFFF);
+        }
+
+        return codePoint;
     }
 }

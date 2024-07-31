@@ -1,3 +1,4 @@
+using System;
 using System.Runtime.InteropServices;
 using System.Security;
 
@@ -12,7 +13,7 @@ namespace JohnsonControls.Metasys.BasicServices
             {
                 secretStore = new Keychain();
             }
-            else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+            else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux) && LinuxLibSecret.IsSecretToolAvailable())
             {
                 secretStore = new LinuxLibSecret();
             }
@@ -30,11 +31,6 @@ namespace JohnsonControls.Metasys.BasicServices
         public static void AddOrReplacePassword(string hostName, string userName, SecureString password)
         {
             secretStore.AddOrReplacePassword(hostName, userName, password);
-        }
-
-        public static void AddPassword(string hostName, string userName, SecureString password)
-        {
-            secretStore.AddPassword(hostName, userName, password);
         }
 
         public static bool TryGetPassword(string hostName, string userName, out SecureString password)

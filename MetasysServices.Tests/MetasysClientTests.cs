@@ -50,13 +50,8 @@ namespace MetasysServices.Tests
 
             httpTest.ShouldHaveCalled($"https://hostname/api/v2/login")
                 .WithVerb(HttpMethod.Post)
-                .With(call =>
-                    {
-                        var actualContent = ((CapturedByteArrayContent)call.Request.Content).Content;
-                        return actualContent == "{\"username\":\"username\",\"password\":\"password\"}";
-                    })
                 .WithContentType("application/json")
-                //  .WithRequestBody("{\"username\":\"username\",\"password\":\"password\"}")
+                .WithCapturedByteArrayContent("{\"username\":\"username\",\"password\":\"password\"}")
                 .Times(1);
             var token = client.GetAccessToken();
             var expected = new AccessToken("hostname", "username", "Bearer faketokenLoginAsync", dateTime2);
@@ -76,7 +71,7 @@ namespace MetasysServices.Tests
                 httpTest.ShouldHaveCalled($"https://hostname/api/v2/login")
                     .WithVerb(HttpMethod.Post)
                     .WithContentType("application/json")
-                    .WithRequestBody("{\"username\":\"username\",\"password\":\"password\"")
+                    .WithCapturedByteArrayContent("{\"username\":\"username\",\"password\":\"password\"}")
                     .Times(1);
                 var token = client.GetAccessToken();
                 var expected = new AccessToken("hostname", "username", "Bearer faketokenLoginAsyncContext", dateTime2);
@@ -97,7 +92,7 @@ namespace MetasysServices.Tests
             httpTest.ShouldHaveCalled($"https://hostname/api/v2/login")
                 .WithVerb(HttpMethod.Post)
                 .WithContentType("application/json")
-                .WithRequestBody("{\"username\":\"username\",\"password\":\"badpassword\"")
+                .WithCapturedByteArrayContent("{\"username\":\"username\",\"password\":\"badpassword\"}")
                 .Times(1);
             Assert.AreEqual(original, client.GetAccessToken()); // The access token is not changed on error
             PrintMessage($"TestLoginUnauthorizedThrowsException: {e.Message}");
@@ -117,7 +112,7 @@ namespace MetasysServices.Tests
             httpTest.ShouldHaveCalled($"https://badhost/api/v2/login")
                 .WithVerb(HttpMethod.Post)
                 .WithContentType("application/json")
-                .WithRequestBody("{\"username\":\"username\",\"password\":\"password\"")
+                .WithCapturedByteArrayContent("{\"username\":\"username\",\"password\":\"password\"}")
                 .Times(1);
             Assert.AreEqual(original, client.GetAccessToken()); // The access token is not changed on error
             PrintMessage($"TestLoginBadHostThrowsException: {e.Message}");
@@ -136,7 +131,7 @@ namespace MetasysServices.Tests
             httpTest.ShouldHaveCalled($"https://hostname/api/v2/login")
                 .WithVerb(HttpMethod.Post)
                 .WithContentType("application/json")
-                .WithRequestBody("{\"username\":\"username\",\"password\":\"password\"")
+                .WithCapturedByteArrayContent("{\"username\":\"username\",\"password\":\"password\"}")
                 .Times(1);
             Assert.AreEqual(original, client.GetAccessToken()); // The access token is not changed on error
             PrintMessage($"TestLoginBadResponseMissingTokenThrowsException: {e.Message}");
@@ -155,7 +150,7 @@ namespace MetasysServices.Tests
             httpTest.ShouldHaveCalled($"https://hostname/api/v2/login")
                 .WithVerb(HttpMethod.Post)
                 .WithContentType("application/json")
-                .WithRequestBody("{\"username\":\"username\",\"password\":\"badpassword\"")
+                .WithCapturedByteArrayContent("{\"username\":\"username\",\"password\":\"badpassword\"}")
                 .Times(1);
             Assert.AreEqual(original, client.GetAccessToken()); // The access token is not changed on error
             PrintMessage($"TestLoginBadResponseMissingExpiresThrowsException: {e.Message}");

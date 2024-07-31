@@ -42,9 +42,9 @@ public class CapturedByteArrayContent : HttpContent
     /// Returns the decoded byte array.
     /// </summary>
     /// <remarks>The byte array is assumed to be utf8 encoded string.
-    /// <para>This will be null in production.<para>
+    /// <para>This will always be null in production.<para>
     /// </remarks>
-    public string Content { get; private set; }
+    public string? Content { get; private set; }
 
     /// <inheritdoc/>
     protected override bool TryComputeLength(out long length)

@@ -8,7 +8,16 @@ using System.Security;
 namespace JohnsonControls.Metasys.BasicServices;
 
 
-
+/// <summary>
+/// An implementation of <see cref="ISecretStore"/> which uses the Keychain on macOS to
+/// store passwords.
+/// </summary>
+/// <remarks>
+/// To manually add passwords to the Keychain, launch the Keychain application. Then select
+/// File | New Password Item. In the dialog enter your host name as the "Keychain Item Name" (for
+/// example, my-ads-server.my-company-com). Add your Metasys User Name in the "Account Name" field.
+/// Finally type your password in the "Password" field.
+/// </remarks>
 public class Keychain : ISecretStore
 {
     private const string SecurityLibrary = "/System/Library/Frameworks/Security.framework/Security";
@@ -252,5 +261,8 @@ public class Keychain : ISecretStore
         return passwordBytes;
     }
 
-
+    public void DeletePassword(string hostName, string userName)
+    {
+        DeleteKeychainEntry(hostName, userName);
+    }
 }

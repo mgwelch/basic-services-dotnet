@@ -265,33 +265,15 @@ namespace JohnsonControls.Metasys.BasicServices
         {
             var securePassword = new SecureString();
             password.ToCharArray().ToList().ForEach(securePassword.AppendChar);
-            return TryLoginInternalAsync(username, securePassword, refresh);
+            return TryLoginAsync(username, securePassword);
         }
-
-        public AccessToken TryLoginWithSavedPassword(string username, bool refresh = true)
+        /// <inheritdoc/>
+        public AccessToken TryLogin(string username, SecureString password)
         {
-            return TryLoginWithSavedPasswordAsync(username, refresh).GetAwaiter().GetResult();
+            return TryLoginAsync(username, password).GetAwaiter().GetResult();
         }
-
-        /// <summary>
-        /// Attempts to login using a stored password for the specified username
-        /// on the host this client was configured with.
-        /// </summary>
-        /// <param name="username"></param>
-        /// <param name="refresh"></param>
-        /// <returns></returns>
-        /// <exception cref="InvalidOperationException"></exception>
-        public Task<AccessToken> TryLoginWithSavedPasswordAsync(string username, bool refresh = true)
-        {
-            if (SecretStore.TryGetPassword(hostname, username, out SecureString password))
-            {
-                return TryLoginInternalAsync(username, password, refresh);
-            }
-            throw new InvalidOperationException("No password found in secret store.");
-        }
-
-
-        private async Task<AccessToken> TryLoginInternalAsync(string username, SecureString password, bool refresh)
+        /// <inheritdoc/>
+        public async Task<AccessToken> TryLoginAsync(string username, SecureString password)
         {
 
             try
@@ -333,7 +315,7 @@ namespace JohnsonControls.Metasys.BasicServices
             // Retrieve credentials first
             var credentials = CredentialUtil.GetCredential(credManTarget);
             // Get the control back to TryLogin method
-            return await TryLoginInternalAsync(CredentialUtil.convertToUnSecureString(credentials.Username), credentials.Password, true).ConfigureAwait(false);
+            return await TryLoginAsync(CredentialUtil.convertToUnSecureString(credentials.Username), credentials.Password).ConfigureAwait(false);
         }
 
         // GetAccessToken -----------------------------------------------------------------------------------------------------------

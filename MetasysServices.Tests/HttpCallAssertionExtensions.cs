@@ -9,7 +9,7 @@ public static class HttpCallAssertionExtensions
         return assertion.With(call =>
         {
             var actualContent = ((CapturedByteArrayContent)call.Request.Content).Content;
-            return actualContent == "{\"username\":\"username\",\"password\":\"password\"}";
+            return actualContent == expectedContent;
         });
     }
 }
