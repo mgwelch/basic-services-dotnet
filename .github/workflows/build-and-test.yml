@@ -3,12 +3,31 @@ name: CI
 on: [push]
 
 jobs:
-  build:
-
+  build-linux:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@master
-    - uses: actions/setup-dotnet@v1
-    - run: dotnet build MetasysServices --configuration Release
-    - run: dotnet test MetasysServices.sln
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+      - name: Ensure secret-tool installed
+        run: sudo apt-get update && sudo apt-get install -y secret-tool
+      - run: dotnet build MetasysServices --configuration Release
+      - run: dotnet test MetasysServicesLinux.sln
+
+  build-macos:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+      - run: dotnet build MetasysServices --configuration Release
+      - run: dotnet test MetasysServicesLinux.sln
+
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+      - run: dotnet build MetasysServices --configuration Release
+      - run: dotnet test MetasysServices.sln
