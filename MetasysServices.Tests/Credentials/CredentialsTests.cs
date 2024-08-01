@@ -3,6 +3,8 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
 
+#nullable enable
+
 namespace JohnsonControls.Metasys.BasicServices;
 
 internal static class SecureStringExtensions
