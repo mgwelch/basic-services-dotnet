@@ -1,8 +1,9 @@
 # Metasys Secrets
 
 A cli for adding metasys passwords to your operating system credential manager.
-These credentials can then be retrieved by your applications and the password
-can be securely passed to `MetasysClient.TryLogin` method of
+These credentials can then be retrieved by your applications using
+[SecretStore](../MetasysServices/Credentials/Secrets.cs) and the password can be
+securely passed to `MetasysClient.TryLogin` method of
 [basic-services-dotnet](../README.md).
 
 ## Installation
