@@ -1,7 +1,6 @@
 using Flurl.Http;
 using JohnsonControls.Metasys.BasicServices;
 using JohnsonControls.Metasys.BasicServices.Enums;
-using JohnsonControls.Metasys.BasicServices.Utils;
 using Newtonsoft.Json.Linq;
 using Nito.AsyncEx;
 using NUnit.Framework;
