@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+
 namespace MetasysServicesExampleApp.FeaturesDemo
 {
     public class GeneralDemo
@@ -31,13 +32,13 @@ namespace MetasysServicesExampleApp.FeaturesDemo
                 Console.WriteLine("\n\nGetObjectIdentifier...");
 
                 // These variables are needed to run the other sections
-                Guid id1 = client.GetObjectIdentifier(object1);
+                var id1 = client.GetObjectIdentifier(object1);
                 Console.WriteLine($"{object1} id: {id1}");
 
-                Guid id2 = client.GetObjectIdentifier(object2);
+                var id2 = client.GetObjectIdentifier(object2);
                 Console.WriteLine($"{object2} id: {id2}");
 
-                List<Guid> ids = new List<Guid>() { id1, id2 };
+                List<ObjectId> ids = [id1, id2];
                 #endregion
 
                 #region ReadProperty
@@ -94,7 +95,7 @@ namespace MetasysServicesExampleApp.FeaturesDemo
                 Console.Write("\nEnter one new value for this attribute (this will be applied to both objects): ");
                 object change = Console.ReadLine();
 
-                // Get original values, this code will throw an exception if the 
+                // Get original values, this code will throw an exception if the
                 Variant result1Attr3 = client.ReadProperty(id1, attribute3);
                 Variant result2Attr3 = client.ReadProperty(id2, attribute3);
                 Console.WriteLine($"{result1Attr3.Id} {result1Attr3.Attribute} original value: {result1Attr3.StringValue}");

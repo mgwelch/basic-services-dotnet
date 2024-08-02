@@ -17,9 +17,10 @@ namespace JohnsonControls.Metasys.BasicServices
         /// </summary>
         /// <param name="spaceId">The identifier of the space.</param>
         /// <returns>The specified alarm details.</returns>
-        MetasysObject FindById(Guid spaceId);
-        /// <inheritdoc cref="ISpaceService.FindById(Guid)"/>
-        Task<MetasysObject> FindByIdAsync(Guid spaceId);
+        MetasysObject FindById(ObjectId spaceId);
+        /// <inheritdoc cref="ISpaceService.FindById(ObjectId)"/>
+        Task<MetasysObject> FindByIdAsync(ObjectId spaceId);
+
 
         // Get ---------------------------------------------------------------------------------------------------------------------
         /// <summary>
@@ -52,10 +53,10 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <summary>
         /// Retrieves the collection of spaces that are located within the specified space.
         /// </summary>
-        /// <param name="spaceId">The GUID of the parent space.</param>
-        IEnumerable<MetasysObject> GetChildren(Guid spaceId);
-        /// <inheritdoc cref="ISpaceService.GetChildren(Guid)"/>
-        Task<IEnumerable<MetasysObject>> GetChildrenAsync(Guid spaceId);
+        /// <param name="spaceId">The id of the parent space.</param>
+        IEnumerable<MetasysObject> GetChildren(ObjectId spaceId);
+        /// <inheritdoc cref="ISpaceService.GetChildren(ObjectId)"/>
+        Task<IEnumerable<MetasysObject>> GetChildrenAsync(ObjectId spaceId);
 
         // GetSpaceTypes -----------------------------------------------------------------------------------------------------------------
         /// <summary>
@@ -69,17 +70,17 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <summary>
         /// Retrieves the collection of spaces served by the specified network device.
         /// </summary>
-        IEnumerable<MetasysObject> GetServedByNetworkDevice(Guid networkDeviceId);
-        /// <inheritdoc cref="ISpaceService.GetServedByNetworkDevice(Guid)"/>
-        Task<IEnumerable<MetasysObject>> GetServedByNetworkDeviceAsync(Guid networkDeviceId);
+        IEnumerable<MetasysObject> GetServedByNetworkDevice(ObjectId networkDeviceId);
+        /// <inheritdoc cref="ISpaceService.GetServedByNetworkDevice(ObjectId)"/>
+        Task<IEnumerable<MetasysObject>> GetServedByNetworkDeviceAsync(ObjectId networkDeviceId);
 
         // GetServedByEquipment ----------------------------------------------------------------------------------------------------------
         /// <summary>
         /// Retrieves the collection of spaces served by the specified network device.
         /// </summary>
-        IEnumerable<MetasysObject> GetServedByEquipment(Guid equipmentId);
-        /// <inheritdoc cref="ISpaceService.GetServedByEquipment(Guid)"/>
-        Task<IEnumerable<MetasysObject>> GetServedByEquipmentAsync(Guid equipmentId);
+        IEnumerable<MetasysObject> GetServedByEquipment(ObjectId equipmentId);
+        /// <inheritdoc cref="ISpaceService.GetServedByEquipment(ObjectId)"/>
+        Task<IEnumerable<MetasysObject>> GetServedByEquipmentAsync(ObjectId equipmentId);
 
     }
 }

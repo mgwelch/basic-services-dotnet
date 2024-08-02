@@ -11,7 +11,7 @@ namespace JohnsonControls.Metasys.BasicServices
     /// value from a single Metasys object.
     /// </summary>
     /// <remarks>
-    /// If the returned property is an array of values the ArrayValue will hold 
+    /// If the returned property is an array of values the ArrayValue will hold
     /// each of these values in a new Variant object.
     /// </remarks>
     public class Variant
@@ -37,7 +37,7 @@ namespace JohnsonControls.Metasys.BasicServices
 
         /// <summary>The enumeration key of the StringValue.</summary>
         /// <value>
-        /// The pre-translated StringValue as an enumeration key or the StringValue if it 
+        /// The pre-translated StringValue as an enumeration key or the StringValue if it
         /// was not an enumeration key. Null if value is not a string, array, or unsupported type.
         /// </value>
         public string StringValueEnumerationKey { private set; get; }
@@ -70,7 +70,7 @@ namespace JohnsonControls.Metasys.BasicServices
         public string Attribute { private set; get; }
 
         /// <summary>The id of the Metasys object.</summary>
-        public Guid Id { private set; get; }
+        public ObjectId Id { private set; get; }
 
         /// <summary>The reliability of the value.</summary>
         /// <value>
@@ -105,7 +105,7 @@ namespace JohnsonControls.Metasys.BasicServices
         public bool IsReliable => ReliabilityEnumerationKey == Reliable;
 
         /// <summary>
-        /// The Metasys API version taken as a reference to process the JToken. 
+        /// The Metasys API version taken as a reference to process the JToken.
         /// </summary>
         private ApiVersion apiVersion;
 
@@ -115,7 +115,7 @@ namespace JohnsonControls.Metasys.BasicServices
         {
         }
 
-        internal Variant(Guid id, JToken token, string attribute, CultureInfo cultureInfo, ApiVersion apiVersion)
+        internal Variant(ObjectId id, JToken token, string attribute, CultureInfo cultureInfo, ApiVersion apiVersion)
         {
             this.apiVersion = apiVersion;
             _CultureInfo = cultureInfo;

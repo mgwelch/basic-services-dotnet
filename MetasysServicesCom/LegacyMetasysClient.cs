@@ -9,6 +9,7 @@ using MetasysAttribute = JohnsonControls.Metasys.BasicServices.MetasysAttribute;
 
 namespace JohnsonControls.Metasys.ComServices
 {
+
     /// <summary>
     /// An COM HTTP client for consuming the most commonly used endpoints of the Metasys API.
     /// </summary>
@@ -561,11 +562,11 @@ namespace JohnsonControls.Metasys.ComServices
             return Mapper.Map<IComMetasysObject[]>(res);
         }
 
-        //GetObjectidentifier -------------------------------------------------------------------------------------------------------
+        //GetObjectIdentifier -------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
         public string GetObjectIdentifier(string itemReference)
         {
-            Guid? res = Client.GetObjectIdentifier(itemReference);
+            ObjectId? res = Client.GetObjectIdentifier(itemReference);
             return res?.ToString();
         }
 
@@ -610,12 +611,7 @@ namespace JohnsonControls.Metasys.ComServices
         {
             // Note: MarshalAs decorator is needed for arrays, otherwise will cause a VBA app crash
             // Note: need a generic object as return type in order to map correctly to VBA type array
-            var guidList = new List<Guid>();
-            foreach (var id in ids)
-            {
-                guidList.Add(new Guid(id));
-            }
-            var res = Client.ReadPropertyMultiple(guidList, attributeNames);
+            var res = Client.ReadPropertyMultiple(ids.Select(id => (ObjectId)id), attributeNames);
             return Mapper.Map<IComVariantMultiple[]>(res);
         }
 
@@ -631,18 +627,13 @@ namespace JohnsonControls.Metasys.ComServices
         public void WritePropertyMultiple([In, MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 0)] string[] ids, [In, MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 0)] string[] attributes, [In, MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 0)] string[] attributeValues)
         {
             // Note: MarshalAs decorator is needed when return type is void, otherwise will cause a VBA error on Automation type not supported when passing array
-            var guidList = new List<Guid>();
-            foreach (var id in ids)
-            {
-                guidList.Add(new Guid(id));
-            }
             // Convert positional arrays to Enumerable
             var valueList = new List<(string, object)>();
             for (int i = 0; i < attributes.Length; i++)
             {
                 valueList.Add((attributes[i], attributeValues[i]));
             }
-            Client.WritePropertyMultiple(guidList, valueList);
+            Client.WritePropertyMultiple(ids.Select(id => (ObjectId)id), valueList);
         }
 
         //SendCommand ---------------------------------------------------------------------------------------------------------------
@@ -680,7 +671,7 @@ namespace JohnsonControls.Metasys.ComServices
             SpaceTypeEnum? spaceType = null;
             if (type != null)
             {
-                // Parse type string to SpaceTypeEnum 
+                // Parse type string to SpaceTypeEnum
                 spaceType = (SpaceTypeEnum)Enum.Parse(typeof(SpaceTypeEnum), type);
             }
             // Note: need a generic object as return type in order to map correctly to VBA type array

@@ -21,9 +21,8 @@ namespace MetasysServicesExampleApp.FeaturesDemo
                 Console.WriteLine("\nIndicate the object you want to run this example code on.");
                 Console.Write("Enter the fully qualified reference of the object (Example: \"site:device/itemReference\"): ");
                 string object1 = Console.ReadLine();
-                Guid id1 = client.GetObjectIdentifier(object1);
-                Console.WriteLine($"{object1} id: {id1}");
-                Guid objId = id1;
+                var objId = client.GetObjectIdentifier(object1);
+                Console.WriteLine($"{object1} id: {objId}");
                 var trendedAttributes = client.Trends.GetTrendedAttributes(objId);
                 Console.WriteLine(trendedAttributes[0].Description);
 

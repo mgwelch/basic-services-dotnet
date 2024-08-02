@@ -89,10 +89,10 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <param name="networkDeviceId">The identifier of the network device.</param>
         /// <param name="alarmFilter">The filter to be applied to alarms list.</param>
         /// <returns>The list of alarms with details.</returns>
-        PagedResult<Alarm> GetForNetworkDevice(Guid networkDeviceId, AlarmFilter alarmFilter);
+        PagedResult<Alarm> GetForNetworkDevice(ObjectId networkDeviceId, AlarmFilter alarmFilter);
 
-        /// <inheritdoc cref="IAlarmsService.GetForNetworkDevice(Guid, AlarmFilter)"/>
-        Task<PagedResult<Alarm>> GetForNetworkDeviceAsync(Guid networkDeviceId, AlarmFilter alarmFilter);
+        /// <inheritdoc cref="IAlarmsService.GetForNetworkDevice(ObjectId, AlarmFilter)"/>
+        Task<PagedResult<Alarm>> GetForNetworkDeviceAsync(ObjectId networkDeviceId, AlarmFilter alarmFilter);
 
         // --------------------------------------------------------------------------------------------------
         /// <summary>
@@ -101,10 +101,10 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <param name="objectId">The identifier of the object.</param>
         /// <param name="alarmFilter">The filter to be applied to alarms list.</param>
         /// <returns>The list of alarms with details.</returns>
-        PagedResult<Alarm> GetForObject(Guid objectId, AlarmFilter alarmFilter);
+        PagedResult<Alarm> GetForObject(ObjectId objectId, AlarmFilter alarmFilter);
 
-        /// <inheritdoc cref="AlarmServiceProvider.GetForObject(Guid, AlarmFilter)"/> 
-        Task<PagedResult<Alarm>> GetForObjectAsync(Guid objectId, AlarmFilter alarmFilter);
+        /// <inheritdoc cref="AlarmServiceProvider.GetForObject(ObjectId, AlarmFilter)"/>
+        Task<PagedResult<Alarm>> GetForObjectAsync(ObjectId objectId, AlarmFilter alarmFilter);
 
     }
 }

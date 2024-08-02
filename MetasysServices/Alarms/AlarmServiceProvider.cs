@@ -127,12 +127,12 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         /// <inheritdoc/>
-        public PagedResult<Alarm> GetForObject(Guid objectId, AlarmFilter alarmFilter)
+        public PagedResult<Alarm> GetForObject(ObjectId objectId, AlarmFilter alarmFilter)
         {
             return GetForObjectAsync(objectId, alarmFilter).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<PagedResult<Alarm>> GetForObjectAsync(Guid objectId, AlarmFilter alarmFilter)
+        public async Task<PagedResult<Alarm>> GetForObjectAsync(ObjectId objectId, AlarmFilter alarmFilter)
         {
             CheckVersion(Version);
 
@@ -157,12 +157,12 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         /// <inheritdoc/>
-        public PagedResult<Alarm> GetForNetworkDevice(Guid networkDeviceId, AlarmFilter alarmFilter)
+        public PagedResult<Alarm> GetForNetworkDevice(ObjectId networkDeviceId, AlarmFilter alarmFilter)
         {
             return GetForNetworkDeviceAsync(networkDeviceId, alarmFilter).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<PagedResult<Alarm>> GetForNetworkDeviceAsync(Guid networkDeviceId, AlarmFilter alarmFilter)
+        public async Task<PagedResult<Alarm>> GetForNetworkDeviceAsync(ObjectId networkDeviceId, AlarmFilter alarmFilter)
         {
             CheckVersion(Version);
 

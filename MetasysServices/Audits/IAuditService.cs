@@ -47,10 +47,10 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <param name="objectId">The identifier of the object.</param>
         /// <param name="auditFilter">The filter to be applied to audit list.</param>
         /// <returns>The list of audit with details.</returns>
-        PagedResult<Audit> GetForObject(Guid objectId, AuditFilter auditFilter);
+        PagedResult<Audit> GetForObject(ObjectId objectId, AuditFilter auditFilter);
 
-        /// <inheritdoc cref="IAuditService.GetForObject(Guid, AuditFilter)"/>
-        Task<PagedResult<Audit>> GetForObjectAsync(Guid objectId, AuditFilter auditFilter);
+        /// <inheritdoc cref="IAuditService.GetForObject(ObjectId, AuditFilter)"/>
+        Task<PagedResult<Audit>> GetForObjectAsync(ObjectId objectId, AuditFilter auditFilter);
 
         /// <summary>
         /// Discard an Audit.

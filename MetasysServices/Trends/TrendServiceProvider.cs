@@ -33,7 +33,7 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         /// <inheritdoc/>
-        public PagedResult<Sample> GetSamples(Guid objectId, int attributeId, TimeFilter filter)
+        public PagedResult<Sample> GetSamples(ObjectId objectId, int attributeId, TimeFilter filter)
         {
             CheckVersion(Version);
             if (Version > ApiVersion.v3)
@@ -49,7 +49,7 @@ namespace JohnsonControls.Metasys.BasicServices
             }
         }
         /// <inheritdoc/>
-        public async Task<PagedResult<Sample>> GetSamplesAsync(Guid objectId, int attributeId, TimeFilter filter)
+        public async Task<PagedResult<Sample>> GetSamplesAsync(ObjectId objectId, int attributeId, TimeFilter filter)
         {
             //Note: this method is valid only for API version v2 and v3
             if (Version < ApiVersion.v2 | Version > ApiVersion.v3) { throw new MetasysUnsupportedApiVersion(Version.ToString()); }
@@ -114,7 +114,7 @@ namespace JohnsonControls.Metasys.BasicServices
             };
         }
         /// <inheritdoc/>
-        public PagedResult<Sample> GetSamples(Guid objectId, AttributeEnumSet attributeName, TimeFilter filter)
+        public PagedResult<Sample> GetSamples(ObjectId objectId, AttributeEnumSet attributeName, TimeFilter filter)
         {
             if (Version > ApiVersion.v3)
             {
@@ -126,7 +126,7 @@ namespace JohnsonControls.Metasys.BasicServices
             }
         }
         /// <inheritdoc/>
-        public async Task<PagedResult<Sample>> GetSamplesAsync(Guid objectId, AttributeEnumSet attributeName, TimeFilter filter)
+        public async Task<PagedResult<Sample>> GetSamplesAsync(ObjectId objectId, AttributeEnumSet attributeName, TimeFilter filter)
         {
             //Note: this method is valid for API version > v3
             if (Version < ApiVersion.v4) { throw new MetasysUnsupportedApiVersion(Version.ToString()); }
@@ -166,12 +166,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // GetTrendedAttributes --------------------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public List<MetasysAttribute> GetTrendedAttributes(Guid id)
+        public List<MetasysAttribute> GetTrendedAttributes(ObjectId id)
         {
             return GetTrendedAttributesAsync(id).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<List<MetasysAttribute>> GetTrendedAttributesAsync(Guid id)
+        public async Task<List<MetasysAttribute>> GetTrendedAttributesAsync(ObjectId id)
         {
             CheckVersion(Version);
 
@@ -229,12 +229,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // GetNetDevTrendedAttributes --------------------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public List<MetasysAttribute> GetNetDevTrendedAttributes(Guid id)
+        public List<MetasysAttribute> GetNetDevTrendedAttributes(ObjectId id)
         {
             return GetNetDevTrendedAttributesAsync(id).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<List<MetasysAttribute>> GetNetDevTrendedAttributesAsync(Guid id)
+        public async Task<List<MetasysAttribute>> GetNetDevTrendedAttributesAsync(ObjectId id)
         {
             CheckVersion(Version);
 
@@ -292,7 +292,7 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // GetNetDevSamples
         /// <inheritdoc/>
-        public PagedResult<Sample> GetNetDevSamples(Guid networkDeviceId, int attributeId, TimeFilter filter)
+        public PagedResult<Sample> GetNetDevSamples(ObjectId networkDeviceId, int attributeId, TimeFilter filter)
         {
             if (Version > ApiVersion.v3)
             {
@@ -307,7 +307,7 @@ namespace JohnsonControls.Metasys.BasicServices
             }
         }
         /// <inheritdoc/>
-        public async Task<PagedResult<Sample>> GetNetDevSamplesAsync(Guid networkDeviceId, int attributeId, TimeFilter filter)
+        public async Task<PagedResult<Sample>> GetNetDevSamplesAsync(ObjectId networkDeviceId, int attributeId, TimeFilter filter)
         {
             //Note: this method is valid only for API version v2 and v3
             if (Version < ApiVersion.v2 | Version > ApiVersion.v3) { throw new MetasysUnsupportedApiVersion(Version.ToString()); }
@@ -357,7 +357,7 @@ namespace JohnsonControls.Metasys.BasicServices
             };
         }
         /// <inheritdoc/>
-        public PagedResult<Sample> GetNetDevSamples(Guid networkDeviceId, AttributeEnumSet attributeName, TimeFilter filter)
+        public PagedResult<Sample> GetNetDevSamples(ObjectId networkDeviceId, AttributeEnumSet attributeName, TimeFilter filter)
         {
             if (Version > ApiVersion.v3)
             {
@@ -369,7 +369,7 @@ namespace JohnsonControls.Metasys.BasicServices
             }
         }
         /// <inheritdoc/>
-        public async Task<PagedResult<Sample>> GetNetDevSamplesAsync(Guid networkDeviceId, AttributeEnumSet attributeName, TimeFilter filter)
+        public async Task<PagedResult<Sample>> GetNetDevSamplesAsync(ObjectId networkDeviceId, AttributeEnumSet attributeName, TimeFilter filter)
         {
             //Note: this method is valid for API version > v3
             if (Version < ApiVersion.v4) { throw new MetasysUnsupportedApiVersion(Version.ToString()); }
@@ -419,5 +419,6 @@ namespace JohnsonControls.Metasys.BasicServices
                 Total = response.Total
             };
         }
+
     }
 }

@@ -32,7 +32,7 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <param name="source"></param>
         /// <param name="id">The Id of the Metasys Object.</param>
         /// <returns></returns>
-        public static MetasysObject FindById(this IEnumerable<MetasysObject> source, Guid id)
+        public static MetasysObject FindById(this IEnumerable<MetasysObject> source, ObjectId id)
         {
             var metasysObject = source.FirstOrDefault(f => f.Id == id);
             if (metasysObject == null)

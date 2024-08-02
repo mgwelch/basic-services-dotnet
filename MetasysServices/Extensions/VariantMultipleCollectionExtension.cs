@@ -29,7 +29,7 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <param name="source"></param>
         /// <param name="id">The Id of the Metasys Object.</param>
         /// <returns></returns>
-        public static VariantMultiple FindById(this IEnumerable<VariantMultiple> source, Guid id)
+        public static VariantMultiple FindById(this IEnumerable<VariantMultiple> source, ObjectId id)
         {
             var multiples = source.FirstOrDefault(f => f.Id == id);
             return multiples ?? throw new Exception($"VariantMultiple not found in the collection ({id}).");

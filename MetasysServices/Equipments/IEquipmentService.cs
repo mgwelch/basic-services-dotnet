@@ -16,9 +16,9 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <summary>
         /// Retrieves the specified equipment instance.
         /// </summary>
-        MetasysObject FindById(Guid equipmentId);
-        /// <inheritdoc cref="IEquipmentService.FindById(Guid)"/>
-        Task<MetasysObject> FindByIdAsync(Guid equipmentId);
+        MetasysObject FindById(ObjectId equipmentId);
+        /// <inheritdoc cref="IEquipmentService.FindById(ObjectId)"/>
+        Task<MetasysObject> FindByIdAsync(ObjectId equipmentId);
 
         // Get ---------------------------------------------------------------------------------------------------------------------
         /// <summary>
@@ -35,48 +35,51 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <summary>
         /// Retrieves the collection of points that are defined by the specified equipment instance.
         /// </summary>
-        /// <param name="equipmentId">The Guid of the equipment.</param>
+        /// <param name="equipmentId">The id of the equipment.</param>
         /// <param name="readAttributeValue">Set to false if you would not read Points Attribute Value.</param>
         /// <remarks> Reading the Attribute Value attribute could take time depending on the number of points. </remarks>
         /// <returns></returns>
-        IEnumerable<MetasysPoint> GetPoints(Guid equipmentId, bool readAttributeValue = true);
-        /// <inheritdoc cref="IEquipmentService.GetPoints(Guid, bool)"/>
-        Task<IEnumerable<MetasysPoint>> GetPointsAsync(Guid equipmentId, bool readAttributeValue = true);
+        IEnumerable<MetasysPoint> GetPoints(ObjectId equipmentId, bool readAttributeValue = true);
+        /// <inheritdoc cref="IEquipmentService.GetPoints(ObjectId, bool)"/>
+        Task<IEnumerable<MetasysPoint>> GetPointsAsync(ObjectId equipmentId, bool readAttributeValue = true);
+
+
 
         // GetServingASpace ------------------------------------------------------------------------------------------------------------
         /// <summary>
         /// Retrieves the collection of equipment that serve the specified space.
         /// </summary>
         /// <param name="spaceId"></param>
-        IEnumerable<MetasysObject> GetServingASpace(Guid spaceId);
-        /// <inheritdoc cref="IEquipmentService.GetServingASpace(Guid)"/>
-        Task<IEnumerable<MetasysObject>> GetServingASpaceAsync(Guid spaceId);
+        IEnumerable<MetasysObject> GetServingASpace(ObjectId spaceId);
+        /// <inheritdoc cref="IEquipmentService.GetServingASpace(ObjectId)"/>
+        Task<IEnumerable<MetasysObject>> GetServingASpaceAsync(ObjectId spaceId);
 
         // GetHostedByNetworkDevice ------------------------------------------------------------------------------------------------------------
         /// <summary>
         /// Retrieves the collection of equipment instances that are hosted by the specified network device or its children.
         /// </summary>
         /// <param name="networkDeviceId"></param>
-        IEnumerable<MetasysObject> GetHostedByNetworkDevice(Guid networkDeviceId);
-        /// <inheritdoc cref="IEquipmentService.GetServingASpace(Guid)"/>
-        Task<IEnumerable<MetasysObject>> GetHostedByNetworkDeviceAsync(Guid networkDeviceId);
+        IEnumerable<MetasysObject> GetHostedByNetworkDevice(ObjectId networkDeviceId);
+        /// <inheritdoc cref="IEquipmentService.GetServingASpace(ObjectId)"/>
+        Task<IEnumerable<MetasysObject>> GetHostedByNetworkDeviceAsync(ObjectId networkDeviceId);
+
 
         // GetServedByEquipment ----------------------------------------------------------------------------------------------------------------
         /// <summary>
         /// Retrieves the equipment served by the specified equipment instance.
         /// </summary>
-        IEnumerable<MetasysObject> GetServedByEquipment(Guid equipmentId);
-        /// <inheritdoc cref="IEquipmentService.GetServedByEquipment(Guid)"/>
-        Task<IEnumerable<MetasysObject>> GetServedByEquipmentAsync(Guid equipmentId);
+        IEnumerable<MetasysObject> GetServedByEquipment(ObjectId equipmentId);
+        /// <inheritdoc cref="IEquipmentService.GetServedByEquipment(ObjectId)"/>
+        Task<IEnumerable<MetasysObject>> GetServedByEquipmentAsync(ObjectId equipmentId);
 
         // GetServingAnEquipment ------------------------------------------------------------------------------------------------------------
         /// <summary>
         /// Retrieves the collection of equipment that serve the specified equipment instance.
         /// </summary>
         /// <param name="equipmentId"></param>
-        IEnumerable<MetasysObject> GetServingAnEquipment(Guid equipmentId);
-        /// <inheritdoc cref="IEquipmentService.GetServingAnEquipment(Guid)"/>
-        Task<IEnumerable<MetasysObject>> GetServingAnEquipmentAsync(Guid equipmentId);
+        IEnumerable<MetasysObject> GetServingAnEquipment(ObjectId equipmentId);
+        /// <inheritdoc cref="IEquipmentService.GetServingAnEquipment(ObjectId)"/>
+        Task<IEnumerable<MetasysObject>> GetServingAnEquipmentAsync(ObjectId equipmentId);
 
     }
 }

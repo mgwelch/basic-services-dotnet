@@ -34,12 +34,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // FindById -----------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public MetasysObject FindById(Guid equipmentId)
+        public MetasysObject FindById(ObjectId equipmentId)
         {
             return FindByIdAsync(equipmentId).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<MetasysObject> FindByIdAsync(Guid equipmentId)
+        public async Task<MetasysObject> FindByIdAsync(ObjectId equipmentId)
         {
             CheckVersion(Version);
 
@@ -70,12 +70,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // GetPoints -------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public IEnumerable<MetasysPoint> GetPoints(Guid equipmentId, bool readAttributeValue = true)
+        public IEnumerable<MetasysPoint> GetPoints(ObjectId equipmentId, bool readAttributeValue = true)
         {
             return GetPointsAsync(equipmentId, readAttributeValue).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<IEnumerable<MetasysPoint>> GetPointsAsync(Guid equipmentId, bool readAttributeValue = true)
+        public async Task<IEnumerable<MetasysPoint>> GetPointsAsync(ObjectId equipmentId, bool readAttributeValue = true)
         {
             CheckVersion(Version);
 
@@ -87,10 +87,10 @@ namespace JohnsonControls.Metasys.BasicServices
                 foreach (var item in response)
                 {
                     MetasysPoint point = new MetasysPoint(item);
-                    // Retrieve object Id from full URL 
+                    // Retrieve object Id from full URL
                     string objectId = point.ObjectUrl.Split('/').Last();
                     point.ObjectId = ParseObjectIdentifier(objectId);
-                    // Retrieve attribute Id from full URL 
+                    // Retrieve attribute Id from full URL
                     string attributeId = (point.Attribute != null) ? point.Attribute.Split('.').Last() : String.Empty;
                     if (attributeId == String.Empty)
                     {
@@ -122,15 +122,14 @@ namespace JohnsonControls.Metasys.BasicServices
             }
             return points;
         }
-
         // GetServingASpace --------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public IEnumerable<MetasysObject> GetServingASpace(Guid spaceId)
+        public IEnumerable<MetasysObject> GetServingASpace(ObjectId spaceId)
         {
             return GetServingASpaceAsync(spaceId).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<IEnumerable<MetasysObject>> GetServingASpaceAsync(Guid spaceId)
+        public async Task<IEnumerable<MetasysObject>> GetServingASpaceAsync(ObjectId spaceId)
         {
             CheckVersion(Version);
 
@@ -140,12 +139,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // GetHostedByNetworkDevice --------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public IEnumerable<MetasysObject> GetHostedByNetworkDevice(Guid networkDeviceId)
+        public IEnumerable<MetasysObject> GetHostedByNetworkDevice(ObjectId networkDeviceId)
         {
             return GetHostedByNetworkDeviceAsync(networkDeviceId).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<IEnumerable<MetasysObject>> GetHostedByNetworkDeviceAsync(Guid networkDeviceId)
+        public async Task<IEnumerable<MetasysObject>> GetHostedByNetworkDeviceAsync(ObjectId networkDeviceId)
         {
             CheckVersion(Version);
 
@@ -155,12 +154,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // GetServedByEquipment -----------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public IEnumerable<MetasysObject> GetServedByEquipment(Guid equipmentId)
+        public IEnumerable<MetasysObject> GetServedByEquipment(ObjectId equipmentId)
         {
             return GetServedByEquipmentAsync(equipmentId).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<IEnumerable<MetasysObject>> GetServedByEquipmentAsync(Guid equipmentId)
+        public async Task<IEnumerable<MetasysObject>> GetServedByEquipmentAsync(ObjectId equipmentId)
         {
             CheckVersion(Version);
 
@@ -170,17 +169,18 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // GetServingAnEquipment --------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public IEnumerable<MetasysObject> GetServingAnEquipment(Guid equipmentId)
+        public IEnumerable<MetasysObject> GetServingAnEquipment(ObjectId equipmentId)
         {
             return GetServingAnEquipmentAsync(equipmentId).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<IEnumerable<MetasysObject>> GetServingAnEquipmentAsync(Guid equipmentId)
+        public async Task<IEnumerable<MetasysObject>> GetServingAnEquipmentAsync(ObjectId equipmentId)
         {
             CheckVersion(Version);
 
             var spaceEquipment = await GetAllAvailablePagesAsync("equipment", null, equipmentId.ToString(), "upstreamEquipment").ConfigureAwait(false);
             return ToMetasysObject(spaceEquipment, Version, MetasysObjectTypeEnum.Equipment);
         }
+
     }
 }

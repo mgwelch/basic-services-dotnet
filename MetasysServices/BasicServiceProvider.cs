@@ -163,7 +163,7 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         /// <summary>
-        /// Gets all child objects given a parent Guid asynchronously by requesting each available page.
+        /// Gets all child objects given a parent id asynchronously by requesting each available page.
         /// Level indicates how deep to retrieve objects.
         /// </summary>
         /// <remarks>
@@ -174,7 +174,7 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <param name="levels">The number of levels to retrieve children.</param>
         /// <exception cref="MetasysHttpException"></exception>
         /// <exception cref="MetasysHttpParsingException"></exception>
-        protected async Task<List<TreeObject>> GetObjectChildrenAsync(Guid id, Dictionary<string, string> parameters = null, int levels = 1)
+        protected async Task<List<TreeObject>> GetObjectChildrenAsync(Object id, Dictionary<string, string> parameters = null, int levels = 1)
         {
             if (levels < 1)
             {
@@ -293,7 +293,7 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         /// <summary>
-        /// Gets the type from a token retrieved from a typeUrl 
+        /// Gets the type from a token retrieved from a typeUrl
         /// </summary>
         /// <param name="typeToken"></param>
         /// <exception cref="MetasysHttpException"></exception>
@@ -463,25 +463,32 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         /// <summary>
-        /// Parses a JToken and creates a Guid.
+        /// Parses a JToken containing a string and returns the value as an <see cref="ObjectId"/>.
         /// </summary>
         /// <param name="token"></param>
         /// <exception cref="MetasysGuidException"></exception>
-        /// <returns>A Guid representation of the JToken.</returns>
-        protected Guid ParseObjectIdentifier(JToken token)
+        /// <returns>The <see cref="ObjectId"/> contained in the token.</returns>
+        protected ObjectId ParseObjectIdentifier(JToken token)
         {
             string str = null;
             try
             {
-                str = token.Value<string>();
-                var id = new Guid(str);
-                return id;
+                if (token.Type == JTokenType.String)
+                {
+                    str = token.Value<string>();
+                    return str;
+                }
             }
             catch (Exception e) when (e is System.ArgumentNullException ||
                 e is System.ArgumentException || e is System.FormatException)
             {
+                // This still throws a MetasysGuidException rather than a new type of
+                // exception to support backward compatibility even though we don't
+                // use Guids any more.
                 throw new MetasysGuidException(str, e);
             }
+
+            throw new MetasysGuidException(token.ToString(), null);
         }
 
         /// <summary>
@@ -501,7 +508,7 @@ namespace JohnsonControls.Metasys.BasicServices
             JToken response = null;
             // Create URL with base resource
             Url url = new Url(resource);
-            // Concatenate segments with base resource url 
+            // Concatenate segments with base resource url
             url.AppendPathSegments(pathSegments);
             // Set query parameters according to the input dictionary
             if (parameters != null)
@@ -527,7 +534,7 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         /// <summary>
-        /// Get typed items for the given resource asynchronously. 
+        /// Get typed items for the given resource asynchronously.
         /// </summary>
         /// <remarks>Optionally accepts query string parameters and additional path segments.</remarks>
         /// <typeparam name="T"></typeparam>
@@ -543,7 +550,7 @@ namespace JohnsonControls.Metasys.BasicServices
 
 
         /// <summary>
-        /// Gets all items for the given resource asynchronously by requesting each available page.      
+        /// Gets all items for the given resource asynchronously by requesting each available page.
         /// </summary>
         /// <param name="resource">The main resource to read.</param>
         /// <param name="parameters">Query string parameters in Key Value format.</param>
@@ -667,14 +674,14 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <param name="resources"></param>
         /// <param name="paths"></param>
         /// <returns></returns>
-        protected async Task<JToken> GetBatchRequestAsync(string endpoint, IEnumerable<Guid> ids, IEnumerable<string> resources, params string[] paths)
+        protected async Task<JToken> GetBatchRequestAsync(string endpoint, IEnumerable<ObjectId> ids, IEnumerable<string> resources, params string[] paths)
         {
             // Create URL with base resource
             Url url = new Url(endpoint);
             // Concatenate batch segment to use batch request and prepare the list of requests
             url.AppendPathSegments("batch");
             var objectsRequests = new List<ObjectRequest>();
-            // Concatenate batch segment to use batch request and prepare the list of requests  
+            // Concatenate batch segment to use batch request and prepare the list of requests
             foreach (var id in ids)
             {
                 foreach (var r in resources)
@@ -716,7 +723,7 @@ namespace JohnsonControls.Metasys.BasicServices
             // Concatenate batch segment to use batch request and prepare the list of requests
             url.AppendPathSegments("batch");
             var objectsRequests = new List<ObjectRequest>();
-            // Concatenate batch segment to use batch request and prepare the list of requests  
+            // Concatenate batch segment to use batch request and prepare the list of requests
             foreach (var r in requests)
             {
                 Url relativeUrl = new Url(r.ObjectId.ToString());
@@ -778,7 +785,7 @@ namespace JohnsonControls.Metasys.BasicServices
             // Concatenate batch segment to use batch request and prepare the list of requests
             url.AppendPathSegments("batch");
             var objectsRequests = new List<ObjectRequest>();
-            // Concatenate batch segment to use batch request and prepare the list of requests  
+            // Concatenate batch segment to use batch request and prepare the list of requests
             foreach (var r in requests)
             {
                 Url relativeUrl = new Url(r.ObjectId.ToString());
@@ -851,7 +858,7 @@ namespace JohnsonControls.Metasys.BasicServices
             // Concatenate batch segment to use batch request and prepare the list of requests
             url.AppendPathSegments("batch");
             var objectsRequests = new List<ObjectRequest>();
-            // Concatenate batch segment to use batch request and prepare the list of requests  
+            // Concatenate batch segment to use batch request and prepare the list of requests
             foreach (var r in requests)
             {
                 string activityManagementStatus = "";

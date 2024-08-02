@@ -18,7 +18,7 @@ namespace JohnsonControls.Metasys.BasicServices
 
         /// <summary>The id of the Metasys object.</summary>
         [JsonProperty(Required = Required.Always)]
-        public Guid Id { set; get; }
+        public ObjectId Id { set; get; }
 
         /// <summary>The name of the Metasys object.</summary>
         [JsonProperty(Required = Required.Always)]
@@ -33,13 +33,13 @@ namespace JohnsonControls.Metasys.BasicServices
         public MetasysObjectTypeEnum? Type { get; set; }
 
         /// <summary>
-        /// The resource type detail reference. 
+        /// The resource type detail reference.
         /// </summary>
         /// <remarks> This is available only on Metasys API v2 and v1. </remarks>
         public string TypeUrl { get; set; }
 
         /// <summary>
-        /// The resource type detail reference. 
+        /// The resource type detail reference.
         /// </summary>
         /// <remarks> This is available since Metasys API v3. </remarks>
         public string ObjectType { get; set; }
@@ -86,8 +86,8 @@ namespace JohnsonControls.Metasys.BasicServices
 
         internal MetasysObject(JToken token, ApiVersion version, IEnumerable<MetasysObject> children = null, MetasysObjectTypeEnum? type = null)
         {
-            Children = children ?? new List<MetasysObject>(); // Return empty list by convention for null         
-            ChildrenCount = Children?.Count() ?? 0; // Children count is 0 when children is null                                 
+            Children = children ?? new List<MetasysObject>(); // Return empty list by convention for null
+            ChildrenCount = Children?.Count() ?? 0; // Children count is 0 when children is null
             Type = type;
 
             JObject jobj = token.ToObject<JObject>();
@@ -153,7 +153,7 @@ namespace JohnsonControls.Metasys.BasicServices
             {
                 try
                 {
-                    // Object Type is available since API v3 only on object detail. 
+                    // Object Type is available since API v3 only on object detail.
                     ObjectType = jobj.ContainsKey("objectType") ? token["objectType"].Value<string>() : null;
                 }
                 catch

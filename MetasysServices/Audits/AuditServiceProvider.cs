@@ -81,7 +81,7 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         /// <inheritdoc/>
-        public async Task<PagedResult<Audit>> GetForObjectAsync(Guid objectId, AuditFilter auditFilter)
+        public async Task<PagedResult<Audit>> GetForObjectAsync(ObjectId objectId, AuditFilter auditFilter)
         {
             CheckVersion(Version);
 
@@ -150,7 +150,7 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         /// <inheritdoc/>
-        public PagedResult<Audit> GetForObject(Guid objectId, AuditFilter auditFilter)
+        public PagedResult<Audit> GetForObject(ObjectId objectId, AuditFilter auditFilter)
         {
             return GetForObjectAsync(objectId, auditFilter).GetAwaiter().GetResult();
         }

@@ -14,6 +14,9 @@ using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 
+// Disable warnings on obsolete methods since we still want to test them
+#pragma  warning disable CS0618
+
 namespace MetasysServices.Tests
 {
     public class MetasysClientTests : MetasysClientTestsBase
@@ -283,25 +286,9 @@ namespace MetasysServices.Tests
         }
 
         [Test]
-        public void TestGetObjectIdentifierBadResponseThrowsException()
-        {
-            httpTest.RespondWith($"\"{mockid}1\"");
-
-            var e = Assert.Throws<MetasysGuidException>(() =>
-                client.GetObjectIdentifier("fully:qualified/reference4"));
-
-            httpTest.ShouldHaveCalled($"https://hostname/api/v2/objectIdentifiers")
-                .WithVerb(HttpMethod.Get)
-                .Times(1);
-            var expected = new MetasysGuidException($"{mockid}1", new NullReferenceException());
-            Assert.AreEqual(expected.Message, e.Message);
-            PrintMessage($"TestGetObjectIdentifierBadResponseThrowsException: {e.Message}");
-        }
-
-        [Test]
         public void TestGetObjectIdentifierNullResponseThrowsException()
         {
-            httpTest.RespondWith("null");
+            httpTest.RespondWithJson(JToken.Parse("null"));
 
             var e = Assert.Throws<MetasysGuidException>(() =>
                 client.GetObjectIdentifier("fully:qualified/reference5"));
@@ -610,7 +597,7 @@ namespace MetasysServices.Tests
         {
             List<string> attributes = new() { mockAttributeName };
 
-            var results = client.ReadPropertyMultiple(null, attributes);
+            var results = client.ReadPropertyMultiple((IEnumerable<ObjectId>)null, attributes);
 
             httpTest.ShouldNotHaveCalled($"https://hostname/api/v2/objects/");
             Assert.AreEqual(null, results);
@@ -642,7 +629,7 @@ namespace MetasysServices.Tests
         [Test]
         public void TestReadPropertyMultipleEmptyAttributes()
         {
-            List<Guid> ids = new() { mockid };
+            List<ObjectId> ids = new() { mockid };
             List<string> attributes = new() { };
 
             var results = client.ReadPropertyMultiple(ids, attributes);
@@ -658,7 +645,7 @@ namespace MetasysServices.Tests
             var json = "{ \"item\": { \"" + mockAttributeName + "\": \"stringvalue\" } }";
             httpTest.RespondWith(json);
             var token = JToken.Parse(json);
-            List<Guid> ids = new() { mockid };
+            List<ObjectId> ids = new() { mockid };
             List<string> attributes = new() { mockAttributeName };
             var results = client.ReadPropertyMultiple(ids, attributes);
 
@@ -686,7 +673,7 @@ namespace MetasysServices.Tests
                 .RespondWith("{ \"item\": { \"" + mockAttributeName4 + "\": false } }")
                 .RespondWith("{ \"item\": { \"" + mockAttributeName5 + "\": [ 1, 2, 3] } }");
 
-            List<Guid> ids = new() { mockid, mockid2 };
+            List<ObjectId> ids = new() { mockid, mockid2 };
             List<string> attributes = new() {
                 mockAttributeName, mockAttributeName2, mockAttributeName3, mockAttributeName4, mockAttributeName5 };
             var results = await client.ReadPropertyMultipleAsync(ids, attributes).ConfigureAwait(false);
@@ -719,7 +706,7 @@ namespace MetasysServices.Tests
                     .RespondWith("{ \"item\": { \"" + mockAttributeName4 + "\": false } }")
                     .RespondWith("{ \"item\": { \"" + mockAttributeName5 + "\": [ 4, 2, 3] } }");
 
-                List<Guid> ids = new() { mockid, mockid2 };
+                List<ObjectId> ids = new() { mockid, mockid2 };
                 List<string> attributes = new() { mockAttributeName, mockAttributeName2, mockAttributeName3, mockAttributeName4, mockAttributeName5 };
                 var results = client.ReadPropertyMultiple(ids, attributes);
 
@@ -739,7 +726,7 @@ namespace MetasysServices.Tests
         public void TestReadPropertyMultipleOneIdOneAttributeDNE()
         {
             httpTest.RespondWith("No HTTP resource was found that matches the request URI.", 404);
-            List<Guid> ids = new() { mockid };
+            List<ObjectId> ids = new() { mockid };
             List<string> attributes = new() { mockAttributeName };
 
             var results = client.ReadPropertyMultiple(ids, attributes);
@@ -754,7 +741,7 @@ namespace MetasysServices.Tests
         public void TestReadPropertyMultipleOneIdDNE()
         {
             httpTest.RespondWith("No HTTP resource was found that matches the request URI.", 404);
-            List<Guid> ids = new() { mockid };
+            List<ObjectId> ids = new() { mockid };
             List<string> attributes = new() { mockAttributeName };
 
             var results = client.ReadPropertyMultiple(ids, attributes);
@@ -769,7 +756,7 @@ namespace MetasysServices.Tests
         public void TestReadPropertyMultipleUnauthorizedThrowsException()
         {
             httpTest.RespondWith("unauthorized", 401);
-            List<Guid> ids = new() { mockid };
+            List<ObjectId> ids = new() { mockid };
             List<string> attributes = new() { mockAttributeName };
 
             var e = Assert.Throws<MetasysHttpException>(() =>
@@ -917,7 +904,7 @@ namespace MetasysServices.Tests
         public void TestWritePropertyMultipleOneIdOneString()
         {
             httpTest.RespondWith("Accepted", 202);
-            List<Guid> ids = new() { mockid };
+            List<ObjectId> ids = new() { mockid };
             List<(string, object)> attributes = new() { (mockAttributeName, "newValue") };
 
             client.WritePropertyMultiple(ids, attributes);
@@ -932,7 +919,7 @@ namespace MetasysServices.Tests
         public void TestWritePropertyMultipleManyIdsOneString()
         {
             httpTest.RespondWith("Accepted", 202);
-            List<Guid> ids = new() { mockid, mockid2 };
+            List<ObjectId> ids = new() { mockid, mockid2 };
             List<(string, object)> attributes = new() { (mockAttributeName, "newValue") };
 
             client.WritePropertyMultiple(ids, attributes);
@@ -951,7 +938,7 @@ namespace MetasysServices.Tests
         public async Task TestWritePropertyMultipleManyIdsManyAttributesAsync()
         {
             httpTest.RespondWith("Accepted", 202);
-            List<Guid> ids = new() { mockid, mockid2 };
+            List<ObjectId> ids = new() { mockid, mockid2 };
             List<(string, object)> attributes = new() {
                 (mockAttributeName, "stringvalue"),
                 (mockAttributeName2, 23),
@@ -982,7 +969,7 @@ namespace MetasysServices.Tests
             AsyncContext.Run(() =>
             {
                 httpTest.RespondWith("Accepted", 202);
-                List<Guid> ids = new() { mockid, mockid2 };
+                List<ObjectId> ids = new() { mockid, mockid2 };
                 List<(string, object)> attributes = new() {
                     (mockAttributeName, "stringvalue"),
                     (mockAttributeName2, 23),
@@ -1012,7 +999,7 @@ namespace MetasysServices.Tests
         public void TestWritePropertyMultipleBadRequestThrowsException()
         {
             httpTest.RespondWith("Bad Request", 400);
-            List<Guid> ids = new() { mockid };
+            List<ObjectId> ids = new() { mockid };
             List<(string, object)> attributes = new() { ("badAttributeName", "newValue") };
 
             var e = Assert.Throws<MetasysHttpException>(() =>
@@ -1044,7 +1031,7 @@ namespace MetasysServices.Tests
         public void TestWritePropertyMultipleNullArguments()
         {
             Dictionary<string, object> attributeValues = null;
-            Assert.Throws<ArgumentNullException>(() => client.WritePropertyMultiple(null, attributeValues));
+            Assert.Throws<ArgumentNullException>(() => client.WritePropertyMultiple((IEnumerable<ObjectId>)null, attributeValues));
             httpTest.ShouldNotHaveCalled($"https://hostname/api/v2/objects/{mockid}");
         }
 

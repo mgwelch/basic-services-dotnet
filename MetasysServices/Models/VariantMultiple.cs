@@ -12,12 +12,12 @@ namespace JohnsonControls.Metasys.BasicServices
     public class VariantMultiple
     {
         /// <summary>The object id.</summary>
-        public Guid Id { private set; get; }
+        public ObjectId Id { private set; get; }
 
         /// <summary>The list of Variants.</summary>
         public IEnumerable<Variant> Values { set; get; }
 
-        internal VariantMultiple(Guid id, IEnumerable<Variant> values)
+        internal VariantMultiple(ObjectId id, IEnumerable<Variant> values)
         {
             Id = id;
             Values = values;

@@ -28,7 +28,7 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <summary>
         /// Stores retrieved Ids and serves as an in-memory caching layer.
         /// </summary>
-        protected Dictionary<string, Guid> IdentifiersDictionary = new Dictionary<string, Guid>();
+        protected Dictionary<string, ObjectId> IdentifiersDictionary = new Dictionary<string, ObjectId>();
 
         /// <inheritdoc/>
         public IActivityService Activities { get; set; }
@@ -325,7 +325,7 @@ namespace JohnsonControls.Metasys.BasicServices
                 var response = await Client.Request("refreshToken")
                                                     .GetJsonAsync<JToken>()
                                                     .ConfigureAwait(false);
-                // Since it's a refresh, get issue info from the current token                
+                // Since it's a refresh, get issue info from the current token
                 CreateAccessToken(AccessToken.Issuer, AccessToken.IssuedTo, response);
                 // Set the new value of the Token to the StreamClient
                 if (Streams != null)
@@ -488,14 +488,15 @@ namespace JohnsonControls.Metasys.BasicServices
 
 
         #region "OBJECTS" // ========================================================================================================
+
         // GetObjects ---------------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public IEnumerable<MetasysObject> GetObjects(Guid id, int levels = 1, bool includeInternalObjects = false, bool includeExtensions = false)
+        public IEnumerable<MetasysObject> GetObjects(ObjectId id, int levels = 1, bool includeInternalObjects = false, bool includeExtensions = false)
         {
             return GetObjectsAsync(id, levels, includeInternalObjects, includeExtensions).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<IEnumerable<MetasysObject>> GetObjectsAsync(Guid id, int levels, bool includeInternalObjects = false, bool includeExtensions = false)
+        public async Task<IEnumerable<MetasysObject>> GetObjectsAsync(ObjectId id, int levels, bool includeInternalObjects = false, bool includeExtensions = false)
         {
             Dictionary<string, string> parameters = null;
             if (Version == ApiVersion.v3)
@@ -528,12 +529,12 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         /// <inheritdoc/>
-        public IEnumerable<MetasysObject> GetObjects(Guid id, string objectType)
+        public IEnumerable<MetasysObject> GetObjects(ObjectId id, string objectType)
         {
             return GetObjectsAsync(id, objectType).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<IEnumerable<MetasysObject>> GetObjectsAsync(Guid objectId, string objectType)
+        public async Task<IEnumerable<MetasysObject>> GetObjectsAsync(ObjectId objectId, string objectType)
         {
             Dictionary<string, string> parameters = null;
 
@@ -555,16 +556,16 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // GetObjectIdentifier ------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public Guid GetObjectIdentifier(string itemReference)
+        public ObjectId GetObjectIdentifier(string itemReference)
         {
             return GetObjectIdentifierAsync(itemReference).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<Guid> GetObjectIdentifierAsync(string itemReference)
+        public async Task<ObjectId> GetObjectIdentifierAsync(string itemReference)
         {
             // Sanitize given itemReference
             var normalizedItemReference = itemReference.Trim().ToUpper();
-            // Returns cached value when available, otherwise perform request         
+            // Returns cached value when available, otherwise perform request
             if (!IdentifiersDictionary.ContainsKey(normalizedItemReference))
             {
                 JToken response = null;
@@ -593,12 +594,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // GetCommands --------------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public IEnumerable<Command> GetCommands(Guid id)
+        public IEnumerable<Command> GetCommands(ObjectId id)
         {
             return GetCommandsAsync(id).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<IEnumerable<Command>> GetCommandsAsync(Guid id)
+        public async Task<IEnumerable<Command>> GetCommandsAsync(ObjectId id)
         {
             try
             {
@@ -658,12 +659,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // ReadProperty -------------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public Variant ReadProperty(Guid id, string attributeName)
+        public Variant ReadProperty(ObjectId id, string attributeName)
         {
             return ReadPropertyAsync(id, attributeName).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<Variant> ReadPropertyAsync(Guid id, string attributeName)
+        public async Task<Variant> ReadPropertyAsync(ObjectId id, string attributeName)
         {
             JToken response = null; Variant result = new Variant();
             try
@@ -687,12 +688,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // ReadPropertyMultiple -----------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public IEnumerable<VariantMultiple> ReadPropertyMultiple(IEnumerable<Guid> ids, IEnumerable<string> attributeNames)
+        public IEnumerable<VariantMultiple> ReadPropertyMultiple(IEnumerable<ObjectId> ids, IEnumerable<string> attributeNames)
         {
             return ReadPropertyMultipleAsync(ids, attributeNames).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task<IEnumerable<VariantMultiple>> ReadPropertyMultipleAsync(IEnumerable<Guid> ids, IEnumerable<string> attributeNames)
+        public async Task<IEnumerable<VariantMultiple>> ReadPropertyMultipleAsync(IEnumerable<ObjectId> ids, IEnumerable<string> attributeNames)
         {
             if (ids == null || attributeNames == null)
             {
@@ -739,12 +740,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // WriteProperty ------------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public void WriteProperty(Guid id, string attributeName, object newValue)
+        public void WriteProperty(ObjectId id, string attributeName, object newValue)
         {
             WritePropertyAsync(id, attributeName, newValue).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task WritePropertyAsync(Guid id, string attributeName, object newValue)
+        public async Task WritePropertyAsync(ObjectId id, string attributeName, object newValue)
         {
             List<(string Attribute, object Value)> list = new List<(string Attribute, object Value)>
             {
@@ -756,12 +757,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // WritePropertyMultiple ----------------------------------------------------------------------------------------------------
         ///<inheritdoc/>
-        public void WritePropertyMultiple(IEnumerable<Guid> ids, Dictionary<string, object> attributeValues)
+        public void WritePropertyMultiple(IEnumerable<ObjectId> ids, Dictionary<string, object> attributeValues)
         {
             WritePropertyMultipleAsync(ids, attributeValues).GetAwaiter().GetResult();
         }
         ///<inheritdoc/>
-        public async Task WritePropertyMultipleAsync(IEnumerable<Guid> ids, Dictionary<string, object> attributeValues)
+        public async Task WritePropertyMultipleAsync(IEnumerable<ObjectId> ids, Dictionary<string, object> attributeValues)
         {
             if (ids == null || attributeValues == null)
             {
@@ -773,12 +774,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // WritePropertyMultiple (2) ------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public void WritePropertyMultiple(IEnumerable<Guid> ids, IEnumerable<(string Attribute, object Value)> attributeValues)
+        public void WritePropertyMultiple(IEnumerable<ObjectId> ids, IEnumerable<(string Attribute, object Value)> attributeValues)
         {
             WritePropertyMultipleAsync(ids, attributeValues).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task WritePropertyMultipleAsync(IEnumerable<Guid> ids, IEnumerable<(string Attribute, object Value)> attributeValues)
+        public async Task WritePropertyMultipleAsync(IEnumerable<ObjectId> ids, IEnumerable<(string Attribute, object Value)> attributeValues)
         {
             if (ids == null || attributeValues == null)
             {
@@ -797,12 +798,12 @@ namespace JohnsonControls.Metasys.BasicServices
 
         // SendCommand --------------------------------------------------------------------------------------------------------------
         /// <inheritdoc/>
-        public void SendCommand(Guid id, string command, IEnumerable<object> values = null)
+        public void SendCommand(ObjectId id, string command, IEnumerable<object> values = null)
         {
             SendCommandAsync(id, command, values).GetAwaiter().GetResult();
         }
         /// <inheritdoc/>
-        public async Task SendCommandAsync(Guid id, string command, IEnumerable<object> values = null)
+        public async Task SendCommandAsync(ObjectId id, string command, IEnumerable<object> values = null)
         {
             if (values == null)
             {
@@ -957,7 +958,7 @@ namespace JohnsonControls.Metasys.BasicServices
         //{
         //    DateTime now = DateTime.UtcNow;
         //    TimeSpan delay = AccessToken.Expires - now.AddSeconds(-1); // minimum renew gap of 1 sec in advance
-        //    // Renew one minute before expiration if there is more than one minute time 
+        //    // Renew one minute before expiration if there is more than one minute time
         //    if (delay > new TimeSpan(0, 1, 0))
         //    {
         //        delay.Subtract(new TimeSpan(0, 1, 0));
@@ -982,13 +983,13 @@ namespace JohnsonControls.Metasys.BasicServices
 
 
         /// <summary>
-        /// Overload of ReadPropertyAsync for internal use where Exception suppress is needed, e.g. ReadPropertyMultiple 
+        /// Overload of ReadPropertyAsync for internal use where Exception suppress is needed, e.g. ReadPropertyMultiple
         /// </summary>
         /// <param name="id"></param>
         /// <param name="attributeName"></param>
         /// <param name="suppressNotFoundException"></param>
         /// <returns></returns>
-        private async Task<Variant> ReadPropertyAsync(Guid id, string attributeName, bool suppressNotFoundException = true)
+        private async Task<Variant> ReadPropertyAsync(ObjectId id, string attributeName, bool suppressNotFoundException = true)
         {
             try
             {
@@ -1003,7 +1004,7 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <summary>
         /// Creates the body for the WriteProperty and WritePropertyMultiple requests as a dictionary.
         /// </summary>
-        /// <param name="attributeValues">The (attribute, value) pairs.</param>      
+        /// <param name="attributeValues">The (attribute, value) pairs.</param>
         /// <returns>Dictionary of the attribute, value pairs.</returns>
         private Dictionary<string, object> GetWritePropertyBody(IEnumerable<(string Attribute, object Value)> attributeValues)
         {
@@ -1022,7 +1023,7 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <param name="body"></param>
         /// <exception cref="MetasysHttpException"></exception>
         /// <returns>Asynchronous Task Result.</returns>
-        private async Task WritePropertyRequestAsync(Guid id, Dictionary<string, object> body)
+        private async Task WritePropertyRequestAsync(ObjectId id, Dictionary<string, object> body)
         {
             var json = new { item = body };
 
@@ -1040,7 +1041,7 @@ namespace JohnsonControls.Metasys.BasicServices
         }
 
         ///// <summary>
-        ///// Gets the type from a token retrieved from a typeUrl 
+        ///// Gets the type from a token retrieved from a typeUrl
         ///// </summary>
         ///// <param name="typeToken"></param>
         ///// <exception cref="MetasysHttpException"></exception>
@@ -1134,7 +1135,7 @@ namespace JohnsonControls.Metasys.BasicServices
             foreach (var r in response["responses"])
             {
                 var respIds = r["id"].Value<string>().Split('_');
-                var objId = new Guid(respIds[0]);
+                var objId = new ObjectId(respIds[0]);
                 string attr = respIds[1];
                 List<Variant> values = new List<Variant>();
                 if (r["status"].Value<int>() == 200)
@@ -1144,7 +1145,7 @@ namespace JohnsonControls.Metasys.BasicServices
                 var m = multiples.SingleOrDefault(s => s.Id == objId);
                 if (m == null)
                 {
-                    // Add a new multiple for the current object                   
+                    // Add a new multiple for the current object
                     multiples.Add(new VariantMultiple(objId, values));
                 }
                 else
@@ -1166,7 +1167,7 @@ namespace JohnsonControls.Metasys.BasicServices
         /// <param name="values"></param>
         /// <exception cref="MetasysHttpException"></exception>
         /// <returns>Asynchronous Task Result.</returns>
-        private async Task SendCommandRequestAsync(Guid id, string command, IEnumerable<object> values)
+        private async Task SendCommandRequestAsync(ObjectId id, string command, IEnumerable<object> values)
         {
             try
             {
@@ -1238,7 +1239,52 @@ namespace JohnsonControls.Metasys.BasicServices
             }
         }
         #endregion
+
+        #region Deprecated Methods Due to Guid -> ObjectId
+        // ReadPropertyMultiple -----------------------------------------------------------------------------------------------------
+        /// <inheritdoc/>
+        [Obsolete("Use ReadPropertyMultiple(IEnumerable<ObjectId>, IEnumerable<string>) instead.")]
+        public IEnumerable<VariantMultiple> ReadPropertyMultiple(IEnumerable<Guid> ids, IEnumerable<string> attributeNames)
+        {
+            return ReadPropertyMultipleAsync(ids, attributeNames).GetAwaiter().GetResult();
+        }
+        /// <inheritdoc/>
+        [Obsolete("Use ReadPropertyMultipleAsync(IEnumerable<ObjectId>, IEnumerable<string>) instead.")]
+        public Task<IEnumerable<VariantMultiple>> ReadPropertyMultipleAsync(IEnumerable<Guid> ids, IEnumerable<string> attributeNames)
+        {
+            return ReadPropertyMultipleAsync(ids.Cast<ObjectId>(), attributeNames);
+        }
+
+        // WritePropertyMultiple ----------------------------------------------------------------------------------------------------
+        ///<inheritdoc/>
+        [Obsolete("Use WritePropertyMultiple(IEnumerable<ObjectId>, Dictionary<string, object>) instead.")]
+        public void WritePropertyMultiple(IEnumerable<Guid> ids, Dictionary<string, object> attributeValues)
+        {
+            WritePropertyMultipleAsync(ids, attributeValues).GetAwaiter().GetResult();
+        }
+        ///<inheritdoc/>
+        [Obsolete("Use WritePropertyMultipleAsync(IEnumerable<ObjectId>, Dictionary<string, object>) instead.")]
+        public Task WritePropertyMultipleAsync(IEnumerable<Guid> ids, Dictionary<string, object> attributeValues)
+        {
+            return WritePropertyMultipleAsync(ids.Cast<ObjectId>(), attributeValues);
+        }
+
+        // WritePropertyMultiple (2) ------------------------------------------------------------------------------------------------
+
+        /// <inheritdoc/>
+        [Obsolete("Use WritePropertyMultiple(IEnumerable<ObjectId> ids, IEnumerable<ValueTuple<string, Value>>) instead.")]
+        public void WritePropertyMultiple(IEnumerable<Guid> ids, IEnumerable<(string Attribute, object Value)> attributeValues)
+        {
+            WritePropertyMultipleAsync(ids, attributeValues).GetAwaiter().GetResult();
+        }
+        /// <inheritdoc/>
+        [Obsolete("Use WritePropertyMultipleAsync(IEnumerable<ObjectId> ids, IEnumerable<ValueTuple<string, Value>>) instead.")]
+        public Task WritePropertyMultipleAsync(IEnumerable<Guid> ids, IEnumerable<(string Attribute, object Value)> attributeValues)
+        {
+            return WritePropertyMultipleAsync(ids.Cast<ObjectId>(), attributeValues);
+        }
+
+        #endregion
     }
 
 }
-
