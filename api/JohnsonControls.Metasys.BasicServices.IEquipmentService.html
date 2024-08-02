@@ -1,0 +1,711 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IEquipmentService | Metasys Services </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IEquipmentService | Metasys Services ">
+      
+      <meta name="description" content="Defines method to provide equipment infos for endpoints of the Metasys Equipments API.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/michaelgwelch/basic-services-dotnet/new/welch/addDocFx/apiSpec/new?filename=JohnsonControls_Metasys_BasicServices_IEquipmentService.md&amp;value=---%0Auid%3A%20JohnsonControls.Metasys.BasicServices.IEquipmentService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Metasys Services">
+            Metasys Services
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService">
+
+
+
+  <h1 id="JohnsonControls_Metasys_BasicServices_IEquipmentService" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService" class="text-break">
+Interface IEquipmentService  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="JohnsonControls.html">JohnsonControls</a>.<a class="xref" href="JohnsonControls.Metasys.html">Metasys</a>.<a class="xref" href="JohnsonControls.Metasys.BasicServices.html">BasicServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MetasysServices.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines method to provide equipment infos for endpoints of the Metasys Equipments API.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IEquipmentService : IBasicService</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_Version">IBasicService.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_Culture">IBasicService.Culture</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_GetObjectTypeEnumeration_System_String_">IBasicService.GetObjectTypeEnumeration(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_Localize_System_String_System_Globalization_CultureInfo_">IBasicService.Localize(string, CultureInfo)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_FindById_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.FindById*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_FindById_JohnsonControls_Metasys_BasicServices_ObjectId_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.FindById(JohnsonControls.Metasys.BasicServices.ObjectId)">
+  FindById(ObjectId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the specified equipment instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MetasysObject FindById(ObjectId equipmentId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipmentId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_FindByIdAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.FindByIdAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_FindByIdAsync_JohnsonControls_Metasys_BasicServices_ObjectId_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.FindByIdAsync(JohnsonControls.Metasys.BasicServices.ObjectId)">
+  FindByIdAsync(ObjectId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the specified equipment instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MetasysObject&gt; FindByIdAsync(ObjectId equipmentId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipmentId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_Get_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.Get*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_Get_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.Get(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+  Get(int?, int?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of equipment instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;MetasysObject&gt; Get(int? page = null, int? pageSize = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>Specifies the number of the page to be retrieved (optional).</p>
+</dd>
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>Specifies the number of items per page. Default is 1000. (optional).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IEquipmentService_Get_System_Nullable_System_Int32__System_Nullable_System_Int32___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If the param 'page' is specified then it will return only the items associated to the specified page number. Otherwise all the items will be returned.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetAsync(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+  GetAsync(int?, int?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of equipment instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetAsync(int? page = null, int? pageSize = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>Specifies the number of the page to be retrieved (optional).</p>
+</dd>
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>Specifies the number of items per page. Default is 1000. (optional).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetAsync_System_Nullable_System_Int32__System_Nullable_System_Int32___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If the param 'page' is specified then it will return only the items associated to the specified page number. Otherwise all the items will be returned.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetHostedByNetworkDevice_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetHostedByNetworkDevice*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetHostedByNetworkDevice_JohnsonControls_Metasys_BasicServices_ObjectId_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetHostedByNetworkDevice(JohnsonControls.Metasys.BasicServices.ObjectId)">
+  GetHostedByNetworkDevice(ObjectId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the collection of equipment instances that are hosted by the specified network device or its children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;MetasysObject&gt; GetHostedByNetworkDevice(ObjectId networkDeviceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkDeviceId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetHostedByNetworkDeviceAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetHostedByNetworkDeviceAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetHostedByNetworkDeviceAsync_JohnsonControls_Metasys_BasicServices_ObjectId_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetHostedByNetworkDeviceAsync(JohnsonControls.Metasys.BasicServices.ObjectId)">
+  GetHostedByNetworkDeviceAsync(ObjectId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the collection of equipment that serve the specified space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetHostedByNetworkDeviceAsync(ObjectId networkDeviceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkDeviceId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetPoints_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetPoints*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetPoints_JohnsonControls_Metasys_BasicServices_ObjectId_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetPoints(JohnsonControls.Metasys.BasicServices.ObjectId,System.Boolean)">
+  GetPoints(ObjectId, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the collection of points that are defined by the specified equipment instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;MetasysPoint&gt; GetPoints(ObjectId equipmentId, bool readAttributeValue = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipmentId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The id of the equipment.</p>
+</dd>
+    <dt><code>readAttributeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set to false if you would not read Points Attribute Value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysPoint.html">MetasysPoint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetPoints_JohnsonControls_Metasys_BasicServices_ObjectId_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Reading the Attribute Value attribute could take time depending on the number of points.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetPointsAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetPointsAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetPointsAsync_JohnsonControls_Metasys_BasicServices_ObjectId_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetPointsAsync(JohnsonControls.Metasys.BasicServices.ObjectId,System.Boolean)">
+  GetPointsAsync(ObjectId, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the collection of points that are defined by the specified equipment instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;MetasysPoint&gt;&gt; GetPointsAsync(ObjectId equipmentId, bool readAttributeValue = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipmentId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The id of the equipment.</p>
+</dd>
+    <dt><code>readAttributeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set to false if you would not read Points Attribute Value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysPoint.html">MetasysPoint</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetPointsAsync_JohnsonControls_Metasys_BasicServices_ObjectId_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Reading the Attribute Value attribute could take time depending on the number of points.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetServedByEquipment_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetServedByEquipment*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetServedByEquipment_JohnsonControls_Metasys_BasicServices_ObjectId_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetServedByEquipment(JohnsonControls.Metasys.BasicServices.ObjectId)">
+  GetServedByEquipment(ObjectId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the equipment served by the specified equipment instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;MetasysObject&gt; GetServedByEquipment(ObjectId equipmentId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipmentId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetServedByEquipmentAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetServedByEquipmentAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetServedByEquipmentAsync_JohnsonControls_Metasys_BasicServices_ObjectId_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetServedByEquipmentAsync(JohnsonControls.Metasys.BasicServices.ObjectId)">
+  GetServedByEquipmentAsync(ObjectId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the equipment served by the specified equipment instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetServedByEquipmentAsync(ObjectId equipmentId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipmentId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetServingASpace_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetServingASpace*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetServingASpace_JohnsonControls_Metasys_BasicServices_ObjectId_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetServingASpace(JohnsonControls.Metasys.BasicServices.ObjectId)">
+  GetServingASpace(ObjectId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the collection of equipment that serve the specified space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;MetasysObject&gt; GetServingASpace(ObjectId spaceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spaceId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetServingASpaceAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetServingASpaceAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetServingASpaceAsync_JohnsonControls_Metasys_BasicServices_ObjectId_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetServingASpaceAsync(JohnsonControls.Metasys.BasicServices.ObjectId)">
+  GetServingASpaceAsync(ObjectId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the collection of equipment that serve the specified space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetServingASpaceAsync(ObjectId spaceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spaceId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetServingAnEquipment_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetServingAnEquipment*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetServingAnEquipment_JohnsonControls_Metasys_BasicServices_ObjectId_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetServingAnEquipment(JohnsonControls.Metasys.BasicServices.ObjectId)">
+  GetServingAnEquipment(ObjectId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the collection of equipment that serve the specified equipment instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;MetasysObject&gt; GetServingAnEquipment(ObjectId equipmentId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipmentId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetServingAnEquipmentAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetServingAnEquipmentAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IEquipmentService_GetServingAnEquipmentAsync_JohnsonControls_Metasys_BasicServices_ObjectId_" data-uid="JohnsonControls.Metasys.BasicServices.IEquipmentService.GetServingAnEquipmentAsync(JohnsonControls.Metasys.BasicServices.ObjectId)">
+  GetServingAnEquipmentAsync(ObjectId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the collection of equipment that serve the specified equipment instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetServingAnEquipmentAsync(ObjectId equipmentId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipmentId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Equipments/IEquipmentService.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

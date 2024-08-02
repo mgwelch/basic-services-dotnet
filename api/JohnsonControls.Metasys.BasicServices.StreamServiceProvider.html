@@ -1,0 +1,1166 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StreamServiceProvider | Metasys Services </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StreamServiceProvider | Metasys Services ">
+      
+      <meta name="description" content="Provide methods for the endpoints of the Metasys Stream API v4.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/michaelgwelch/basic-services-dotnet/new/welch/addDocFx/apiSpec/new?filename=JohnsonControls_Metasys_BasicServices_StreamServiceProvider.md&amp;value=---%0Auid%3A%20JohnsonControls.Metasys.BasicServices.StreamServiceProvider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Metasys Services">
+            Metasys Services
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider">
+
+
+
+  <h1 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider" class="text-break">
+Class StreamServiceProvider  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="JohnsonControls.html">JohnsonControls</a>.<a class="xref" href="JohnsonControls.Metasys.html">Metasys</a>.<a class="xref" href="JohnsonControls.Metasys.BasicServices.html">BasicServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MetasysServices.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provide methods for the endpoints of the Metasys Stream API v4.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class StreamServiceProvider : BasicServiceProvider, IDisposable, IStreamService, IBasicService</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.Utils.ObjectUtil.html">ObjectUtil</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.html">BasicServiceProvider</a></div>
+      <div><span class="xref">StreamServiceProvider</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.IStreamService.html">IStreamService</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html">IBasicService</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.html#JohnsonControls_Metasys_BasicServices_BasicServiceProvider_Version">BasicServiceProvider.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.html#JohnsonControls_Metasys_BasicServices_BasicServiceProvider_MinVersionSupported">BasicServiceProvider.MinVersionSupported</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.html#JohnsonControls_Metasys_BasicServices_BasicServiceProvider_MaxVersionSupported">BasicServiceProvider.MaxVersionSupported</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.html#JohnsonControls_Metasys_BasicServices_BasicServiceProvider_Culture">BasicServiceProvider.Culture</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.html#JohnsonControls_Metasys_BasicServices_BasicServiceProvider_LogClientErrors">BasicServiceProvider.LogClientErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.html#JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetResourceTypesAsync_System_String_System_String_">BasicServiceProvider.GetResourceTypesAsync(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.html#JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetObjectTypeEnumeration_System_String_">BasicServiceProvider.GetObjectTypeEnumeration(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.html#JohnsonControls_Metasys_BasicServices_BasicServiceProvider_Localize_System_String_System_Globalization_CultureInfo_">BasicServiceProvider.Localize(string, CultureInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.html#JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToDictionary_System_Object_">BasicServiceProvider.ToDictionary(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.Utils.ObjectUtil.html#JohnsonControls_Metasys_BasicServices_Utils_ObjectUtil_GetJTokenValue_Newtonsoft_Json_Linq_JToken_System_String_">ObjectUtil.GetJTokenValue(JToken, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.Utils.ObjectUtil.html#JohnsonControls_Metasys_BasicServices_Utils_ObjectUtil_GetJTokenDate_Newtonsoft_Json_Linq_JToken_System_String_">ObjectUtil.GetJTokenDate(JToken, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider__ctor_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.#ctor*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider__ctor_Flurl_Http_IFlurlClient_JohnsonControls_Metasys_BasicServices_ApiVersion_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.#ctor(Flurl.Http.IFlurlClient,JohnsonControls.Metasys.BasicServices.ApiVersion,System.Boolean)">
+  StreamServiceProvider(IFlurlClient, ApiVersion, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stream Service Provider</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StreamServiceProvider(IFlurlClient client, ApiVersion version, bool logClientErrors = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>client</code> <span class="xref">IFlurlClient</span></dt>
+    <dd></dd>
+    <dt><code>version</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ApiVersion.html">ApiVersion</a></dt>
+    <dd></dd>
+    <dt><code>logClientErrors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_AccessToken_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.AccessToken*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_AccessToken" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.AccessToken">
+  AccessToken
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Access Token</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessToken AccessToken { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.AccessToken.html">AccessToken</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_ResultChannel_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.ResultChannel*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_ResultChannel" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.ResultChannel">
+  ResultChannel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Channel result</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChannelReader&lt;StreamMessage&gt; ResultChannel { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.channels.channelreader-1">ChannelReader</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.StreamMessage.html">StreamMessage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_ConnectAsync_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.ConnectAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_ConnectAsync" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.ConnectAsync">
+  ConnectAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Connect method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; ConnectAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_Dispose_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.Dispose*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_Dispose" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_GetAlarmEvents_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.GetAlarmEvents*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_GetAlarmEvents" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.GetAlarmEvents">
+  GetAlarmEvents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L830"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the list of Alarm events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;StreamMessage&gt; GetAlarmEvents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.StreamMessage.html">StreamMessage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_GetAuditEvents_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.GetAuditEvents*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_GetAuditEvents" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.GetAuditEvents">
+  GetAuditEvents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L896"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the list of Audit events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;StreamMessage&gt; GetAuditEvents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.StreamMessage.html">StreamMessage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_GetCOV_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.GetCOV*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_GetCOV" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.GetCOV">
+  GetCOV()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L747"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the first value of COV values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StreamMessage GetCOV()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.StreamMessage.html">StreamMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_GetCOVList_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.GetCOVList*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_GetCOVList" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.GetCOVList">
+  GetCOVList()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L740"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the list of COV values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;StreamMessage&gt; GetCOVList()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.StreamMessage.html">StreamMessage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_GetRequestIds_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.GetRequestIds*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_GetRequestIds" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.GetRequestIds">
+  GetRequestIds()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the list of request Ids</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Guid&gt; GetRequestIds()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_KeepAlive_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.KeepAlive*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_KeepAlive_JohnsonControls_Metasys_BasicServices_AccessToken_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.KeepAlive(JohnsonControls.Metasys.BasicServices.AccessToken)">
+  KeepAlive(AccessToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Call the related API (with a new Token) to keep the Stream Alive</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task KeepAlive(AccessToken accessToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accessToken</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AccessToken.html">AccessToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_LoadActivitySubscriptions_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.LoadActivitySubscriptions*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_LoadActivitySubscriptions_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.LoadActivitySubscriptions(System.String)">
+  LoadActivitySubscriptions(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a subscription for an Activity according to the ActivityType</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadActivitySubscriptions(string activityType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>activityType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_LoadCOVSubscriptions_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.LoadCOVSubscriptions*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_LoadCOVSubscriptions_System_Collections_Generic_IEnumerable_System_Guid__" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.LoadCOVSubscriptions(System.Collections.Generic.IEnumerable{System.Guid})">
+  LoadCOVSubscriptions(IEnumerable&lt;Guid&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a list of subscriptions for COV (presentValue).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadCOVSubscriptions(IEnumerable&lt;Guid&gt; ids)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_LoadCOVSubscriptions_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.LoadCOVSubscriptions*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_LoadCOVSubscriptions_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.LoadCOVSubscriptions(System.Guid)">
+  LoadCOVSubscriptions(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a subscription for a COV (presentValue).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadCOVSubscriptions(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StartCollectingAlarmsAsync_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StartCollectingAlarmsAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StartCollectingAlarmsAsync_System_Int32_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StartCollectingAlarmsAsync(System.Int32)">
+  StartCollectingAlarmsAsync(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L788"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start collecting the Alarm events from the stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StartCollectingAlarmsAsync(int maxNumber = 100)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StartCollectingAuditsAsync_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StartCollectingAuditsAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StartCollectingAuditsAsync_System_Int32_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StartCollectingAuditsAsync(System.Int32)">
+  StartCollectingAuditsAsync(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L856"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start collecting the Audit events from the stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StartCollectingAuditsAsync(int maxNumber = 100)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StartReadingCOV_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StartReadingCOV*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StartReadingCOV_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StartReadingCOV(System.Guid)">
+  StartReadingCOV(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L689"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start reading a COV value from the stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartReadingCOV(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StartReadingCOVAsync_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StartReadingCOVAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StartReadingCOVAsync_System_Collections_Generic_IEnumerable_System_Guid__" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StartReadingCOVAsync(System.Collections.Generic.IEnumerable{System.Guid})">
+  StartReadingCOVAsync(IEnumerable&lt;Guid&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L708"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start reading multiple COV values from the stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StartReadingCOVAsync(IEnumerable&lt;Guid&gt; ids)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StartReadingCOVAsync_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StartReadingCOVAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StartReadingCOVAsync_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StartReadingCOVAsync(System.Guid)">
+  StartReadingCOVAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L694"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start reading a COV value from the stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StartReadingCOVAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StopCollectingAlarms_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StopCollectingAlarms*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StopCollectingAlarms_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StopCollectingAlarms(System.Guid)">
+  StopCollectingAlarms(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L819"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stop collecting Alarm events from the stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopCollectingAlarms(Guid requestId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requestId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StopCollectingAudits_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StopCollectingAudits*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StopCollectingAudits_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StopCollectingAudits(System.Guid)">
+  StopCollectingAudits(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L886"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stop collecting Audit events from the stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopCollectingAudits(Guid requestId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requestId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StopReadingCOV_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StopReadingCOV*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_StopReadingCOV_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.StopReadingCOV(System.Guid)">
+  StopReadingCOV(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L729"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stop reading COV Stream Value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopReadingCOV(Guid requestId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requestId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_SubscribeAsync_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.SubscribeAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_SubscribeAsync_System_Guid_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Object_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.SubscribeAsync(System.Guid,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Object)">
+  SubscribeAsync(Guid, string, string, Dictionary&lt;string, string&gt;, dynamic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Subscribe method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; SubscribeAsync(Guid requestId, string method, string relativeUrl, Dictionary&lt;string, string&gt; query = null, dynamic body = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requestId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>relativeUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>query</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>body</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_UnsubscribeAsync_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.UnsubscribeAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_UnsubscribeAsync_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.UnsubscribeAsync(System.Guid)">
+  UnsubscribeAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unsubscribe method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UnsubscribeAsync(Guid requestId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requestId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_AlarmOccurred" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.AlarmOccurred">
+  AlarmOccurred
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L836"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event fired when an Alarm event occurs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;StreamEventArgs&gt; AlarmOccurred</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.StreamEventArgs.html">StreamEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_AuditOccurred" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.AuditOccurred">
+  AuditOccurred
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L902"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event fired when an Audit event occurs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;StreamEventArgs&gt; AuditOccurred</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.StreamEventArgs.html">StreamEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_COVValueChanged" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.COVValueChanged">
+  COVValueChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L753"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event fired when a COV value changes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;StreamEventArgs&gt; COVValueChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.StreamEventArgs.html">StreamEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_StreamServiceProvider_HeartBeatOccurred" data-uid="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.HeartBeatOccurred">
+  HeartBeatOccurred
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L911"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event fired when an HeartBeat occurs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventSourceMessageEventArgs&gt; HeartBeatOccurred</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<span class="xref">EventSourceMessageEventArgs</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Streams/StreamServiceProvider.cs/#L30" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

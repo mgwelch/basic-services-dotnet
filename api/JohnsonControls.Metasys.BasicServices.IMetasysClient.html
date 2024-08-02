@@ -1,0 +1,3002 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IMetasysClient | Metasys Services </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IMetasysClient | Metasys Services ">
+      
+      <meta name="description" content="An HTTP client for consuming the most commonly used endpoints of the Metasys API.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/michaelgwelch/basic-services-dotnet/new/welch/addDocFx/apiSpec/new?filename=JohnsonControls_Metasys_BasicServices_IMetasysClient.md&amp;value=---%0Auid%3A%20JohnsonControls.Metasys.BasicServices.IMetasysClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Metasys Services">
+            Metasys Services
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient">
+
+
+
+  <h1 id="JohnsonControls_Metasys_BasicServices_IMetasysClient" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient" class="text-break">
+Interface IMetasysClient  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="JohnsonControls.html">JohnsonControls</a>.<a class="xref" href="JohnsonControls.Metasys.html">Metasys</a>.<a class="xref" href="JohnsonControls.Metasys.BasicServices.html">BasicServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MetasysServices.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An HTTP client for consuming the most commonly used endpoints of the Metasys API.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMetasysClient : IBasicService</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_Version">IBasicService.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_Culture">IBasicService.Culture</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_GetObjectTypeEnumeration_System_String_">IBasicService.GetObjectTypeEnumeration(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_Localize_System_String_System_Globalization_CultureInfo_">IBasicService.Localize(string, CultureInfo)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Activities_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Activities*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Activities" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Activities">
+  Activities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Services for Activities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IActivityService Activities { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.IActivityService.html">IActivityService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Alarms_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Alarms*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Alarms" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Alarms">
+  Alarms
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Services for Alarms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAlarmsService Alarms { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.IAlarmsService.html">IAlarmsService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Audits_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Audits*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Audits" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Audits">
+  Audits
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Services for Audits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAuditService Audits { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.IAuditService.html">IAuditService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Enumerations_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Enumerations*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Enumerations" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Enumerations">
+  Enumerations
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Services for Enumerations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerationService Enumerations { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.IEnumerationService.html">IEnumerationService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Equipments_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Equipments*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Equipments" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Equipments">
+  Equipments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Services for Equipments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEquipmentService Equipments { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.IEquipmentService.html">IEquipmentService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Hostname_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Hostname*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Hostname" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Hostname">
+  Hostname
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The hostname of Metasys API server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Hostname { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_NetworkDevices_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.NetworkDevices*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_NetworkDevices" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.NetworkDevices">
+  NetworkDevices
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Services for Network Devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INetworkDeviceService NetworkDevices { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.INetworkDeviceService.html">INetworkDeviceService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Spaces_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Spaces*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Spaces" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Spaces">
+  Spaces
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Services for Spaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISpaceService Spaces { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.ISpaceService.html">ISpaceService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Streams_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Streams*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Streams" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Streams">
+  Streams
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Services for Streams.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IStreamService Streams { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.IStreamService.html">IStreamService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Timeout_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Timeout*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Timeout" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Timeout">
+  Timeout
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The timeout of https request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Timeout { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Trends_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Trends*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Trends" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Trends">
+  Trends
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Services for Trends and Samples.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITrendService Trends { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.ITrendService.html">ITrendService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetAccessToken_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetAccessToken*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetAccessToken" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetAccessToken">
+  GetAccessToken()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the current session access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AccessToken GetAccessToken()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.AccessToken.html">AccessToken</a></dt>
+    <dd><p>Current session's Access Token.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetCommandEnumeration_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetCommandEnumeration*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetCommandEnumeration_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetCommandEnumeration(System.String)">
+  GetCommandEnumeration(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to get the enumeration key of a given en-US localized command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCommandEnumeration(string resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The en-US value for the localization resource.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The enumeration key of the en-US command if found, original resource if not.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetCommandEnumeration_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The resource parameter must be the value of a Metasys commandIdEnumSet en-US value,
+otherwise no key will be found.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetCommands_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetCommands*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetCommands_JohnsonControls_Metasys_BasicServices_ObjectId_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetCommands(JohnsonControls.Metasys.BasicServices.ObjectId)">
+  GetCommands(ObjectId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get all available commands given the id of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;Command&gt; GetCommands(ObjectId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Command.html">Command</a>&gt;</dt>
+    <dd><p>List of Commands.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetCommandsAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetCommandsAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetCommandsAsync_JohnsonControls_Metasys_BasicServices_ObjectId_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetCommandsAsync(JohnsonControls.Metasys.BasicServices.ObjectId)">
+  GetCommandsAsync(ObjectId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get all available commands given the id of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;Command&gt;&gt; GetCommandsAsync(ObjectId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Command.html">Command</a>&gt;&gt;</dt>
+    <dd><p>List of Commands.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetEquipment_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetEquipment*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetEquipment" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetEquipment">
+  GetEquipment()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Retrieves a collection of equipment instances.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use EquipmentServiceProvider.Get(int?, int?) instead.&quot;)]
+IEnumerable&lt;MetasysObject&gt; GetEquipment()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetEquipment_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated.</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html#JohnsonControls_Metasys_BasicServices_EquipmentServiceProvider_Get_System_Nullable_System_Int32__System_Nullable_System_Int32__">Get(int?, int?)</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html#JohnsonControls_Metasys_BasicServices_EquipmentServiceProvider_GetAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__">GetAsync(int?, int?)</a> instead.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetEquipmentAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetEquipmentAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetEquipmentAsync" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetEquipmentAsync">
+  GetEquipmentAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Retrieves a collection of equipment instances.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use EquipmentServiceProvider.GetAsync(int?, int?) instead.&quot;)]
+Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetEquipmentAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetEquipmentAsync_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated.</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html#JohnsonControls_Metasys_BasicServices_EquipmentServiceProvider_Get_System_Nullable_System_Int32__System_Nullable_System_Int32__">Get(int?, int?)</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html#JohnsonControls_Metasys_BasicServices_EquipmentServiceProvider_GetAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__">GetAsync(int?, int?)</a> instead.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetEquipmentPoints_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetEquipmentPoints*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetEquipmentPoints_System_Guid_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetEquipmentPoints(System.Guid,System.Boolean)">
+  GetEquipmentPoints(Guid, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Retrieves the collection of points that are defined by the specified equipment instance</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use EquipmentServiceProvider.GetPoints(ObjectId, bool) instead.&quot;)]
+IEnumerable&lt;MetasysPoint&gt; GetEquipmentPoints(Guid equipmentId, bool readAttributeValue = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipmentId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The Guid of the equipment.</p>
+</dd>
+    <dt><code>readAttributeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set to false if you would not read Points Attribute Value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysPoint.html">MetasysPoint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetEquipmentPoints_System_Guid_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html#JohnsonControls_Metasys_BasicServices_EquipmentServiceProvider_GetPoints_JohnsonControls_Metasys_BasicServices_ObjectId_System_Boolean_">GetPoints(ObjectId, bool)</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html#JohnsonControls_Metasys_BasicServices_EquipmentServiceProvider_GetPointsAsync_JohnsonControls_Metasys_BasicServices_ObjectId_System_Boolean_">GetPointsAsync(ObjectId, bool)</a> instead.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetEquipmentPointsAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetEquipmentPointsAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetEquipmentPointsAsync_System_Guid_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetEquipmentPointsAsync(System.Guid,System.Boolean)">
+  GetEquipmentPointsAsync(Guid, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Retrieves the collection of points that are defined by the specified equipment instance</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use EquipmentServiceProvider.GetPointsAsync(ObjectId, bool) instead.&quot;)]
+Task&lt;IEnumerable&lt;MetasysPoint&gt;&gt; GetEquipmentPointsAsync(Guid equipmentId, bool readAttributeValue = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipmentId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The Guid of the equipment.</p>
+</dd>
+    <dt><code>readAttributeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set to false if you would not read Points Attribute Value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysPoint.html">MetasysPoint</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetEquipmentPointsAsync_System_Guid_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html#JohnsonControls_Metasys_BasicServices_EquipmentServiceProvider_GetPoints_JohnsonControls_Metasys_BasicServices_ObjectId_System_Boolean_">GetPoints(ObjectId, bool)</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html#JohnsonControls_Metasys_BasicServices_EquipmentServiceProvider_GetPointsAsync_JohnsonControls_Metasys_BasicServices_ObjectId_System_Boolean_">GetPointsAsync(ObjectId, bool)</a> instead.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDeviceTypes_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetNetworkDeviceTypes*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDeviceTypes" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetNetworkDeviceTypes">
+  GetNetworkDeviceTypes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all available network device types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;MetasysObjectType&gt; GetNetworkDeviceTypes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObjectType.html">MetasysObjectType</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDeviceTypesAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetNetworkDeviceTypesAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDeviceTypesAsync" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetNetworkDeviceTypesAsync">
+  GetNetworkDeviceTypesAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all available network device types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;MetasysObjectType&gt;&gt; GetNetworkDeviceTypesAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObjectType.html">MetasysObjectType</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevices_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetNetworkDevices*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevices_JohnsonControls_Metasys_BasicServices_NetworkDeviceTypeEnum_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetNetworkDevices(JohnsonControls.Metasys.BasicServices.NetworkDeviceTypeEnum)">
+  GetNetworkDevices(NetworkDeviceTypeEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all network devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;MetasysObject&gt; GetNetworkDevices(NetworkDeviceTypeEnum networkDevicetype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkDevicetype</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.NetworkDeviceTypeEnum.html">NetworkDeviceTypeEnum</a></dt>
+    <dd><p>Network Device Type enum</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevices_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetNetworkDevices*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevices_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetNetworkDevices(System.String)">
+  GetNetworkDevices(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Gets all network devices.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GetNetworkDevices(NetworkDeviceTypeEnum) instead.&quot;)]
+IEnumerable&lt;MetasysObject&gt; GetNetworkDevices(string type = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional type number as a string</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevices_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>Note this method has been deprecated.</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevices_JohnsonControls_Metasys_BasicServices_NetworkDeviceTypeEnum_">GetNetworkDevices(NetworkDeviceTypeEnum)</a>
+or <a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevicesAsync_JohnsonControls_Metasys_BasicServices_NetworkDeviceTypeEnum_">GetNetworkDevicesAsync(NetworkDeviceTypeEnum)</a> instead.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevicesAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetNetworkDevicesAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevicesAsync_JohnsonControls_Metasys_BasicServices_NetworkDeviceTypeEnum_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetNetworkDevicesAsync(JohnsonControls.Metasys.BasicServices.NetworkDeviceTypeEnum)">
+  GetNetworkDevicesAsync(NetworkDeviceTypeEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all network devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetNetworkDevicesAsync(NetworkDeviceTypeEnum networkDevicetype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkDevicetype</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.NetworkDeviceTypeEnum.html">NetworkDeviceTypeEnum</a></dt>
+    <dd><p>Network Device Type enum</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevicesAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetNetworkDevicesAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevicesAsync_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetNetworkDevicesAsync(System.String)">
+  GetNetworkDevicesAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Gets all network devices.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GetNetworkDevicesAsync(NetworkDeviceTypeEnum) instead.&quot;)]
+Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetNetworkDevicesAsync(string type = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional type number as a string</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevicesAsync_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>Note this method has been deprecated.</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevices_JohnsonControls_Metasys_BasicServices_NetworkDeviceTypeEnum_">GetNetworkDevices(NetworkDeviceTypeEnum)</a>
+or <a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_GetNetworkDevicesAsync_JohnsonControls_Metasys_BasicServices_NetworkDeviceTypeEnum_">GetNetworkDevicesAsync(NetworkDeviceTypeEnum)</a> instead.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjectIdentifier_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetObjectIdentifier*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjectIdentifier_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetObjectIdentifier(System.String)">
+  GetObjectIdentifier(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given the Item Reference of an object, returns the object identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ObjectId GetObjectIdentifier(string itemReference)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemReference</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>An <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a> for the specified object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjectIdentifier_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The itemReference will be automatically URL encoded.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjectIdentifierAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetObjectIdentifierAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjectIdentifierAsync_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetObjectIdentifierAsync(System.String)">
+  GetObjectIdentifierAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given the Item Reference of an object, returns the object identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ObjectId&gt; GetObjectIdentifierAsync(string itemReference)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemReference</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a>&gt;</dt>
+    <dd><p>An <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a> for the specified object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjectIdentifierAsync_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The itemReference will be automatically URL encoded.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjects_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetObjects*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjects_JohnsonControls_Metasys_BasicServices_ObjectId_System_Int32_System_Boolean_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetObjects(JohnsonControls.Metasys.BasicServices.ObjectId,System.Int32,System.Boolean,System.Boolean)">
+  GetObjects(ObjectId, int, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all child objects given a parent id.
+Level indicates how deep to retrieve objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;MetasysObject&gt; GetObjects(ObjectId id, int levels = 1, bool includeInternalObjects = false, bool includeExtensions = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The ID of the parent object.</p>
+</dd>
+    <dt><code>levels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The depth of the children to retrieve.</p>
+</dd>
+    <dt><code>includeInternalObjects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set it to true to see also internal objects that are not displayed in the Metasys tree.</p>
+</dd>
+    <dt><code>includeExtensions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set it to true to get also the extensions of the object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjects_JohnsonControls_Metasys_BasicServices_ObjectId_System_Int32_System_Boolean_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A level of 1 only retrieves immediate children of the parent object.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjects_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetObjects*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjects_JohnsonControls_Metasys_BasicServices_ObjectId_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetObjects(JohnsonControls.Metasys.BasicServices.ObjectId,System.String)">
+  GetObjects(ObjectId, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all child objects given a parent id and object type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;MetasysObject&gt; GetObjects(ObjectId objectId, string objectType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>objectType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The object type enum set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjectsAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetObjectsAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjectsAsync_JohnsonControls_Metasys_BasicServices_ObjectId_System_Int32_System_Boolean_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetObjectsAsync(JohnsonControls.Metasys.BasicServices.ObjectId,System.Int32,System.Boolean,System.Boolean)">
+  GetObjectsAsync(ObjectId, int, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all child objects given a parent id.
+Level indicates how deep to retrieve objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetObjectsAsync(ObjectId id, int levels = 1, bool includeInternalObjects = false, bool includeExtensions = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The ID of the parent object.</p>
+</dd>
+    <dt><code>levels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The depth of the children to retrieve.</p>
+</dd>
+    <dt><code>includeInternalObjects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set it to true to see also internal objects that are not displayed in the Metasys tree.</p>
+</dd>
+    <dt><code>includeExtensions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set it to true to get also the extensions of the object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjectsAsync_JohnsonControls_Metasys_BasicServices_ObjectId_System_Int32_System_Boolean_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A level of 1 only retrieves immediate children of the parent object.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjectsAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetObjectsAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetObjectsAsync_JohnsonControls_Metasys_BasicServices_ObjectId_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetObjectsAsync(JohnsonControls.Metasys.BasicServices.ObjectId,System.String)">
+  GetObjectsAsync(ObjectId, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all child objects given a parent id and object type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetObjectsAsync(ObjectId objectId, string objectType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>objectType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The object type enum set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetServerTime_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetServerTime*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetServerTime" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetServerTime">
+  GetServerTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the current server time in UTC format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime GetServerTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The current Server time.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd><p>Occurs when it's not possible to read date time from HTTP response.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetServerTimeAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetServerTimeAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetServerTimeAsync" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetServerTimeAsync">
+  GetServerTimeAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L452"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the current server time in UTC format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DateTime&gt; GetServerTimeAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</dt>
+    <dd><p>The current Server time.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd><p>Occurs when it's not possible to read date time from HTTP response.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceChildren_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaceChildren*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceChildren_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaceChildren(System.Guid)">
+  GetSpaceChildren(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Retrieves the collection of spaces that are located within the specified space.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use SpaceServiceProvider.GetChildren(ObjectId) instead.&quot;)]
+IEnumerable&lt;MetasysObject&gt; GetSpaceChildren(Guid spaceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spaceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The GUID of the parent space.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceChildren_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated.</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html#JohnsonControls_Metasys_BasicServices_SpaceServiceProvider_GetChildren_JohnsonControls_Metasys_BasicServices_ObjectId_">GetChildren(ObjectId)</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html#JohnsonControls_Metasys_BasicServices_SpaceServiceProvider_GetChildrenAsync_JohnsonControls_Metasys_BasicServices_ObjectId_">GetChildrenAsync(ObjectId)</a> instead.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceChildrenAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaceChildrenAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceChildrenAsync_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaceChildrenAsync(System.Guid)">
+  GetSpaceChildrenAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Retrieves the collection of spaces that are located within the specified space.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use SpaceServiceProvider.GetChildrenAsync(ObjectId) instead.&quot;)]
+Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetSpaceChildrenAsync(Guid spaceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spaceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The GUID of the parent space.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceChildrenAsync_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated.</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html#JohnsonControls_Metasys_BasicServices_SpaceServiceProvider_GetChildren_JohnsonControls_Metasys_BasicServices_ObjectId_">GetChildren(ObjectId)</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html#JohnsonControls_Metasys_BasicServices_SpaceServiceProvider_GetChildrenAsync_JohnsonControls_Metasys_BasicServices_ObjectId_">GetChildrenAsync(ObjectId)</a> instead.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceEquipment_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaceEquipment*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceEquipment_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaceEquipment(System.Guid)">
+  GetSpaceEquipment(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Retrieves the collection of equipment that serve the specified space.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use EquipmentServiceProvider.GetServingASpace(ObjectId) instead.&quot;)]
+IEnumerable&lt;MetasysObject&gt; GetSpaceEquipment(Guid spaceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spaceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceEquipment_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html#JohnsonControls_Metasys_BasicServices_EquipmentServiceProvider_GetServingASpace_JohnsonControls_Metasys_BasicServices_ObjectId_">GetServingASpace(ObjectId)</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html#JohnsonControls_Metasys_BasicServices_EquipmentServiceProvider_GetServingASpaceAsync_JohnsonControls_Metasys_BasicServices_ObjectId_">GetServingASpaceAsync(ObjectId)</a> instead.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceEquipmentAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaceEquipmentAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceEquipmentAsync_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaceEquipmentAsync(System.Guid)">
+  GetSpaceEquipmentAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Retrieves the collection of equipment that serve the specified space.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use EquipmentServiceProvider.GetServingASpaceAsync(ObjectId) instead.&quot;)]
+Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetSpaceEquipmentAsync(Guid spaceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spaceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceEquipmentAsync_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html#JohnsonControls_Metasys_BasicServices_EquipmentServiceProvider_GetServingASpace_JohnsonControls_Metasys_BasicServices_ObjectId_">GetServingASpace(ObjectId)</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html#JohnsonControls_Metasys_BasicServices_EquipmentServiceProvider_GetServingASpaceAsync_JohnsonControls_Metasys_BasicServices_ObjectId_">GetServingASpaceAsync(ObjectId)</a> instead.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceTypes_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaceTypes*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceTypes" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaceTypes">
+  GetSpaceTypes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Retrieves the collection of all spaces types.</s>
+<remarks>
+<b>This method is deprecated.</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html#JohnsonControls_Metasys_BasicServices_SpaceServiceProvider_GetTypes">GetTypes()</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html#JohnsonControls_Metasys_BasicServices_SpaceServiceProvider_GetTypesAsync">GetTypesAsync()</a> instead.
+</remarks></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;MetasysObjectType&gt; GetSpaceTypes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObjectType.html">MetasysObjectType</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceTypesAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaceTypesAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaceTypesAsync" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaceTypesAsync">
+  GetSpaceTypesAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Retrieves the collection of all spaces types.</s>
+<remarks>
+<b>This method is deprecated.</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html#JohnsonControls_Metasys_BasicServices_SpaceServiceProvider_GetTypes">GetTypes()</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html#JohnsonControls_Metasys_BasicServices_SpaceServiceProvider_GetTypesAsync">GetTypesAsync()</a> instead.
+</remarks></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;MetasysObjectType&gt;&gt; GetSpaceTypesAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObjectType.html">MetasysObjectType</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaces_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaces*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaces_System_Nullable_JohnsonControls_Metasys_BasicServices_SpaceTypeEnum__" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpaces(System.Nullable{JohnsonControls.Metasys.BasicServices.SpaceTypeEnum})">
+  GetSpaces(SpaceTypeEnum?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Retrieves a collection of spaces.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use SpaceServiceProvider.Get(SpaceTypeEnum?, int?, int?, string) instead.&quot;)]
+IEnumerable&lt;MetasysObject&gt; GetSpaces(SpaceTypeEnum? type = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceTypeEnum.html">SpaceTypeEnum</a>?</dt>
+    <dd><p>Optional type ID belonging to SpaceTypeEnum.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpaces_System_Nullable_JohnsonControls_Metasys_BasicServices_SpaceTypeEnum___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html#JohnsonControls_Metasys_BasicServices_SpaceServiceProvider_Get_System_Nullable_JohnsonControls_Metasys_BasicServices_SpaceTypeEnum__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_">Get(SpaceTypeEnum?, int?, int?, string)</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html#JohnsonControls_Metasys_BasicServices_SpaceServiceProvider_GetAsync_System_Nullable_JohnsonControls_Metasys_BasicServices_SpaceTypeEnum__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_">GetAsync(SpaceTypeEnum?, int?, int?, string)</a> instead.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpacesAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpacesAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpacesAsync_System_Nullable_JohnsonControls_Metasys_BasicServices_SpaceTypeEnum__" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.GetSpacesAsync(System.Nullable{JohnsonControls.Metasys.BasicServices.SpaceTypeEnum})">
+  GetSpacesAsync(SpaceTypeEnum?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Retrieves a collection of spaces.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;SpaceServiceProvider.GetAsync(SpaceTypeEnum?, int?, int?, string) instead.&quot;)]
+Task&lt;IEnumerable&lt;MetasysObject&gt;&gt; GetSpacesAsync(SpaceTypeEnum? type = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceTypeEnum.html">SpaceTypeEnum</a>?</dt>
+    <dd><p>Optional type ID belonging to SpaceTypeEnum.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_GetSpacesAsync_System_Nullable_JohnsonControls_Metasys_BasicServices_SpaceTypeEnum___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html#JohnsonControls_Metasys_BasicServices_SpaceServiceProvider_Get_System_Nullable_JohnsonControls_Metasys_BasicServices_SpaceTypeEnum__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_">Get(SpaceTypeEnum?, int?, int?, string)</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html#JohnsonControls_Metasys_BasicServices_SpaceServiceProvider_GetAsync_System_Nullable_JohnsonControls_Metasys_BasicServices_SpaceTypeEnum__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_">GetAsync(SpaceTypeEnum?, int?, int?, string)</a> instead.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadProperty_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.ReadProperty*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadProperty_JohnsonControls_Metasys_BasicServices_ObjectId_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.ReadProperty(JohnsonControls.Metasys.BasicServices.ObjectId,System.String)">
+  ReadProperty(ObjectId, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Read one attribute value given the id of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Variant ReadProperty(ObjectId id, string attributeName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>attributeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.Variant.html">Variant</a></dt>
+    <dd><p>Variant if the attribute exists, null if does not exist.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpTimeoutException.html">MetasysHttpTimeoutException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpNotFoundException.html">MetasysHttpNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysPropertyException.html">MetasysPropertyException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.ReadPropertyAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyAsync_JohnsonControls_Metasys_BasicServices_ObjectId_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.ReadPropertyAsync(JohnsonControls.Metasys.BasicServices.ObjectId,System.String)">
+  ReadPropertyAsync(ObjectId, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Read one attribute value given the id of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Variant&gt; ReadPropertyAsync(ObjectId id, string attributeName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>attributeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Variant.html">Variant</a>&gt;</dt>
+    <dd><p>Variant if the attribute exists, null if does not exist.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpTimeoutException.html">MetasysHttpTimeoutException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpNotFoundException.html">MetasysHttpNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysPropertyException.html">MetasysPropertyException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultiple_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.ReadPropertyMultiple*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_String__" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.ReadPropertyMultiple(System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.ObjectId},System.Collections.Generic.IEnumerable{System.String})">
+  ReadPropertyMultiple(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Read many attribute values given the ids of the objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;VariantMultiple&gt; ReadPropertyMultiple(IEnumerable&lt;ObjectId&gt; ids, IEnumerable&lt;string&gt; attributeNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>attributeNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.VariantMultiple.html">VariantMultiple</a>&gt;</dt>
+    <dd><p>A list of VariantMultiple with all the specified attributes (if existing).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysPropertyException.html">MetasysPropertyException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultiple_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.ReadPropertyMultiple*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultiple_System_Collections_Generic_IEnumerable_System_Guid__System_Collections_Generic_IEnumerable_System_String__" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.ReadPropertyMultiple(System.Collections.Generic.IEnumerable{System.Guid},System.Collections.Generic.IEnumerable{System.String})">
+  ReadPropertyMultiple(IEnumerable&lt;Guid&gt;, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L483"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Read many attribute values given the Guids of the objects.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ReadPropertyMultiple(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;string&gt;) instead.&quot;)]
+IEnumerable&lt;VariantMultiple&gt; ReadPropertyMultiple(IEnumerable&lt;Guid&gt; ids, IEnumerable&lt;string&gt; attributeNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>attributeNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.VariantMultiple.html">VariantMultiple</a>&gt;</dt>
+    <dd><p>A list of VariantMultiple with all the specified attributes (if existing).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultiple_System_Collections_Generic_IEnumerable_System_Guid__System_Collections_Generic_IEnumerable_System_String___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method is deprecated. Please use <a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_String__">ReadPropertyMultiple(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;string&gt;)</a>
+or <a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_String__">ReadPropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;string&gt;)</a> instead.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysPropertyException.html">MetasysPropertyException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultipleAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.ReadPropertyMultipleAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_String__" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.ReadPropertyMultipleAsync(System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.ObjectId},System.Collections.Generic.IEnumerable{System.String})">
+  ReadPropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Read many attribute values given the ids of the objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;VariantMultiple&gt;&gt; ReadPropertyMultipleAsync(IEnumerable&lt;ObjectId&gt; ids, IEnumerable&lt;string&gt; attributeNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>attributeNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.VariantMultiple.html">VariantMultiple</a>&gt;&gt;</dt>
+    <dd><p>A list of VariantMultiple with all the specified attributes (if existing).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysPropertyException.html">MetasysPropertyException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultipleAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.ReadPropertyMultipleAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultipleAsync_System_Collections_Generic_IEnumerable_System_Guid__System_Collections_Generic_IEnumerable_System_String__" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.ReadPropertyMultipleAsync(System.Collections.Generic.IEnumerable{System.Guid},System.Collections.Generic.IEnumerable{System.String})">
+  ReadPropertyMultipleAsync(IEnumerable&lt;Guid&gt;, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Read many attribute values given the Guids of the objects.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ReadPropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;string&gt;) instead.&quot;)]
+Task&lt;IEnumerable&lt;VariantMultiple&gt;&gt; ReadPropertyMultipleAsync(IEnumerable&lt;Guid&gt; ids, IEnumerable&lt;string&gt; attributeNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>attributeNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.VariantMultiple.html">VariantMultiple</a>&gt;&gt;</dt>
+    <dd><p>A list of VariantMultiple with all the specified attributes (if existing).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultipleAsync_System_Collections_Generic_IEnumerable_System_Guid__System_Collections_Generic_IEnumerable_System_String___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method is deprecated. Please use <a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_String__">ReadPropertyMultiple(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;string&gt;)</a>
+or <a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_ReadPropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_String__">ReadPropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;string&gt;)</a> instead.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysPropertyException.html">MetasysPropertyException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Refresh_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Refresh*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_Refresh" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.Refresh">
+  Refresh()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Requests a new access token from the server before the current token expires.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AccessToken Refresh()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.AccessToken.html">AccessToken</a></dt>
+    <dd><p>Access Token.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysTokenException.html">MetasysTokenException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_RefreshAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.RefreshAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_RefreshAsync" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.RefreshAsync">
+  RefreshAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Requests a new access token from the server before the current token expires.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AccessToken&gt; RefreshAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.AccessToken.html">AccessToken</a>&gt;</dt>
+    <dd><p>Access Token.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysTokenException.html">MetasysTokenException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_SendAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.SendAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_SendAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">
+  SendAsync(HttpRequestMessage, HttpCompletionOption, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send an HTTP request as an asynchronous operation.</p>
+<p>
+This method currently only supports 1 value per header rather than multiple. In a future revision, this is planned to be addressed.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption = HttpCompletionOption.ResponseContentRead, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a></dt>
+    <dd><p>The HTTP request message to send.</p>
+</dd>
+    <dt><code>completionOption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcompletionoption">HttpCompletionOption</a></dt>
+    <dd><p>When the operation should complete (as soon as a response is available or after reading the whole response content).</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token to cancel operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage">HttpResponseMessage</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_SendCommand_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.SendCommand*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_SendCommand_JohnsonControls_Metasys_BasicServices_ObjectId_System_String_System_Collections_Generic_IEnumerable_System_Object__" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.SendCommand(JohnsonControls.Metasys.BasicServices.ObjectId,System.String,System.Collections.Generic.IEnumerable{System.Object})">
+  SendCommand(ObjectId, string, IEnumerable&lt;object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send a command to an object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SendCommand(ObjectId id, string command, IEnumerable&lt;object&gt; values = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_SendCommandAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.SendCommandAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_SendCommandAsync_JohnsonControls_Metasys_BasicServices_ObjectId_System_String_System_Collections_Generic_IEnumerable_System_Object__" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.SendCommandAsync(JohnsonControls.Metasys.BasicServices.ObjectId,System.String,System.Collections.Generic.IEnumerable{System.Object})">
+  SendCommandAsync(ObjectId, string, IEnumerable&lt;object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send a command to an object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendCommandAsync(ObjectId id, string command, IEnumerable&lt;object&gt; values = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_TryLogin_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.TryLogin*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_TryLogin_System_String_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.TryLogin(System.String,System.Boolean)">
+  TryLogin(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to login to the given host using Credential Manager and retrieve an access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AccessToken TryLogin(string credManTarget, bool refresh = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>credManTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Credential Manager target where to pick the credentials.</p>
+</dd>
+    <dt><code>refresh</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Flag to set automatic access token refreshing to keep session active.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.AccessToken.html">AccessToken</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_TryLogin_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method can be overridden by extended class with other Credential Manager implementations.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_TryLogin_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.TryLogin*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_TryLogin_System_String_System_String_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.TryLogin(System.String,System.String,System.Boolean)">
+  TryLogin(string, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to login to the given host and retrieve an access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AccessToken TryLogin(string username, string password, bool refresh = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>username</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>refresh</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Flag to set automatic access token refreshing to keep session active.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.AccessToken.html">AccessToken</a></dt>
+    <dd><p>Access Token.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysTokenException.html">MetasysTokenException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_TryLoginAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.TryLoginAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_TryLoginAsync_System_String_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.TryLoginAsync(System.String,System.Boolean)">
+  TryLoginAsync(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to login to the given host using Credential Manager and retrieve an access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AccessToken&gt; TryLoginAsync(string credManTarget, bool refresh = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>credManTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Credential Manager target where to pick the credentials.</p>
+</dd>
+    <dt><code>refresh</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Flag to set automatic access token refreshing to keep session active.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.AccessToken.html">AccessToken</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_TryLoginAsync_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method can be overridden by extended class with other Credential Manager implementations.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_TryLoginAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.TryLoginAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_TryLoginAsync_System_String_System_String_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.TryLoginAsync(System.String,System.String,System.Boolean)">
+  TryLoginAsync(string, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to login to the given host and retrieve an access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AccessToken&gt; TryLoginAsync(string username, string password, bool refresh = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>username</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>refresh</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Flag to set automatic access token refreshing to keep session active.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.AccessToken.html">AccessToken</a>&gt;</dt>
+    <dd><p>Access Token.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysTokenException.html">MetasysTokenException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WriteProperty_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WriteProperty*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WriteProperty_JohnsonControls_Metasys_BasicServices_ObjectId_System_String_System_Object_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WriteProperty(JohnsonControls.Metasys.BasicServices.ObjectId,System.String,System.Object)">
+  WriteProperty(ObjectId, string, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Write a single attribute given the id of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteProperty(ObjectId id, string attributeName, object newValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The id of the attribute</p>
+</dd>
+    <dt><code>attributeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the attribute</p>
+</dd>
+    <dt><code>newValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The new value of the attribute</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyAsync_JohnsonControls_Metasys_BasicServices_ObjectId_System_String_System_Object_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyAsync(JohnsonControls.Metasys.BasicServices.ObjectId,System.String,System.Object)">
+  WritePropertyAsync(ObjectId, string, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Write a single attribute given the id of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task WritePropertyAsync(ObjectId id, string attributeName, object newValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The id of the attribute</p>
+</dd>
+    <dt><code>attributeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the attribute</p>
+</dd>
+    <dt><code>newValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The new value of the attribute</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultiple*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultiple(System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.ObjectId},System.Collections.Generic.Dictionary{System.String,System.Object})">
+  WritePropertyMultiple(IEnumerable&lt;ObjectId&gt;, Dictionary&lt;string, object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Write to many attribute values given the ids of the objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WritePropertyMultiple(IEnumerable&lt;ObjectId&gt; ids, Dictionary&lt;string, object&gt; attributeValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>attributeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>The (attribute, value) pairs.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultiple*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object___" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultiple(System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.ObjectId},System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.Object}})">
+  WritePropertyMultiple(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;(string Attribute, object Value)&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Write to many attribute values given the ids of the objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WritePropertyMultiple(IEnumerable&lt;ObjectId&gt; ids, IEnumerable&lt;(string Attribute, object Value)&gt; attributeValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>attributeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.object-.attribute">Attribute</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.object-.value">Value</a>)&gt;</dt>
+    <dd><p>The (attribute, value) pairs.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultiple*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_System_Collections_Generic_IEnumerable_System_Guid__System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultiple(System.Collections.Generic.IEnumerable{System.Guid},System.Collections.Generic.Dictionary{System.String,System.Object})">
+  WritePropertyMultiple(IEnumerable&lt;Guid&gt;, Dictionary&lt;string, object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Write to many attribute values given the Guids of the objects.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use WritePropertyMultiple(IEnumerable&lt;ObjectId&gt;, Dictionary&lt;string, object&gt;) instead.&quot;)]
+void WritePropertyMultiple(IEnumerable&lt;Guid&gt; ids, Dictionary&lt;string, object&gt; attributeValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>attributeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>The (attribute, value) pairs.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_System_Collections_Generic_IEnumerable_System_Guid__System_Collections_Generic_Dictionary_System_String_System_Object___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated.</b> Please use one of the following instead:
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_Dictionary_System_String_System_Object__">WritePropertyMultiple(IEnumerable&lt;ObjectId&gt;, Dictionary&lt;string, object&gt;)</a>,
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object___">WritePropertyMultiple(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;(string Attribute, object Value)&gt;)</a>,
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_Dictionary_System_String_System_Object__">WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, Dictionary&lt;string, object&gt;)</a>,
+or <a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object___">WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;(string Attribute, object Value)&gt;)</a>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultiple*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_System_Collections_Generic_IEnumerable_System_Guid__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object___" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultiple(System.Collections.Generic.IEnumerable{System.Guid},System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.Object}})">
+  WritePropertyMultiple(IEnumerable&lt;Guid&gt;, IEnumerable&lt;(string Attribute, object Value)&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L503"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Write to many attribute values given the Guids of the objects.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use WritePropertyMultiple(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;string, object&gt;) instead.&quot;)]
+void WritePropertyMultiple(IEnumerable&lt;Guid&gt; ids, IEnumerable&lt;(string Attribute, object Value)&gt; attributeValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>attributeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.object-.attribute">Attribute</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.object-.value">Value</a>)&gt;</dt>
+    <dd><p>The (attribute, value) pairs.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_System_Collections_Generic_IEnumerable_System_Guid__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated.</b> Please use one of the following instead:
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_Dictionary_System_String_System_Object__">WritePropertyMultiple(IEnumerable&lt;ObjectId&gt;, Dictionary&lt;string, object&gt;)</a>,
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object___">WritePropertyMultiple(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;(string Attribute, object Value)&gt;)</a>,
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_Dictionary_System_String_System_Object__">WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, Dictionary&lt;string, object&gt;)</a>,
+or <a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object___">WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;(string Attribute, object Value)&gt;)</a>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultipleAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultipleAsync(System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.ObjectId},System.Collections.Generic.Dictionary{System.String,System.Object})">
+  WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, Dictionary&lt;string, object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Write to many attribute values given the ids of the objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt; ids, Dictionary&lt;string, object&gt; attributeValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>attributeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>The (attribute, value) pairs.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultipleAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object___" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultipleAsync(System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.ObjectId},System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.Object}})">
+  WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;(string Attribute, object Value)&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Write asynchronously to many attribute values given the ids of the objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt; ids, IEnumerable&lt;(string Attribute, object Value)&gt; attributeValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>attributeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.object-.attribute">Attribute</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.object-.value">Value</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultipleAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_System_Guid__System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultipleAsync(System.Collections.Generic.IEnumerable{System.Guid},System.Collections.Generic.Dictionary{System.String,System.Object})">
+  WritePropertyMultipleAsync(IEnumerable&lt;Guid&gt;, Dictionary&lt;string, object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L521"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Write to many attribute values given the Guids of the objects.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use WritePropertyMultiple(IEnumerable&lt;ObjectId&gt;, Dictionary&lt;string, object&gt;) instead.&quot;)]
+Task WritePropertyMultipleAsync(IEnumerable&lt;Guid&gt; ids, Dictionary&lt;string, object&gt; attributeValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>attributeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>The (attribute, value) pairs.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_System_Guid__System_Collections_Generic_Dictionary_System_String_System_Object___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated.</b> Please use one of the following instead:
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_Dictionary_System_String_System_Object__">WritePropertyMultiple(IEnumerable&lt;ObjectId&gt;, Dictionary&lt;string, object&gt;)</a>,
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object___">WritePropertyMultiple(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;(string Attribute, object Value)&gt;)</a>,
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_Dictionary_System_String_System_Object__">WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, Dictionary&lt;string, object&gt;)</a>,
+or <a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object___">WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;(string Attribute, object Value)&gt;)</a>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultipleAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_System_Guid__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object___" data-uid="JohnsonControls.Metasys.BasicServices.IMetasysClient.WritePropertyMultipleAsync(System.Collections.Generic.IEnumerable{System.Guid},System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.Object}})">
+  WritePropertyMultipleAsync(IEnumerable&lt;Guid&gt;, IEnumerable&lt;(string Attribute, object Value)&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><s>Write asynchronously to many attribute values given the Guids of the objects.</s></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;string, object&gt;) instead.&quot;)]
+Task WritePropertyMultipleAsync(IEnumerable&lt;Guid&gt; ids, IEnumerable&lt;(string Attribute, object Value)&gt; attributeValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>attributeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.object-.attribute">Attribute</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.object-.value">Value</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_System_Guid__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><b>This method is deprecated.</b> Please use
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_Dictionary_System_String_System_Object__">WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, Dictionary&lt;string, object&gt;)</a> or
+<a class="xref" href="JohnsonControls.Metasys.BasicServices.IMetasysClient.html#JohnsonControls_Metasys_BasicServices_IMetasysClient_WritePropertyMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_Object___">WritePropertyMultipleAsync(IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;(string Attribute, object Value)&gt;)</a>
+instead.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Interfaces/IMetasysClient.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

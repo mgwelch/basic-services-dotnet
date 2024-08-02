@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Changelog | Metasys Services </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Changelog | Metasys Services ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/CHANGELOG.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Metasys Services">
+            Metasys Services
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<p>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
+and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2 id="unreleased"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v6.0.4...HEAD">Unreleased</a></h2>
+<h2 id="604---2024-07-25"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v6.0.3...v6.0.4">6.0.4</a> - 2024-07-25</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Fixed issue related to the method 'GetObjects()' (specifically related to the attribute 'Classification')</li>
+<li>Updated the dictionaries of all the supported locales.</li>
+<li>Reviewed and cleaned up unnecessary code.</li>
+</ul>
+<h2 id="603---2024-04-11"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v6.0.2...v6.0.3">6.0.3</a> - 2024-04-11</h2>
+<h3 id="changed-1">Changed</h3>
+<ul>
+<li>Fixed issue related to the method 'GetObjects()' (the parameter 'levels' was not properly handled)</li>
+<li>Enhanced methods 'ReadProperty()' and 'ReadPropertyMultiple()'</li>
+<li>Enhanced the TestClient app in order to support the latest changes.</li>
+</ul>
+<h2 id="602---2024-03-20"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v6.0.1...v6.0.2">6.0.2</a> - 2024-03-20</h2>
+<h3 id="changed-2">Changed</h3>
+<ul>
+<li>Fixed issue related to the method that is retrieving the list of Activities when API v4 was selected.</li>
+<li>Added the new parameters of the method 'alarms.get()' supported from API v4 on.</li>
+<li>Enhanced the TestClient app in order to support the latest changes.</li>
+</ul>
+<h2 id="601---2024-01-15"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v6.0.0...v6.0.1">6.0.1</a> - 2024-01-15</h2>
+<h3 id="changed-3">Changed</h3>
+<ul>
+<li>Made changes to MetasysObject to fix an issue related to the property ObjectType that wasn't properly populated.</li>
+<li>Added a few comments and removed some unnecessary code.</li>
+<li>Fixed a minor issue in the TestApp project.</li>
+</ul>
+<h2 id="600---2023-12-05"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v5.0.3...v6.0.0">6.0.0</a> - 2023-12-05</h2>
+<p>The main purpose of this release is to add the support for Metasys API v5 (provided by Metasys 13) as well as many enhancements of the library.</p>
+<h3 id="added">Added</h3>
+<p>Specifically, as example, it provides the new 'Activities' service including some new methods as:</p>
+<ul>
+<li>Activities.Get(ActivityFilter activityFilter)</li>
+<li>Activities.GetSync(ActivityFilter activityFilter)</li>
+<li>Activities.ActionMultiple(IEnumerable requests)</li>
+<li>Activities.ActionMultipleAsync(IEnumerable requests)</li>
+</ul>
+<p>It also provides the corresponding new methods via COM component.</p>
+<ul>
+<li>GetActivities(IComActivityFilter activityFilter)</li>
+<li>ActivityActionMultiple(string[] requestParams)</li>
+</ul>
+<p>Also, it includes the possibility to handle a few extra parameters as, for example, the 'timeout' for https requests as well as the 'page', 'pageSize' and 'sort' for the method to retrieve the spaces.</p>
+<h2 id="503---2023-02-15"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v5.0.2...v5.0.3">5.0.3</a> - 2023-02-15</h2>
+<h3 id="added-1">Added</h3>
+<p>Added the new methods:</p>
+<ul>
+<li>GetObjects(Guid objectId, string objectType)</li>
+<li>GetObjectsAsync(Guid objectId, string objectType)</li>
+</ul>
+<p>Added the related method to the COM component:</p>
+<ul>
+<li>GetObjects(string id, string type)</li>
+</ul>
+<h2 id="502---2023-02-07"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v5.0.1...v5.0.2">5.0.2</a> - 2023-02-07</h2>
+<h3 id="added-2">Added</h3>
+<ul>
+<li>Added the support for 'Ad-Hoc' calls.</li>
+</ul>
+<h3 id="changed-4">Changed</h3>
+<ul>
+<li>Updated reference to Newtonsoft.Json v13.0.2 (and removes a few unused references).</li>
+</ul>
+<h2 id="501---2022-11-09"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v5.0.0...v5.0.1">5.0.1</a> - 2022-11-09</h2>
+<h3 id="changed-5">Changed</h3>
+<ul>
+<li>Modified the default value of the parameter 'pageSize' from 100 to 1000.</li>
+<li>Modified the method Equipments.Get() in order to add a few optional parameters as 'page' and 'pageSize'.</li>
+</ul>
+<h2 id="500---2022-06-01"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v4.2.0...v5.0.0">5.0.0</a> - 2022-06-01</h2>
+<h3 id="added-3">Added</h3>
+<ul>
+<li>Support to Metasys API v4 (provided by Metasys 12).</li>
+<li>Added new Alarm service methods: Alarms.Acknowledge, Alarms.Discard.</li>
+<li>Added new Enumeration service and related methods: Enumerations.Get, Enumerations.Create, Enumerations.GetValues, Enumerations.Edit, Enumerations.Replace, Enumerations.Delete.</li>
+<li>Added new Equipment service and related methods: Equipments.Get, Equipments.FindById, Equipments.GetServedByEquipment, Equipments.GetPoint, Equipments.GetServingASpace, Equipments.GetHostedByNetworkDevice, Equipments.GetServingAnEquipment.</li>
+<li>Added new NetworkDevice service and related methods: NetworkDevices.Get, NetworkDevices.GetTypes, NetworkDevices.FindById, NetworkDevices.GetHostingAnEquipment, NetworkDevices.GetChildren, NetworkDevices.GetServingASpace.</li>
+<li>Added new Space service and related methods: Spaces.Get, Spaces.GetChildren, Spaces.GetTypes, Spaces.FindById, Spaces.GetServedByEquipment, Spaces.GetServedByNetworkDevice.</li>
+<li>Added new Stream service and related methods: StartReadingCOV, StopReadingCOV, Streams.GetCOV, Streams.StartCollectingAlarms, Streams.StopCollectingAlarms, Streams.GetAlarmEvents, Streams.StartCollectingAudits, Streams.StopCollectingAudits, Streams.GetAuditEvents, Streams.KeepAlive.</li>
+<li>Added a new specific exception to report when a method is not supported by the specified API version.</li>
+<li>Added a new TestClient application to show how to use all the provided methods.</li>
+</ul>
+<h3 id="changed-6">Changed</h3>
+<ul>
+<li>Updated the file 'MetasysApiTest.xlsm' to shown examples of the new methods.</li>
+<li>Modified the following existing methods to support API v4: Alarms.Get, Alarms.FindById, Alarms.GetForNetworkDevice, Alarms.GetForObject, Alarms.GetAnnotations, Audits.Get, Audits.FindById, Audits.GetForObject, Audits.GetAnnotations, Audits.Discard, Audits.DiscardMultiple.</li>
+</ul>
+<h3 id="deprecated">Deprecated</h3>
+<ul>
+<li>Deprecated the following existing methods: GetEquipmentPoints, GetNetworkDevices, GetEquipment, GetSpaceEquipment, GetNetworkDevices, GetNetworkDeviceTypes, GetSpaces, GetSpaceChildren, GetSpaceTypes. These methods have been replaced by the equivalent ones provided by the different services.</li>
+</ul>
+<h2 id="420---2020-10-20"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v4.1.0...v4.2.0">4.2.0</a> - 2020-10-20</h2>
+<h3 id="added-4">Added</h3>
+<ul>
+<li>Added new method AddAuditAnnotationMultiple (COM) to add many audit annotations in one call.</li>
+<li>Added the new method DiscardAuditMultiple (COM) to discard many audits in one call.</li>
+<li>Added a new specific exception to report when a method is not supported by the specified API version.</li>
+</ul>
+<h3 id="changed-7">Changed</h3>
+<ul>
+<li>Updated the file 'MetasysApiTest.xlsm' to shown examples of the new methods.</li>
+<li>Updated Id for Equipment and Space examples</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Issue in the method GetSampleAsync (due to v3 changes)</li>
+</ul>
+<h2 id="410---2020-07-24"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v4.0.0...v4.1.0">4.1.0</a> - 2020-07-24</h2>
+<h3 id="added-5">Added</h3>
+<ul>
+<li>Translations for Fully Qualified Enum Attributes returned by API v3 (for Alarms and Audits)</li>
+<li>The new method GetServerTime</li>
+<li>A new enumeration set for ActionType</li>
+<li>A new enumeration set for OriginApplication</li>
+<li>A new enumeration set for ClassLevel</li>
+<li>A new enumeration set for NetworkDeviceType</li>
+<li>Added AuditSignature and LegacyInfo strong typed objects for Audits (.Net and COM)</li>
+<li>Added a few new Test Cases (mainly for v3)</li>
+</ul>
+<h3 id="changed-8">Changed</h3>
+<ul>
+<li>Handled single values scenario for PreData and PostData (for Audits)</li>
+<li>Modified the method GetnetworkDevices to accept the new NetworkDeviceType enumeration as parameter</li>
+<li>Modified the AuditFilter object to accept the new enumeration sets as paramenters</li>
+<li>Modified Equals and GetHashCode methods in a few class as Alarm, Audit, AuditData and LegacyData</li>
+<li>Removed priority from write methods in Excel app</li>
+<li>Updated Id for Equipment and Space examples</li>
+</ul>
+<h3 id="fixed-1">Fixed</h3>
+<ul>
+<li>Issue in the parameters passed to the SendCommands method (due to v3 changes)</li>
+<li>Issue in FindById method (for Alarms and Audits) due to difference in the object structure of v3</li>
+<li>Issue is the response parsing of GetCommands method (when using v3)</li>
+</ul>
+<h2 id="400---2020-06-19"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v3.5.1...v4.0.0">4.0.0</a> - 2020-06-19</h2>
+<h3 id="added-6">Added</h3>
+<ul>
+<li>Support to API v3 (pre-release)</li>
+<li>GetBatchRequestAsync, PutBatchRequestAsync, PostBatchRequestAsync methods to support Objects batch endpoint of v3</li>
+<li>Support for Batch request on ReadPropertyMultiple</li>
+<li>Support for Batch request on AddAnnotationMultiple (for Audits)</li>
+<li>Support for Batch request on DiscardMultiple (for Audits)</li>
+<li>Public setter for ApiVersion and Hostname</li>
+<li>Overload for WritePropertyMultiple that takes a dictionary of key/value pairs</li>
+<li>Support to fully qualified enums of v3 (Sample, Alarm, Audit)</li>
+<li>Helpers FindByName, FindByID, FindByShortName to work with MetasysObject, MetasysPoint, Variant, VariantMultiple collections</li>
+<li>Support for the method GetAnnotations (for Alarms)</li>
+<li>Support for the methods GetAnnotations, AddAnnotation, Discard (for Audits)</li>
+<li>Added the new class ResourceManager to support the static methods: Localize, GetCommandEnumeration and GetObjectTypeEnumeration</li>
+</ul>
+<h3 id="changed-9">Changed</h3>
+<ul>
+<li>Simplified methods and models names of Alarm and Audit service</li>
+<li>PostBatchRequestAsync method to support Objects batch endpoint of v3</li>
+<li>Support for Batch request on ReadPropertyMultiple</li>
+<li>Renamed Point class in MetasysPoint</li>
+<li>Renamed Attribute class in MetasysClass</li>
+<li>Renamed Variants property of VariantMultiple in Values</li>
+<li>Modified the Localize method that now uses the new class ResourceManager</li>
+</ul>
+<h2 id="351---2020-05-18"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v3.5.0...v3.5.1">3.5.1</a> - 2020-05-18</h2>
+<h3 id="fixed-2">Fixed</h3>
+<ul>
+<li>Fixed issue of silent thread termination on custom SynchronizationContext for async methods</li>
+<li>Fixed parsing of type parameter for COM GetSpaces and added COM GetSpaceChildren method</li>
+</ul>
+<h2 id="350---2020-05-15"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v3.4.0...v3.5.0">3.5.0</a> - 2020-05-15</h2>
+<h3 id="added-7">Added</h3>
+<ul>
+<li>GetSpaceChildren method</li>
+<li>SpaceType enum</li>
+<li>Set AccessToken method</li>
+<li>Issuer and IssuedTo properties for AccessToken</li>
+<li>TypeUrl property for MetasysObject</li>
+<li>Category property for MetasysObject</li>
+<li>ToString with JSON format for output objects</li>
+</ul>
+<h2 id="340---2020-03-26"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v3.3.0...v3.4.0">3.4.0</a> - 2020-03-26</h2>
+<h3 id="added-8">Added</h3>
+<ul>
+<li>Added ReadAttributeValue option flag for GetEquipmentPoints method.</li>
+</ul>
+<h2 id="330---2020-03-12"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v3.2.0...v3.3.0">3.3.0</a> - 2020-03-12</h2>
+<h3 id="added-9">Added</h3>
+<ul>
+<li>Added logClientErrors flag for MetasysClient constructor.</li>
+<li>Added logClientErrors flag for GetLegacyClient method.</li>
+<li>Added CredManException when an error occurs while retrieving Credential Manager target.</li>
+<li>Runtime errors are now automatically written to a dedicated text file.</li>
+</ul>
+<h2 id="320---2020-02-28"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v3.1.0...v3.2.0">3.2.0</a> - 2020-02-28</h2>
+<h3 id="added-10">Added</h3>
+<ul>
+<li>Added support to Credential Manager for TryLogin method of MetasysClient.</li>
+<li>Added support to Credential Manager for TryLoginWithCredMan method of LegacyMetasysClient.</li>
+<li>Added CredentialUtil to retrieve/set user and passwords from the secure vault.</li>
+<li>Added Log4Net support in MetasysClient and LegacyMetasysClient.</li>
+<li>Added Log4Net support in Basic Services as a facility for the host application (see example apps for usage).</li>
+</ul>
+<h3 id="fixed-3">Fixed</h3>
+<ul>
+<li>Mapping with ComPoint in LegacyClient and SpaceEquipment method.</li>
+</ul>
+<h2 id="310---2020-02-13"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/3.0.0...v3.1.0">3.1.0</a> - 2020-02-13</h2>
+<h3 id="added-11">Added</h3>
+<ul>
+<li>Dedicated Service Provider for Audits.</li>
+<li>Get Audits method with filter object.</li>
+<li>Get Single Audit by guid method.</li>
+<li>Get Audits for a specific object method.</li>
+</ul>
+<h3 id="fixed-4">Fixed</h3>
+<ul>
+<li>Empty Guid check on Get Equipment points.</li>
+</ul>
+<h2 id="300---2020-01-30"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v2.3.0...3.0.0">3.0.0</a> - 2020-01-30</h2>
+<h3 id="added-12">Added</h3>
+<ul>
+<li>Dedicated Service Provider for Trends</li>
+<li>Get Trended Attributes method for a specific object.</li>
+<li>Get Samples for a specific object given the attribute ID and the Time filter.</li>
+</ul>
+<h3 id="changed-10">Changed</h3>
+<ul>
+<li>Alarms services are now exposed by a dedicated Alarms provider of MetasysClient class.</li>
+<li>GetAlarms methods now returns a PagedResult of type AlarmItemProvider.</li>
+<li>GetSingleAlarm, GetAlarmsForAnObject, GetAlarmsForNetworkDevice methods now accept Guid object as input in Metasys Services.</li>
+</ul>
+<h3 id="fixed-5">Fixed</h3>
+<ul>
+<li>COM methods for Alarms accept input filter object and return results using proper mapping.</li>
+</ul>
+<h2 id="230---2020-01-20"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v2.0.0...v2.3.0">2.3.0</a> - 2020-01-20</h2>
+<h3 id="added-13">Added</h3>
+<ul>
+<li>Get Alarms method with filter object.</li>
+<li>Get Single Alarm by guid method.</li>
+<li>Get Alarms for a specific object or network devices methods.</li>
+</ul>
+<h2 id="200---2019-11-26"><a href="https://github.com/metasys-server/basic-services-dotnet/compare/v1.0.0...v2.0.0">2.0.0</a> - 2019-11-26</h2>
+<h3 id="added-14">Added</h3>
+<ul>
+<li>Get Spaces, Get Space Types and Get Equipment methods.</li>
+<li>Get Space Equipment and GetEquipment Points methods.</li>
+<li>Caching for Get Object Identifier.</li>
+</ul>
+<h3 id="changed-11">Changed</h3>
+<ul>
+<li>MetasysHttpNotFoundException is raised when attempt to read from a nonexistent resource. ReadProperty and GetObjectIdentifier methods do not use nullable return type anymore.</li>
+<li>Factory for COM: GetLegacyClient is now the main method to get the instance.</li>
+<li>Host parameter was moved from TryLogin method to GetLegacyClient Factory.</li>
+</ul>
+<h2 id="100---2019-10-31"><a href="https://github.com/metasys-server/basic-services-dotnet/releases/tag/v1.0.0">1.0.0</a> - 2019-10-31</h2>
+<p>First Release.</p>
+<h3 id="added-15">Added</h3>
+<ul>
+<li>MetasysClient to perform basic Http requests on a Metasys server.</li>
+<li>LegacyMetasysClient for compatibility with COM services.</li>
+<li>Automatic enumeration translations for supported languages.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/CHANGELOG.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,795 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IAlarmsService | Metasys Services </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IAlarmsService | Metasys Services ">
+      
+      <meta name="description" content="Defines method to provide alarm infos for endpoints of the Metasys Alarm API.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/michaelgwelch/basic-services-dotnet/new/welch/addDocFx/apiSpec/new?filename=JohnsonControls_Metasys_BasicServices_IAlarmsService.md&amp;value=---%0Auid%3A%20JohnsonControls.Metasys.BasicServices.IAlarmsService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Metasys Services">
+            Metasys Services
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService">
+
+
+
+  <h1 id="JohnsonControls_Metasys_BasicServices_IAlarmsService" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService" class="text-break">
+Interface IAlarmsService  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="JohnsonControls.html">JohnsonControls</a>.<a class="xref" href="JohnsonControls.Metasys.html">Metasys</a>.<a class="xref" href="JohnsonControls.Metasys.BasicServices.html">BasicServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MetasysServices.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines method to provide alarm infos for endpoints of the Metasys Alarm API.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAlarmsService : IBasicService</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_Version">IBasicService.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_Culture">IBasicService.Culture</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_GetObjectTypeEnumeration_System_String_">IBasicService.GetObjectTypeEnumeration(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_Localize_System_String_System_Globalization_CultureInfo_">IBasicService.Localize(string, CultureInfo)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_Acknowledge_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.Acknowledge*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_Acknowledge_System_Guid_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.Acknowledge(System.Guid,System.String)">
+  Acknowledge(Guid, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set an Alarm as 'acknowledged'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Acknowledge(Guid alarmId, string annotationText = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alarmId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The identifier of the alarm.</p>
+</dd>
+    <dt><code>annotationText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Annotation Text (optional).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_AcknowledgeAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.AcknowledgeAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_AcknowledgeAsync_System_Guid_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.AcknowledgeAsync(System.Guid,System.String)">
+  AcknowledgeAsync(Guid, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set an Alarm as 'acknowledged'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AcknowledgeAsync(Guid alarmId, string annotationText = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alarmId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The identifier of the alarm.</p>
+</dd>
+    <dt><code>annotationText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Annotation Text (optional).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_Discard_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.Discard*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_Discard_System_Guid_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.Discard(System.Guid,System.String)">
+  Discard(Guid, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set an Alarm as 'discarded'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Discard(Guid alarmId, string annotationText = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alarmId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The identifier of the alarm.</p>
+</dd>
+    <dt><code>annotationText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Annotation Text (optional).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_DiscardAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.DiscardAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_DiscardAsync_System_Guid_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.DiscardAsync(System.Guid,System.String)">
+  DiscardAsync(Guid, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set an Alarm as 'discarded'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DiscardAsync(Guid alarmId, string annotationText = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alarmId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The identifier of the alarm.</p>
+</dd>
+    <dt><code>annotationText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Annotation Text (optional).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_FindById_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.FindById*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_FindById_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.FindById(System.Guid)">
+  FindById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the specified alarm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Alarm FindById(Guid alarmId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alarmId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The identifier of the alarm.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.Alarm.html">Alarm</a></dt>
+    <dd><p>The specified alarm details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_FindByIdAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.FindByIdAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_FindByIdAsync_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.FindByIdAsync(System.Guid)">
+  FindByIdAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the specified alarm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Alarm&gt; FindByIdAsync(Guid alarmId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alarmId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The identifier of the alarm.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Alarm.html">Alarm</a>&gt;</dt>
+    <dd><p>The specified alarm details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_Get_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.Get*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_Get_JohnsonControls_Metasys_BasicServices_AlarmFilter_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.Get(JohnsonControls.Metasys.BasicServices.AlarmFilter)">
+  Get(AlarmFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of alarms using API v2 or v3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PagedResult&lt;Alarm&gt; Get(AlarmFilter alarmFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alarmFilter</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AlarmFilter.html">AlarmFilter</a></dt>
+    <dd><p>The alarm model to filter alarms.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Alarm.html">Alarm</a>&gt;</dt>
+    <dd><p>The list of alarms with details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_Get_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.Get*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_Get_JohnsonControls_Metasys_BasicServices_AlarmFilterV4Plus_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.Get(JohnsonControls.Metasys.BasicServices.AlarmFilterV4Plus)">
+  Get(AlarmFilterV4Plus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of alarms from API v4 on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PagedResult&lt;Alarm&gt; Get(AlarmFilterV4Plus alarmFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alarmFilter</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AlarmFilterV4Plus.html">AlarmFilterV4Plus</a></dt>
+    <dd><p>The alarm model to filter alarms.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Alarm.html">Alarm</a>&gt;</dt>
+    <dd><p>The list of alarms with details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetAnnotations_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetAnnotations*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetAnnotations_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetAnnotations(System.Guid)">
+  GetAnnotations(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve a collection of Alarm Annotations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;AlarmAnnotation&gt; GetAnnotations(Guid alarmId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alarmId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.AlarmAnnotation.html">AlarmAnnotation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetAnnotationsAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetAnnotationsAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetAnnotationsAsync_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetAnnotationsAsync(System.Guid)">
+  GetAnnotationsAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve a collection of Alarm Annotations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;AlarmAnnotation&gt;&gt; GetAnnotationsAsync(Guid alarmId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alarmId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.AlarmAnnotation.html">AlarmAnnotation</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetAsync_JohnsonControls_Metasys_BasicServices_AlarmFilter_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetAsync(JohnsonControls.Metasys.BasicServices.AlarmFilter)">
+  GetAsync(AlarmFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of alarms using API v2 or v3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PagedResult&lt;Alarm&gt;&gt; GetAsync(AlarmFilter alarmFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alarmFilter</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AlarmFilter.html">AlarmFilter</a></dt>
+    <dd><p>The alarm model to filter alarms.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Alarm.html">Alarm</a>&gt;&gt;</dt>
+    <dd><p>The list of alarms with details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetAsync_JohnsonControls_Metasys_BasicServices_AlarmFilterV4Plus_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetAsync(JohnsonControls.Metasys.BasicServices.AlarmFilterV4Plus)">
+  GetAsync(AlarmFilterV4Plus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of alarms from API v4 on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PagedResult&lt;Alarm&gt;&gt; GetAsync(AlarmFilterV4Plus alarmFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alarmFilter</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AlarmFilterV4Plus.html">AlarmFilterV4Plus</a></dt>
+    <dd><p>The alarm model to filter alarms.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Alarm.html">Alarm</a>&gt;&gt;</dt>
+    <dd><p>The list of alarms with details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetForNetworkDevice_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetForNetworkDevice*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetForNetworkDevice_JohnsonControls_Metasys_BasicServices_ObjectId_JohnsonControls_Metasys_BasicServices_AlarmFilter_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetForNetworkDevice(JohnsonControls.Metasys.BasicServices.ObjectId,JohnsonControls.Metasys.BasicServices.AlarmFilter)">
+  GetForNetworkDevice(ObjectId, AlarmFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of alarms for the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PagedResult&lt;Alarm&gt; GetForNetworkDevice(ObjectId networkDeviceId, AlarmFilter alarmFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkDeviceId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The identifier of the network device.</p>
+</dd>
+    <dt><code>alarmFilter</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AlarmFilter.html">AlarmFilter</a></dt>
+    <dd><p>The filter to be applied to alarms list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Alarm.html">Alarm</a>&gt;</dt>
+    <dd><p>The list of alarms with details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetForNetworkDeviceAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetForNetworkDeviceAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetForNetworkDeviceAsync_JohnsonControls_Metasys_BasicServices_ObjectId_JohnsonControls_Metasys_BasicServices_AlarmFilter_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetForNetworkDeviceAsync(JohnsonControls.Metasys.BasicServices.ObjectId,JohnsonControls.Metasys.BasicServices.AlarmFilter)">
+  GetForNetworkDeviceAsync(ObjectId, AlarmFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of alarms for the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PagedResult&lt;Alarm&gt;&gt; GetForNetworkDeviceAsync(ObjectId networkDeviceId, AlarmFilter alarmFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkDeviceId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The identifier of the network device.</p>
+</dd>
+    <dt><code>alarmFilter</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AlarmFilter.html">AlarmFilter</a></dt>
+    <dd><p>The filter to be applied to alarms list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Alarm.html">Alarm</a>&gt;&gt;</dt>
+    <dd><p>The list of alarms with details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetForObject_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetForObject*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetForObject_JohnsonControls_Metasys_BasicServices_ObjectId_JohnsonControls_Metasys_BasicServices_AlarmFilter_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetForObject(JohnsonControls.Metasys.BasicServices.ObjectId,JohnsonControls.Metasys.BasicServices.AlarmFilter)">
+  GetForObject(ObjectId, AlarmFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of alarms for the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PagedResult&lt;Alarm&gt; GetForObject(ObjectId objectId, AlarmFilter alarmFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The identifier of the object.</p>
+</dd>
+    <dt><code>alarmFilter</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AlarmFilter.html">AlarmFilter</a></dt>
+    <dd><p>The filter to be applied to alarms list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Alarm.html">Alarm</a>&gt;</dt>
+    <dd><p>The list of alarms with details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetForObjectAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetForObjectAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAlarmsService_GetForObjectAsync_JohnsonControls_Metasys_BasicServices_ObjectId_JohnsonControls_Metasys_BasicServices_AlarmFilter_" data-uid="JohnsonControls.Metasys.BasicServices.IAlarmsService.GetForObjectAsync(JohnsonControls.Metasys.BasicServices.ObjectId,JohnsonControls.Metasys.BasicServices.AlarmFilter)">
+  GetForObjectAsync(ObjectId, AlarmFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of alarms for the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PagedResult&lt;Alarm&gt;&gt; GetForObjectAsync(ObjectId objectId, AlarmFilter alarmFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The identifier of the object.</p>
+</dd>
+    <dt><code>alarmFilter</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AlarmFilter.html">AlarmFilter</a></dt>
+    <dd><p>The filter to be applied to alarms list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Alarm.html">Alarm</a>&gt;&gt;</dt>
+    <dd><p>The list of alarms with details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Alarms/IAlarmService.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

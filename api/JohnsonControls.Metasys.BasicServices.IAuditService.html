@@ -1,0 +1,809 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IAuditService | Metasys Services </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IAuditService | Metasys Services ">
+      
+      <meta name="description" content="Defines method to provide audit infos for endpoints of the Metasys Audit API.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/michaelgwelch/basic-services-dotnet/new/welch/addDocFx/apiSpec/new?filename=JohnsonControls_Metasys_BasicServices_IAuditService.md&amp;value=---%0Auid%3A%20JohnsonControls.Metasys.BasicServices.IAuditService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Metasys Services">
+            Metasys Services
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="JohnsonControls.Metasys.BasicServices.IAuditService">
+
+
+
+  <h1 id="JohnsonControls_Metasys_BasicServices_IAuditService" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService" class="text-break">
+Interface IAuditService  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="JohnsonControls.html">JohnsonControls</a>.<a class="xref" href="JohnsonControls.Metasys.html">Metasys</a>.<a class="xref" href="JohnsonControls.Metasys.BasicServices.html">BasicServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MetasysServices.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines method to provide audit infos for endpoints of the Metasys Audit API.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAuditService : IBasicService</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_Version">IBasicService.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_Culture">IBasicService.Culture</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_GetObjectTypeEnumeration_System_String_">IBasicService.GetObjectTypeEnumeration(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.IBasicService.html#JohnsonControls_Metasys_BasicServices_IBasicService_Localize_System_String_System_Globalization_CultureInfo_">IBasicService.Localize(string, CultureInfo)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_AddAnnotation_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.AddAnnotation*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_AddAnnotation_System_Guid_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.AddAnnotation(System.Guid,System.String)">
+  AddAnnotation(Guid, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add an Annotation to the specified Audit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddAnnotation(Guid id, string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The identifier of the Audit.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text of the Annotation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysUnsupportedApiVersion.html">MetasysUnsupportedApiVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_AddAnnotationAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.AddAnnotationAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_AddAnnotationAsync_System_Guid_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.AddAnnotationAsync(System.Guid,System.String)">
+  AddAnnotationAsync(Guid, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add an Annotation to the specified Audit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddAnnotationAsync(Guid id, string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The identifier of the Audit.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text of the Annotation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysUnsupportedApiVersion.html">MetasysUnsupportedApiVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_AddAnnotationMultiple_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.AddAnnotationMultiple*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_AddAnnotationMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_BatchRequestParam__" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.AddAnnotationMultiple(System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.BatchRequestParam})">
+  AddAnnotationMultiple(IEnumerable&lt;BatchRequestParam&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add many Annotations given a list of requests containing the Id of the Audits and the text of the Annotations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;Result&gt; AddAnnotationMultiple(IEnumerable&lt;BatchRequestParam&gt; requests)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.BatchRequestParam.html">BatchRequestParam</a>&gt;</dt>
+    <dd><p>List of BatchRequestParam to specify the id of the audits and the text of the annotations to add.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Result.html">Result</a>&gt;</dt>
+    <dd><p>A list of BatchRequestParam with all the specified attributes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_AddAnnotationMultipleAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.AddAnnotationMultipleAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_AddAnnotationMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_BatchRequestParam__" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.AddAnnotationMultipleAsync(System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.BatchRequestParam})">
+  AddAnnotationMultipleAsync(IEnumerable&lt;BatchRequestParam&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add many Annotations given a list of requests containing the Id of the Audits and the text of the Annotations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;Result&gt;&gt; AddAnnotationMultipleAsync(IEnumerable&lt;BatchRequestParam&gt; requests)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.BatchRequestParam.html">BatchRequestParam</a>&gt;</dt>
+    <dd><p>List of BatchRequestParam to specify the id of the audits and the text of the annotations to add.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Result.html">Result</a>&gt;&gt;</dt>
+    <dd><p>A list of BatchRequestParam with all the specified attributes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_Discard_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.Discard*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_Discard_System_Guid_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.Discard(System.Guid,System.String)">
+  Discard(Guid, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Discard an Audit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Discard(Guid id, string annotationText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The identifier of the Audit.</p>
+</dd>
+    <dt><code>annotationText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text of the annotation to report the reason of the discard.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysUnsupportedApiVersion.html">MetasysUnsupportedApiVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_DiscardAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.DiscardAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_DiscardAsync_System_Guid_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.DiscardAsync(System.Guid,System.String)">
+  DiscardAsync(Guid, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Discard an Audit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DiscardAsync(Guid id, string annotationText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The identifier of the Audit.</p>
+</dd>
+    <dt><code>annotationText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text of the annotation to report the reason of the discard.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysUnsupportedApiVersion.html">MetasysUnsupportedApiVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_DiscardMultiple_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.DiscardMultiple*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_DiscardMultiple_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_BatchRequestParam__" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.DiscardMultiple(System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.BatchRequestParam})">
+  DiscardMultiple(IEnumerable&lt;BatchRequestParam&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Discard many Audit given a list of requests containing the Id of the Audits and the text for the Annotations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;Result&gt; DiscardMultiple(IEnumerable&lt;BatchRequestParam&gt; requests)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.BatchRequestParam.html">BatchRequestParam</a>&gt;</dt>
+    <dd><p>List of BatchRequestParam to specify the id of the audits and the text of the annotations to discard.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Result.html">Result</a>&gt;</dt>
+    <dd><p>A list of BatchRequestParam with all the specified attributes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_DiscardMultipleAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.DiscardMultipleAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_DiscardMultipleAsync_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_BatchRequestParam__" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.DiscardMultipleAsync(System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.BatchRequestParam})">
+  DiscardMultipleAsync(IEnumerable&lt;BatchRequestParam&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Discard many Audit given a list of requests containing the Id of the Audits and the text for the Annotations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;Result&gt;&gt; DiscardMultipleAsync(IEnumerable&lt;BatchRequestParam&gt; requests)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.BatchRequestParam.html">BatchRequestParam</a>&gt;</dt>
+    <dd><p>List of BatchRequestParam to specify the id of the audits and the text of the annotations to discard.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Result.html">Result</a>&gt;&gt;</dt>
+    <dd><p>A list of BatchRequestParam with all the specified attributes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_FindById_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.FindById*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_FindById_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.FindById(System.Guid)">
+  FindById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the specified audit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Audit FindById(Guid auditId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>auditId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The identifier of the audit.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.Audit.html">Audit</a></dt>
+    <dd><p>The specified audit details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_FindByIdAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.FindByIdAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_FindByIdAsync_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.FindByIdAsync(System.Guid)">
+  FindByIdAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the specified audit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Audit&gt; FindByIdAsync(Guid auditId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>auditId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The identifier of the audit.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Audit.html">Audit</a>&gt;</dt>
+    <dd><p>The specified audit details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_Get_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.Get*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_Get_JohnsonControls_Metasys_BasicServices_AuditFilter_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.Get(JohnsonControls.Metasys.BasicServices.AuditFilter)">
+  Get(AuditFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of audits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PagedResult&lt;Audit&gt; Get(AuditFilter auditFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>auditFilter</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AuditFilter.html">AuditFilter</a></dt>
+    <dd><p>The audit model to filter audits.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Audit.html">Audit</a>&gt;</dt>
+    <dd><p>The list of audits with details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_GetAnnotations_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.GetAnnotations*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_GetAnnotations_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.GetAnnotations(System.Guid)">
+  GetAnnotations(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve a collection of Audit Annotations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;AuditAnnotation&gt; GetAnnotations(Guid auditId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>auditId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.AuditAnnotation.html">AuditAnnotation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_GetAnnotationsAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.GetAnnotationsAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_GetAnnotationsAsync_System_Guid_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.GetAnnotationsAsync(System.Guid)">
+  GetAnnotationsAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve a collection of Audit Annotations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;AuditAnnotation&gt;&gt; GetAnnotationsAsync(Guid auditId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>auditId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.AuditAnnotation.html">AuditAnnotation</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_GetAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.GetAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_GetAsync_JohnsonControls_Metasys_BasicServices_AuditFilter_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.GetAsync(JohnsonControls.Metasys.BasicServices.AuditFilter)">
+  GetAsync(AuditFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of audits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PagedResult&lt;Audit&gt;&gt; GetAsync(AuditFilter auditFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>auditFilter</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AuditFilter.html">AuditFilter</a></dt>
+    <dd><p>The audit model to filter audits.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Audit.html">Audit</a>&gt;&gt;</dt>
+    <dd><p>The list of audits with details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_GetForObject_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.GetForObject*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_GetForObject_JohnsonControls_Metasys_BasicServices_ObjectId_JohnsonControls_Metasys_BasicServices_AuditFilter_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.GetForObject(JohnsonControls.Metasys.BasicServices.ObjectId,JohnsonControls.Metasys.BasicServices.AuditFilter)">
+  GetForObject(ObjectId, AuditFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of audits for the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PagedResult&lt;Audit&gt; GetForObject(ObjectId objectId, AuditFilter auditFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The identifier of the object.</p>
+</dd>
+    <dt><code>auditFilter</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AuditFilter.html">AuditFilter</a></dt>
+    <dd><p>The filter to be applied to audit list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Audit.html">Audit</a>&gt;</dt>
+    <dd><p>The list of audit with details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_IAuditService_GetForObjectAsync_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.GetForObjectAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_IAuditService_GetForObjectAsync_JohnsonControls_Metasys_BasicServices_ObjectId_JohnsonControls_Metasys_BasicServices_AuditFilter_" data-uid="JohnsonControls.Metasys.BasicServices.IAuditService.GetForObjectAsync(JohnsonControls.Metasys.BasicServices.ObjectId,JohnsonControls.Metasys.BasicServices.AuditFilter)">
+  GetForObjectAsync(ObjectId, AuditFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a collection of audits for the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PagedResult&lt;Audit&gt;&gt; GetForObjectAsync(ObjectId objectId, AuditFilter auditFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectId</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The identifier of the object.</p>
+</dd>
+    <dt><code>auditFilter</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.AuditFilter.html">AuditFilter</a></dt>
+    <dd><p>The filter to be applied to audit list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.Audit.html">Audit</a>&gt;&gt;</dt>
+    <dd><p>The list of audit with details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/Audits/IAuditService.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

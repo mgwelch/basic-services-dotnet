@@ -1,0 +1,1208 @@
+{
+  "source_base_path": "/Users/cwelchmi/repos/basic-services-dotnet",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "CONTRIBUTING.md",
+      "output": {
+        ".html": {
+          "relative_path": "CONTRIBUTING.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.AccessToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.AccessToken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.ActionTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.ActionTypeEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Activity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Activity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.ActivityAlarm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.ActivityAlarm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.ActivityAudit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.ActivityAudit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.ActivityFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.ActivityFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.ActivityManagementStatusEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.ActivityManagementStatusEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Alarm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Alarm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.AlarmAnnotation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.AlarmAnnotation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.AlarmFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.AlarmFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.AlarmFilterV4Plus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.AlarmFilterV4Plus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.AlarmServiceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.AlarmServiceProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.ApiVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.ApiVersion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.AttributeEnumSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.AttributeEnumSet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Audit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Audit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.AuditAnnotation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.AuditAnnotation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.AuditData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.AuditData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.AuditFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.AuditFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.AuditServiceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.AuditServiceProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.AuditSignature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.AuditSignature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.BasicFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.BasicFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.BasicServiceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.BasicServiceProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.BatchRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.BatchRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.BatchRequestParam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.BatchRequestParam.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.ClassLevelsEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.ClassLevelsEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Command.EnumerationItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Command.EnumerationItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Command.Item.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Command.Item.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Command.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.CommandCollectionExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.CommandCollectionExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.CredManException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.CredManException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.EnumerationServiceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.EnumerationServiceProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Enums.NetworkDeviceClassificationEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Enums.NetworkDeviceClassificationEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Enums.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.IActivityService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.IActivityService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.IAlarmsService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.IAlarmsService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.IAuditService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.IAuditService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.IBasicService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.IBasicService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.IEnumerationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.IEnumerationService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.IEquipmentService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.IEquipmentService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.IMetasysClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.IMetasysClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.INetworkDeviceService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.INetworkDeviceService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.ISpaceService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.ISpaceService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.IStreamService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.IStreamService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.ITrendService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.ITrendService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.LegacyData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.LegacyData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.LegacyInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.LegacyInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.LogFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.LogFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.LogInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.LogInitializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.ManageException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.ManageException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Measurement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Measurement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysAnnotation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysAnnotation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysCommandException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysCommandException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysEnumValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysEnumValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysEnumeration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysEnumeration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysGuidException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysGuidException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysHttpException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysHttpException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysHttpNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysHttpNotFoundException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysHttpTimeoutException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysHttpTimeoutException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysObjectCollectionExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysObjectCollectionExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysObjectException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysObjectException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysObjectType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysObjectType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysObjectTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysObjectTypeEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysObjectTypeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysObjectTypeException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysPointCollectionExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysPointCollectionExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysPropertyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysPropertyException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysTokenException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysTokenException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysUnsupportedApiVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.MetasysUnsupportedApiVersion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.NetworkDevice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.NetworkDevice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.NetworkDeviceServiceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.NetworkDeviceServiceProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.NetworkDeviceTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.NetworkDeviceTypeEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.ObjectId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.ObjectId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.ObjectRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.ObjectRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.OriginApplicationsEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.OriginApplicationsEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.PagedResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.PagedResult-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Result.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Result.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Sample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Sample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.SpaceSortEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.SpaceSortEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.SpaceTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.SpaceTypeEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.StreamEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.StreamEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.StreamMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.StreamMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.StreamServiceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.StreamServiceProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Subscription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Subscription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.TimeFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.TimeFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Token.AccessTokenResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Token.AccessTokenResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Token.IAuthTokenProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Token.IAuthTokenProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Token.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Token.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.TreeObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.TreeObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.TrendServiceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.TrendServiceProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.TriggerValue.Schema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.TriggerValue.Schema.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.TriggerValue.SchemaUnits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.TriggerValue.SchemaUnits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.TriggerValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.TriggerValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.UntrustedCertClientFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.UntrustedCertClientFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Utils.CredentialUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Utils.CredentialUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Utils.ObjectUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Utils.ObjectUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Utils.ResourceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Utils.ResourceManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Utils.UserPass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Utils.UserPass.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.Variant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.Variant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.VariantMultiple.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.VariantMultiple.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.VariantMultipleCollectionExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.VariantMultipleCollectionExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JohnsonControls.Metasys.BasicServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JohnsonControls.Metasys.BasicServices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

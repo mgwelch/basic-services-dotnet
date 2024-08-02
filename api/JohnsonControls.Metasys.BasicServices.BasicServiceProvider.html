@@ -1,0 +1,1573 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BasicServiceProvider | Metasys Services </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BasicServiceProvider | Metasys Services ">
+      
+      <meta name="description" content="Base abstract class to be extended on specific provider implementation.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/michaelgwelch/basic-services-dotnet/new/welch/addDocFx/apiSpec/new?filename=JohnsonControls_Metasys_BasicServices_BasicServiceProvider.md&amp;value=---%0Auid%3A%20JohnsonControls.Metasys.BasicServices.BasicServiceProvider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Metasys Services">
+            Metasys Services
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider">
+
+
+
+  <h1 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider" class="text-break">
+Class BasicServiceProvider  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="JohnsonControls.html">JohnsonControls</a>.<a class="xref" href="JohnsonControls.Metasys.html">Metasys</a>.<a class="xref" href="JohnsonControls.Metasys.BasicServices.html">BasicServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MetasysServices.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base abstract class to be extended on specific provider implementation.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BasicServiceProvider : ObjectUtil</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.Utils.ObjectUtil.html">ObjectUtil</a></div>
+      <div><span class="xref">BasicServiceProvider</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.AlarmServiceProvider.html">AlarmServiceProvider</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.AuditServiceProvider.html">AuditServiceProvider</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.EnumerationServiceProvider.html">EnumerationServiceProvider</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.EquipmentServiceProvider.html">EquipmentServiceProvider</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysClient.html">MetasysClient</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.NetworkDeviceServiceProvider.html">NetworkDeviceServiceProvider</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.SpaceServiceProvider.html">SpaceServiceProvider</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.StreamServiceProvider.html">StreamServiceProvider</a></div>
+      <div><a class="xref" href="JohnsonControls.Metasys.BasicServices.TrendServiceProvider.html">TrendServiceProvider</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.Utils.ObjectUtil.html#JohnsonControls_Metasys_BasicServices_Utils_ObjectUtil_GetJTokenValue_Newtonsoft_Json_Linq_JToken_System_String_">ObjectUtil.GetJTokenValue(JToken, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="JohnsonControls.Metasys.BasicServices.Utils.ObjectUtil.html#JohnsonControls_Metasys_BasicServices_Utils_ObjectUtil_GetJTokenDate_Newtonsoft_Json_Linq_JToken_System_String_">ObjectUtil.GetJTokenDate(JToken, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider__ctor_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.#ctor*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider__ctor_Flurl_Http_IFlurlClient_JohnsonControls_Metasys_BasicServices_ApiVersion_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.#ctor(Flurl.Http.IFlurlClient,JohnsonControls.Metasys.BasicServices.ApiVersion,System.Boolean)">
+  BasicServiceProvider(IFlurlClient, ApiVersion, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructor for dedicated services with Flurl client initialization already performed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicServiceProvider(IFlurlClient client, ApiVersion version, bool logErrors = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>client</code> <span class="xref">IFlurlClient</span></dt>
+    <dd><p>The Flurl client.</p>
+</dd>
+    <dt><code>version</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ApiVersion.html">ApiVersion</a></dt>
+    <dd><p>The server's Api version.</p>
+</dd>
+    <dt><code>logErrors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set this flag to false to disable logging of client errors.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider__ctor_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.#ctor*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider__ctor_System_Boolean_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.#ctor(System.Boolean)">
+  BasicServiceProvider(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Empty constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicServiceProvider(bool logErrors = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logErrors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set this flag to false to disable logging of client errors.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider__ctor_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Assume Client is initialized by extended class.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_Client" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.Client">
+  Client
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The http client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IFlurlClient Client</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IFlurlClient</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_Log" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.Log">
+  Log
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The log initiliazer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LogInitializer Log</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.LogInitializer.html">LogInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_Culture_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.Culture*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_Culture" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.Culture">
+  Culture
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The current Culture Used for localization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CultureInfo Culture { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_LogClientErrors_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.LogClientErrors*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_LogClientErrors" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.LogClientErrors">
+  LogClientErrors
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set this flag to false to disable logging of client errors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LogClientErrors { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_MaxVersionSupported_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.MaxVersionSupported*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_MaxVersionSupported" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.MaxVersionSupported">
+  MaxVersionSupported
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Max API version supported by this SDK.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiVersion MaxVersionSupported { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.ApiVersion.html">ApiVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_MinVersionSupported_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.MinVersionSupported*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_MinVersionSupported" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.MinVersionSupported">
+  MinVersionSupported
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Min API version supported by this SDK.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiVersion MinVersionSupported { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.ApiVersion.html">ApiVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_Version_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.Version*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_Version" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.Version">
+  Version
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiVersion Version { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.ApiVersion.html">ApiVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_CheckVersion_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.CheckVersion*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_CheckVersion_JohnsonControls_Metasys_BasicServices_ApiVersion_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.CheckVersion(JohnsonControls.Metasys.BasicServices.ApiVersion)">
+  CheckVersion(ApiVersion)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L946"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Check if the selected API version is supported by the SDK</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CheckVersion(ApiVersion version)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>version</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ApiVersion.html">ApiVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetAllAvailablePagesAsync_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetAllAvailablePagesAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetAllAvailablePagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_String___" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetAllAvailablePagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String[])">
+  GetAllAvailablePagesAsync(string, Dictionary&lt;string, string&gt;, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L563"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all items for the given resource asynchronously by requesting each available page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;List&lt;JToken&gt;&gt; GetAllAvailablePagesAsync(string resource, Dictionary&lt;string, string&gt; parameters = null, params string[] pathSegments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The main resource to read.</p>
+</dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Query string parameters in Key Value format.</p>
+</dd>
+    <dt><code>pathSegments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Path segments to be used in combination with the main resource.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">JToken</span>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpTimeoutException.html">MetasysHttpTimeoutException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpNotFoundException.html">MetasysHttpNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetBatchRequestAsync_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetBatchRequestAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetBatchRequestAsync_System_String_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_ObjectId__System_Collections_Generic_IEnumerable_System_String__System_String___" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetBatchRequestAsync(System.String,System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.ObjectId},System.Collections.Generic.IEnumerable{System.String},System.String[])">
+  GetBatchRequestAsync(string, IEnumerable&lt;ObjectId&gt;, IEnumerable&lt;string&gt;, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L677"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Perform multiple requests (GET) to the Server with a single HTTP call asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;JToken&gt; GetBatchRequestAsync(string endpoint, IEnumerable&lt;ObjectId&gt; ids, IEnumerable&lt;string&gt; resources, params string[] paths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>endpoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>resources</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>paths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">JToken</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetEnumValues_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetEnumValues*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetEnumValues_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetEnumValues(System.String)">
+  GetEnumValues(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IEnumerable&lt;MetasysEnumValue&gt; GetEnumValues(string enumerationKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumerationKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysEnumValue.html">MetasysEnumValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetEnumValuesAsync_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetEnumValuesAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetEnumValuesAsync_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetEnumValuesAsync(System.String)">
+  GetEnumValuesAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;IEnumerable&lt;MetasysEnumValue&gt;&gt; GetEnumValuesAsync(string enumerationKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumerationKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysEnumValue.html">MetasysEnumValue</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetObjectChildrenAsync_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetObjectChildrenAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetObjectChildrenAsync_System_Object_System_Collections_Generic_Dictionary_System_String_System_String__System_Int32_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetObjectChildrenAsync(System.Object,System.Collections.Generic.Dictionary{System.String,System.String},System.Int32)">
+  GetObjectChildrenAsync(object, Dictionary&lt;string, string&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all child objects given a parent id asynchronously by requesting each available page.
+Level indicates how deep to retrieve objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;List&lt;TreeObject&gt;&gt; GetObjectChildrenAsync(object id, Dictionary&lt;string, string&gt; parameters = null, int levels = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The id of the object.</p>
+</dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Query string parameters in Key/Value format.</p>
+</dd>
+    <dt><code>levels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of levels to retrieve children.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.TreeObject.html">TreeObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetObjectChildrenAsync_System_Object_System_Collections_Generic_Dictionary_System_String_System_String__System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A level of 1 only retrieves immediate children of the parent object.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetObjectTypeEnumeration_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetObjectTypeEnumeration*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetObjectTypeEnumeration_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetObjectTypeEnumeration(System.String)">
+  GetObjectTypeEnumeration(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetObjectTypeEnumeration(string resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetPagedResultsAsync_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetPagedResultsAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetPagedResultsAsync__1_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Object___" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetPagedResultsAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Object[])">
+  GetPagedResultsAsync&lt;T&gt;(string, Dictionary&lt;string, string&gt;, params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L545"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get typed items for the given resource asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;PagedResult&lt;T&gt;&gt; GetPagedResultsAsync&lt;T&gt;(string resource, Dictionary&lt;string, string&gt; parameters, params object[] pathSegments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The main resource to read.</p>
+</dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Query string parameters in Key/Value format.</p>
+</dd>
+    <dt><code>pathSegments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Path segments to be used in combination with the main resource.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.PagedResult-1.html">PagedResult</a>&lt;T&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetPagedResultsAsync__1_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Object____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Optionally accepts query string parameters and additional path segments.</p>
+</div>
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetRequestAsync_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetRequestAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetRequestAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Object___" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetRequestAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Object[])">
+  GetRequestAsync(string, Dictionary&lt;string, string&gt;, params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic request for the given resource asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;JToken&gt; GetRequestAsync(string resource, Dictionary&lt;string, string&gt; parameters = null, params object[] pathSegments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The main resource to read.</p>
+</dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Query string parameters in Key/Value format.</p>
+</dd>
+    <dt><code>pathSegments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Path segments to be used in combination with the main resource.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">JToken</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpTimeoutException.html">MetasysHttpTimeoutException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpNotFoundException.html">MetasysHttpNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetResourceTypesAsync_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetResourceTypesAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetResourceTypesAsync_System_String_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetResourceTypesAsync(System.String,System.String)">
+  GetResourceTypesAsync(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all resource types asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;MetasysObjectType&gt;&gt; GetResourceTypesAsync(string resource, string pathSegment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>pathSegment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObjectType.html">MetasysObjectType</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetType_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetType*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetType_Newtonsoft_Json_Linq_JToken_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetType(Newtonsoft.Json.Linq.JToken)">
+  GetType(JToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the type from a token retrieved from a typeUrl</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MetasysObjectType GetType(JToken typeToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>typeToken</code> <span class="xref">JToken</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObjectType.html">MetasysObjectType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObjectTypeException.html">MetasysObjectTypeException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetType_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetType*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetType_System_Int32_System_String_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetType(System.Int32,System.String,System.String)">
+  GetType(int, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the type from the values of the paramenters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MetasysObjectType GetType(int id, string description, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObjectType.html">MetasysObjectType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObjectTypeException.html">MetasysObjectTypeException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetWithFullUrl_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetWithFullUrl*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_GetWithFullUrl_System_String_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.GetWithFullUrl(System.String)">
+  GetWithFullUrl(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a resource given the full url asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;JToken&gt; GetWithFullUrl(string url)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">JToken</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_Localize_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.Localize*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_Localize_System_String_System_Globalization_CultureInfo_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.Localize(System.String,System.Globalization.CultureInfo)">
+  Localize(string, CultureInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Localize(string resource, CultureInfo cultureInfo = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>cultureInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ParseObjectIdentifier_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ParseObjectIdentifier*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ParseObjectIdentifier_Newtonsoft_Json_Linq_JToken_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ParseObjectIdentifier(Newtonsoft.Json.Linq.JToken)">
+  ParseObjectIdentifier(JToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L471"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parses a JToken containing a string and returns the value as an <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ObjectId ParseObjectIdentifier(JToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <span class="xref">JToken</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>The <a class="xref" href="JohnsonControls.Metasys.BasicServices.ObjectId.html">ObjectId</a> contained in the token.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysGuidException.html">MetasysGuidException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_PatchBatchRequestAsync_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.PatchBatchRequestAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_PatchBatchRequestAsync_System_String_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_BatchRequestParam__" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.PatchBatchRequestAsync(System.String,System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.BatchRequestParam})">
+  PatchBatchRequestAsync(string, IEnumerable&lt;BatchRequestParam&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L854"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Perform multiple requests (PATCH) to the Server with a single HTTP call asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;JToken&gt; PatchBatchRequestAsync(string endpoint, IEnumerable&lt;BatchRequestParam&gt; requests)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>endpoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.BatchRequestParam.html">BatchRequestParam</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">JToken</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_PostBatchRequestAsync_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.PostBatchRequestAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_PostBatchRequestAsync_System_String_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_BatchRequestParam__System_String___" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.PostBatchRequestAsync(System.String,System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.BatchRequestParam},System.String[])">
+  PostBatchRequestAsync(string, IEnumerable&lt;BatchRequestParam&gt;, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L719"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Perform multiple requests (POST) to the Server with a single HTTP call asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;JToken&gt; PostBatchRequestAsync(string endpoint, IEnumerable&lt;BatchRequestParam&gt; requests, params string[] paths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>endpoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.BatchRequestParam.html">BatchRequestParam</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>paths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">JToken</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_PutBatchRequestAsync_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.PutBatchRequestAsync*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_PutBatchRequestAsync_System_String_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_BatchRequestParam__System_String___" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.PutBatchRequestAsync(System.String,System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.BatchRequestParam},System.String[])">
+  PutBatchRequestAsync(string, IEnumerable&lt;BatchRequestParam&gt;, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L780"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Perform multiple requests (PUT or PATCH) to the Server with a single HTTP call asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;JToken&gt; PutBatchRequestAsync(string endpoint, IEnumerable&lt;BatchRequestParam&gt; requests, params string[] paths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>endpoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.BatchRequestParam.html">BatchRequestParam</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>paths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">JToken</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ThrowHttpException_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ThrowHttpException*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ThrowHttpException_Flurl_Http_FlurlHttpException_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ThrowHttpException(Flurl.Http.FlurlHttpException)">
+  ThrowHttpException(FlurlHttpException)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L621"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Throws a Metasys Exception from a Flurl.Http exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ThrowHttpException(FlurlHttpException e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <span class="xref">FlurlHttpException</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpParsingException.html">MetasysHttpParsingException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpTimeoutException.html">MetasysHttpTimeoutException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpException.html">MetasysHttpException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysHttpNotFoundException.html">MetasysHttpNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToDictionary_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ToDictionary*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToDictionary_System_Object_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ToDictionary(System.Object)">
+  ToDictionary(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L651"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convert a generic object to a dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, string&gt; ToDictionary(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToMetasysObject_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ToMetasysObject*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToMetasysObject_Newtonsoft_Json_Linq_JToken_JohnsonControls_Metasys_BasicServices_ApiVersion_System_Nullable_JohnsonControls_Metasys_BasicServices_MetasysObjectTypeEnum__" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ToMetasysObject(Newtonsoft.Json.Linq.JToken,JohnsonControls.Metasys.BasicServices.ApiVersion,System.Nullable{JohnsonControls.Metasys.BasicServices.MetasysObjectTypeEnum})">
+  ToMetasysObject(JToken, ApiVersion, MetasysObjectTypeEnum?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return Metasys Object representation from a generic JSON object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MetasysObject ToMetasysObject(JToken item, ApiVersion version, MetasysObjectTypeEnum? objectType = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">JToken</span></dt>
+    <dd></dd>
+    <dt><code>version</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ApiVersion.html">ApiVersion</a></dt>
+    <dd></dd>
+    <dt><code>objectType</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObjectTypeEnum.html">MetasysObjectTypeEnum</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToMetasysObject_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ToMetasysObject*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToMetasysObject_System_Collections_Generic_IEnumerable_JohnsonControls_Metasys_BasicServices_TreeObject__JohnsonControls_Metasys_BasicServices_ApiVersion_System_Nullable_JohnsonControls_Metasys_BasicServices_MetasysObjectTypeEnum__" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ToMetasysObject(System.Collections.Generic.IEnumerable{JohnsonControls.Metasys.BasicServices.TreeObject},JohnsonControls.Metasys.BasicServices.ApiVersion,System.Nullable{JohnsonControls.Metasys.BasicServices.MetasysObjectTypeEnum})">
+  ToMetasysObject(IEnumerable&lt;TreeObject&gt;, ApiVersion, MetasysObjectTypeEnum?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return Metasys Object representation from a generic JSON object tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;MetasysObject&gt; ToMetasysObject(IEnumerable&lt;TreeObject&gt; objects, ApiVersion version, MetasysObjectTypeEnum? objectType = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.TreeObject.html">TreeObject</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>version</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ApiVersion.html">ApiVersion</a></dt>
+    <dd></dd>
+    <dt><code>objectType</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObjectTypeEnum.html">MetasysObjectTypeEnum</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToMetasysObject_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ToMetasysObject*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToMetasysObject_System_Collections_Generic_List_Newtonsoft_Json_Linq_JToken__JohnsonControls_Metasys_BasicServices_ApiVersion_System_Nullable_JohnsonControls_Metasys_BasicServices_MetasysObjectTypeEnum__" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ToMetasysObject(System.Collections.Generic.List{Newtonsoft.Json.Linq.JToken},JohnsonControls.Metasys.BasicServices.ApiVersion,System.Nullable{JohnsonControls.Metasys.BasicServices.MetasysObjectTypeEnum})">
+  ToMetasysObject(List&lt;JToken&gt;, ApiVersion, MetasysObjectTypeEnum?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return Metasys Object representation from a generic JSON object List.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;MetasysObject&gt; ToMetasysObject(List&lt;JToken&gt; items, ApiVersion version, MetasysObjectTypeEnum? type = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">JToken</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>version</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ApiVersion.html">ApiVersion</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObjectTypeEnum.html">MetasysObjectTypeEnum</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.MetasysObject.html">MetasysObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToNetworkDevice_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ToNetworkDevice*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToNetworkDevice_Newtonsoft_Json_Linq_JToken_JohnsonControls_Metasys_BasicServices_ApiVersion_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ToNetworkDevice(Newtonsoft.Json.Linq.JToken,JohnsonControls.Metasys.BasicServices.ApiVersion)">
+  ToNetworkDevice(JToken, ApiVersion)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return Network Device representation from a generic JSON object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected NetworkDevice ToNetworkDevice(JToken item, ApiVersion version)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">JToken</span></dt>
+    <dd></dd>
+    <dt><code>version</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ApiVersion.html">ApiVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JohnsonControls.Metasys.BasicServices.NetworkDevice.html">NetworkDevice</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToNetworkDevice_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ToNetworkDevice*"></a>
+
+  <h3 id="JohnsonControls_Metasys_BasicServices_BasicServiceProvider_ToNetworkDevice_System_Collections_Generic_List_Newtonsoft_Json_Linq_JToken__JohnsonControls_Metasys_BasicServices_ApiVersion_" data-uid="JohnsonControls.Metasys.BasicServices.BasicServiceProvider.ToNetworkDevice(System.Collections.Generic.List{Newtonsoft.Json.Linq.JToken},JohnsonControls.Metasys.BasicServices.ApiVersion)">
+  ToNetworkDevice(List&lt;JToken&gt;, ApiVersion)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return Network Device representation from a generic JSON object List.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;NetworkDevice&gt; ToNetworkDevice(List&lt;JToken&gt; items, ApiVersion version)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">JToken</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>version</code> <a class="xref" href="JohnsonControls.Metasys.BasicServices.ApiVersion.html">ApiVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="JohnsonControls.Metasys.BasicServices.NetworkDevice.html">NetworkDevice</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/michaelgwelch/basic-services-dotnet/blob/welch/addDocFx/MetasysServices/BasicServiceProvider.cs/#L24" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
