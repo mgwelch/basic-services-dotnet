@@ -40,7 +40,7 @@
       "_appName": "Metasys Services",
       "_appTitle": "Metasys Services",
       "_enableSearch": true,
-      "pdf": false
+      "pdf": true
     }
   }
 }
